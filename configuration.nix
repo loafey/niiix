@@ -16,7 +16,7 @@
   boot.loader.grub.device = "/dev/vda";
   boot.loader.grub.useOSProber = true;
 
-  networking.hostName = "mango-lemma"; # Define your hostname.
+  networking.hostName = "mango-loafey"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
@@ -84,13 +84,13 @@
   # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.lemma = {
+  users.users.loafey = {
     isNormalUser = true;
-    description = "lemma";
+    description = "loafey";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = [];
   };
-  home-manager.users.lemma = { pkgs, ... }: {
+  home-manager.users.loafey = { pkgs, ... }: {
     nixpkgs = {
       config = {
         allowUnfree = true;
