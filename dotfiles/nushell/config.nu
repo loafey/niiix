@@ -836,9 +836,7 @@ def prompt [] {
 def lsg [arg = "."] { ls $arg | sort-by type name -i | grid -c | str trim }
 def :q [] {exit}
 def sup [] {
-    paru -Syu --noconfirm
-    rustup update
-    cabal update
+    sudo nixos-rebuild switch --upgrade
 }
 
 $env.PATH = ($env.PATH | split row (char esep) | append "/home/samuel/.ghcup/bin")

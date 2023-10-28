@@ -16,6 +16,7 @@ flimpy: { pkgs, ... }: {
         icrawl.discord-vscode
         pkief.material-icon-theme
         jnoortheen.nix-ide
+        thenuprojectcontributors.vscode-nushell-lang
       ];
     }
     )

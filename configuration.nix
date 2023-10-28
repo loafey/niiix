@@ -94,6 +94,7 @@
     isNormalUser = true;
     description = "lemma";
     extraGroups = [ "networkmanager" "wheel" ];
+    shell = pkgs.nushell;
     packages = [ ];
   };
 
