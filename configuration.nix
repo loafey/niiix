@@ -49,6 +49,8 @@
 
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
+  services.xserver.displayManager.autoLogin.enable = true;
+  services.xserver.displayManager.autoLogin.user = "lemma";
   services.xserver.desktopManager.gnome.enable = true;
 
   # Configure keymap in X11
@@ -132,6 +134,7 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
   environment.systemPackages = with pkgs; [
     neovim
     nushell
