@@ -89,7 +89,8 @@
           { 
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.lemma.imports = [./home.nix];
+            home-manager.users.lemma = import ./home.nix;
+            home-manager.extraSpecialArgs = specialArgs;
           }
         ];
       };
