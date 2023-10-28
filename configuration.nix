@@ -58,6 +58,10 @@
     xkbVariant = "";
   };
 
+  fonts.packages = with pkgs; [
+    (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
+  ];
+
   # Configure console keymap
   console.keyMap = "sv-latin1";
 
