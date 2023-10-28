@@ -108,7 +108,7 @@
     nushell
     wget
     git
-    inputs.grompt.packages."${pkgs.system}".grompt
+    inputs.grompt.defaultPackage."${pkgs.system}"
   ];
   environment.sessionVariables = rec { 
     EDITOR = "nvim"; 
