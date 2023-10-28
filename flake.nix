@@ -85,12 +85,12 @@
           # old configuration file can still take effect.
           # Note: configuration.nix itself is also a Nix Module,
           ./configuration.nix
-          home-manager.nixosModules.home-manager 
-          { 
+          home-manager.nixosModules.home-manager
+          {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             #home-manager.extraSpecialArgs = specialArgs;
-            home-manager.users.lemma = import ./home.nix { 
+            home-manager.users.lemma = import ./home.nix {
               nix-vscode-extensions = inputs.nix-vscode-extensions;
             };
           }

@@ -6,7 +6,8 @@
 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [
+      # Include the results of the hardware scan.
       ./hardware-configuration.nix
     ];
 
@@ -93,7 +94,7 @@
     isNormalUser = true;
     description = "lemma";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = [];
+    packages = [ ];
   };
 
   # Allow unfree packages
@@ -114,8 +115,8 @@
     git
     inputs.grompt.defaultPackage."${pkgs.system}"
   ];
-  environment.sessionVariables = rec { 
-    EDITOR = "nvim"; 
+  environment.sessionVariables = rec {
+    EDITOR = "nvim";
   };
 
   # Some programs need SUID wrappers, can be configured further or are

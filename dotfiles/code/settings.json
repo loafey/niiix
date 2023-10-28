@@ -1,0 +1,242 @@
+{
+    "editor.fontFamily": "FiraCode Nerd Font",
+    "editor.fontLigatures": true,
+    "editor.minimap.enabled": false,
+    "window.menuBarVisibility": "toggle",
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    },
+    "csharp.referencesCodeLens.enabled": false,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    "rust-client.engine": "rust-analyzer",
+    "todo-tree.tree.showScanModeButton": false,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "rust-analyzer.checkOnSave.command": "clippy",
+    "workbench.editorAssociations": {
+        "*.rdb": "hexEditor.hexedit",
+        "*.ipynb": "jupyter-notebook"
+    },
+    "rust-analyzer.diagnostics.disabled": [
+        "macro-error",
+        "unresolved-proc-macro"
+    ],
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.statusBar.enabled": false,
+    "rust-analyzer.procMacro.enable": true,
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "XXX",
+        "[ ]",
+        "[x]"
+    ],
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+    "explorer.confirmDragAndDrop": false,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "explorer.confirmDelete": false,
+    "[haskell]": {
+        "editor.defaultFormatter": "haskell.haskell"
+    },
+    "zenMode.fullScreen": false,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.silentNotifications": false,
+    "restoreTerminals.terminals": [
+        {
+            "splitTerminals": [
+                {
+                    "name": "Terminal",
+                    "commands": [
+                        "ls"
+                    ]
+                }
+            ]
+        },
+    ],
+    "zenMode.centerLayout": false,
+    "haskell.formattingProvider": "stylish-haskell",
+    "vsicons.dontShowNewVersionMessage": true,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "omnisharp.useGlobalMono": "always",
+    "discord.lowerDetailsEditing": "Workspace: {git_repo_name}",
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "javascript.format.semicolons": "insert",
+    "typescript.format.semicolons": "insert",
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "redhat.telemetry.enabled": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "zenMode.hideTabs": false,
+    "polacode.backgroundColor": "#f2f2f200",
+    "polacode.transparentBackground": true,
+    "zenMode.hideStatusBar": false,
+    "git.ignoreRebaseWarning": true,
+    "rust-analyzer.lens.implementations": false,
+    "cSpell.enableFiletypes": [
+        "!c",
+        "!haskell",
+        "!rust"
+    ],
+    "cmake.configureOnOpen": true,
+    "editor.codeLensFontFamily": "Victor Mono",
+    "editor.unicodeHighlight.allowedCharacters": {
+        "𝑄": true
+    },
+    "workbench.colorTheme": "Ayu Mirage",
+    "workbench.productIconTheme": "icons-carbon",
+    "workbench.iconTheme": "material-icon-theme",
+    "security.workspace.trust.startupPrompt": "never",
+    "security.workspace.trust.enabled": false,
+    "cSpell.userWords": [
+        "Aktivitet",
+        "Arrangör",
+        "boardofstudies",
+        "bypassable",
+        "concats",
+        "Consequentialist",
+        "cryptosystem",
+        "Deontological",
+        "DFBM",
+        "Diffie",
+        "downcasting",
+        "dummyframe",
+        "dvarm",
+        "dvrk",
+        "Endianness",
+        "Evaluable",
+        "femmepp",
+        "floatbin",
+        "Hammersberg",
+        "harddrive",
+        "HIDS",
+        "Intelli",
+        "Ints",
+        "Keyloggers",
+        "Kommittéer",
+        "Lerp",
+        "lualatex",
+        "marp",
+        "Mathf",
+        "misprediction",
+        "Monomorphism",
+        "NIDS",
+        "nonumber",
+        "phising",
+        "polymorhpism",
+        "println",
+        "qouge",
+        "rehype",
+        "reimplement",
+        "rgba",
+        "Sandboxing",
+        "selftext",
+        "serde",
+        "Steamworks",
+        "Steganography",
+        "stringstyle",
+        "struct",
+        "structs",
+        "Studienämnd",
+        "subtyping",
+        "swordlord",
+        "tscn",
+        "tuplify",
+        "Twople",
+        "Vecture",
+        "Xform"
+    ],
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    "markdown.marp.enableHtml": true,
+    "rust-analyzer.inlayHints.enable": false,
+    "rust-analyzer.inlayHints.renderColons": false,
+    "rust-analyzer.cargo.buildScripts.enable": true,
+    "rust-analyzer.inlayHints.chainingHints.enable": false,
+    "rust-analyzer.inlayHints.parameterHints.enable": false,
+    "rust-analyzer.inlayHints.typeHints.enable": false,
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "workbench.preferredDarkColorTheme": "Adwaita Dark",
+    "workbench.preferredLightColorTheme": "Adwaita Light",
+    "window.autoDetectColorScheme": true,
+    "rust-analyzer.inlayHints.closingBraceHints.enable": false,
+    "material-icon-theme.folders.color": "#90a4af",
+    "material-icon-theme.files.associations": {
+        "*.rs": "rescript",
+    },
+    "latex-workshop.latex.build.forceRecipeUsage": false,
+    "haskell.manageHLS": "GHCup",
+    "workbench.startupEditor": "none",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "/bin/zsh",
+            "args": [
+                "-l",
+                "-i"
+            ]
+        },
+        "fish": {
+            "path": "fish"
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        },
+        "nu": {
+            "path": "/bin/nu"
+        }
+    },
+    "latex-workshop.message.latexlog.exclude": [
+        "Some font shapes were not available, defaults substituted.",
+        "Font shape `.*' undefined"
+    ],
+    "rust-analyzer.checkOnSave": true,
+    "rust-analyzer.check.command": "clippy",
+    "git.openRepositoryInParentFolders": "always",
+    "editor.acceptSuggestionOnEnter": "off",
+    "errorLens.excludeBySource": [
+        "rustc(Click for full compiler diagnostic)"
+    ],
+    "editor.formatOnSave": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "editor.linkedEditing": true,
+    "slint.preview.style": "fluent",
+    "[csharp]": {
+        "editor.defaultFormatter": "ms-dotnettools.csharp"
+    },
+    "terminal.integrated.fontFamily": "FiraCode Nerd Font",
+    "terminal.integrated.defaultProfile.linux": "nu",
+    "breadcrumbs.enabled": false
+}

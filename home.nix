@@ -5,17 +5,23 @@ flimpy: { pkgs, ... }: {
       allowUnfreePredicate = (_: true);
     };
   };
-  home.packages = with pkgs; [ 
+  home.packages = with pkgs; [
     firefox
-    #vscode
     (vscode-with-extensions.override {
-        vscodeExtensions = with flimpy.nix-vscode-extensions.extensions.${system}; [
-        vscode-marketplace.golang.go
-        vscode-marketplace.rust-lang.rust-analyzer
+      vscodeExtensions = with flimpy.nix-vscode-extensions.extensions.${system}.vscode-marketplace; [
+        golang.go
+        rust-lang.rust-analyzer
+        teabyii.ayu
+        serayuzgur.crates
+        icrawl.discord-vscode
+        pkief.material-icon-theme
+        jnoortheen.nix-ide
       ];
-    })
+    }
+    )
     thunderbird
     discord
+    nixpkgs-fmt
   ];
   programs.bash.enable = true;
 
@@ -28,7 +34,9 @@ flimpy: { pkgs, ... }: {
     ];
   };
 
-  xdg.configFile."nushell/config.nu".source = ./dotfiles/config.nu;
+  xdg.configFile."nushell/config.nu".source = ./dotfiles/nushell/config.nu;
+  xdg.configFile."Code/User/settings.json".source = ./dotfiles/code/settings.json;
+  xdg.configFile."Code/User/keybindings.json".source = ./dotfiles/code/keybindings.json;
 
   # The state version is required and should stay at the version you
   # originally installed.
