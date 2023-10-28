@@ -3,7 +3,8 @@
 CONFIG_PATH="$(realpath $(dirname $0))"
 HARDWARE_CONFIG_PATH="${CONFIG_PATH}/hardware-configuration.nix"
 
-nixos-generate-config --show-hardware-config > $HARDWARE_CONFIG_PATH
+# nixos-generate-config --show-hardware-config > $HARDWARE_CONFIG_PATH
+cp /etc/nixos/hardware-configuration.nix hardware-configuration.nix
 sudo nix-channel --add https://nixos.org/channels/nixos-unstable nixos
 sudo nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
 sudo nix-channel --update
