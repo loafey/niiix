@@ -11,6 +11,7 @@
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     grompt.url = "github:samhamnam/grompt";
+    nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
   };
 
   # `outputs` are all the build result of the flake.
@@ -99,9 +100,9 @@
                 firefox
                 #vscode
                 (vscode-with-extensions.override {
-                  vscodeExtensions = with vscode-extensions; [
-                    rust-lang.rust-analyzer
-                    #teabyii.ayu
+                  vscodeExtensions = with inputs.nix-vscode-extensions.extensions.${system}; [
+                    vscode-marketplace.golang.go
+                    vscode-marketplace-latest.rust-lang.rust-analyzer
                   ];
                 })
                 thunderbird
