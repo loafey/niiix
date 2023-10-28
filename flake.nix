@@ -7,21 +7,9 @@
   # Each item in `inputs` will be passed as a parameter to
   # the `outputs` function after being pulled and built.
   inputs = {
-    # There are many ways to reference flake inputs.
-    # The most widely used is `github:owner/name/reference`,
-    # which represents the GitHub repository URL + branch/commit-id/tag.
-
-    # Official NixOS package source, using nixos-unstable branch here
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    # home-manager, used for managing user configuration
-    #home-manager = {
-      #url = "github:nix-community/home-manager/release-23.05";
-      # The `follows` keyword in inputs is used for inheritance.
-      # Here, `inputs.nixpkgs` of home-manager is kept consistent with
-      # the `inputs.nixpkgs` of the current flake,
-      # to avoid problems caused by different versions of nixpkgs.
-      #inputs.nixpkgs.follows = "nixpkgs";
-    #};
+    home-manager.url = "github:nix-community/home-manager";
+    home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   # `outputs` are all the build result of the flake.
@@ -94,6 +82,47 @@
           # old configuration file can still take effect.
           # Note: configuration.nix itself is also a Nix Module,
           ./configuration.nix
+          home-manager.nixosModules.home-manager 
+          { 
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.lemma = { pkgs, ... }: {
+              nixpkgs = {
+                config = {
+                  allowUnfree = true;
+                  allowUnfreePredicate = (_: true);
+                };
+              };
+              home.packages = with pkgs; [ 
+                firefox
+                #vscode
+                (vscode-with-extensions.override {
+                  vscodeExtensions = with vscode-extensions; [
+                    rust-lang.rust-analyzer
+                    #teabyii.ayu
+                  ];
+                })
+                thunderbird
+                discord
+              ];
+              programs.bash.enable = true;
+
+              programs.git = {
+                enable = true;
+                userName = "Samuel Hammersberg";
+                userEmail = "samuel.hammersberg@gmail.com";
+                includes = [
+                  { path = "~/.gitconfig.local"; }
+                ];
+              };
+
+              xdg.configFile."nushell/config.nu".source = ./dotfiles/config.nu;
+
+              # The state version is required and should stay at the version you
+              # originally installed.
+              home.stateVersion = "23.05";
+            };
+          }
         ];
       };
     };
