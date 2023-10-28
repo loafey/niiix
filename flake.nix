@@ -89,8 +89,10 @@
           { 
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.lemma = import ./home.nix;
-            home-manager.extraSpecialArgs = specialArgs;
+            #home-manager.extraSpecialArgs = specialArgs;
+            home-manager.users.lemma = import ./home.nix { 
+              nix-vscode-extensions = inputs.nix-vscode-extensions;
+            };
           }
         ];
       };

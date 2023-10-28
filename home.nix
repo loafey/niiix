@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }: {
+flimpy: { pkgs, ... }: {
   nixpkgs = {
     config = {
       allowUnfree = true;
@@ -9,7 +9,7 @@
     firefox
     #vscode
     (vscode-with-extensions.override {
-        vscodeExtensions = with inputs.nix-vscode-extensions.extensions.${system}; [
+        vscodeExtensions = with flimpy.nix-vscode-extensions.extensions.${system}; [
         vscode-marketplace.golang.go
         vscode-marketplace.rust-lang.rust-analyzer
       ];
