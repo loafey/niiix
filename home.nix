@@ -12,7 +12,7 @@
         vscodeExtensions = with inputs.nix-vscode-extensions.extensions.${system}; [
         vscode-marketplace.golang.go
         vscode-marketplace.rust-lang.rust-analyzer
-        ];
+      ];
     })
     thunderbird
     discord

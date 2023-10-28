@@ -78,7 +78,7 @@
         # `specialArgs`. 
         # you must use `specialArgs` by uncomment the following line:
         #
-        # specialArgs = {...};  # pass custom arguments into all sub module.
+        # specialArgs = {...};  # pass custom arguments into all sub modules.
         specialArgs = { inherit inputs; };
         modules = [
           # Import the configuration.nix here, so that the
@@ -89,7 +89,7 @@
           { 
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.lemma = import ./home.nix;
+            home-manager.users.lemma.imports = [./home.nix];
           }
         ];
       };
