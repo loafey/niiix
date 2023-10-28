@@ -10,6 +10,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    grompt.url = "github:samhamnam/grompt";
   };
 
   # `outputs` are all the build result of the flake.
@@ -22,7 +23,7 @@
   # 
   # The `@` syntax here is used to alias the attribute set of the
   # inputs's parameter, making it convenient to use inside the function.
-  outputs = { self, nixpkgs, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, ... }@inputs: {
     nixosConfigurations = {
       # By default, NixOS will try to refer the nixosConfiguration with
       # its hostname, so the system named `nixos-test` will use this one.
@@ -77,6 +78,7 @@
         # you must use `specialArgs` by uncomment the following line:
         #
         # specialArgs = {...};  # pass custom arguments into all sub module.
+        specialArgs = inputs;
         modules = [
           # Import the configuration.nix here, so that the
           # old configuration file can still take effect.
