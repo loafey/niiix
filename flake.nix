@@ -78,7 +78,7 @@
         # you must use `specialArgs` by uncomment the following line:
         #
         # specialArgs = {...};  # pass custom arguments into all sub module.
-        specialArgs = inputs;
+        specialArgs = { inherit inputs; };
         modules = [
           # Import the configuration.nix here, so that the
           # old configuration file can still take effect.
