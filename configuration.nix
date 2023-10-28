@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, grompt, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   imports =
@@ -108,7 +108,7 @@
     nushell
     wget
     git
-    grompt
+    inputs.grompt.packages."${pkgs.system}".grompt
   ];
   environment.sessionVariables = rec { 
     EDITOR = "nvim"; 
