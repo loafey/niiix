@@ -18,7 +18,7 @@
             inherit inputs;
             host = "mango-vm";
             userName = userName;
-            hardwareConfig = ./hardware-configs/mango-vm.nix;
+            hardwareConfig = import ./hardware-configs/mango-vm.nix;
             serviceSetup = {
               xserver.enable = true;
               #xserver.displayManager.sddm.enable = true;
@@ -56,7 +56,7 @@
             inherit inputs;
             host = "mango-lappy";
             userName = userName;
-            hardwareConfig = ./hardware-configs/mango-lappy.nix;
+            hardwareConfig = import ./hardware-configs/mango-lappy.nix;
             serviceSetup = {
               xserver.enable = true;
               #xserver.displayManager.sddm.enable = true;
