@@ -11,7 +11,7 @@
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {
     nixosConfigurations =
-      let userName = "lemma"; in {
+      let userName = "loafey"; in {
         "mango-vm" = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           specialArgs = {
