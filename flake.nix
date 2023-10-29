@@ -11,28 +11,22 @@
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {
     nixosConfigurations =
-      let
-        default-modules = [
-          home-manager.nixosModules.home-manager
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.lemma = import ./home.nix {
-              nix-vscode-extensions = inputs.nix-vscode-extensions;
-            };
-          }
-        ];
-      in
-      {
+      let userName = "lemma"; in {
         "mango-lemma" = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           specialArgs = {
             inherit inputs;
             host = "mango-lemma";
-            userName = "lemma";
+            userName = userName;
           };
-          modules = [ ./configuration.nix ] ++ default-modules;
+          modules = [ ./configuration.nix ] ++ import ./home-setup.nix {
+            userName = userName;
+            home-manager = home-manager;
+            inputs = inputs;
+          };
         };
       };
   };
 }
+
+
