@@ -8,7 +8,7 @@ flimpy: { pkgs, ... }: {
   home.packages = with pkgs; [
     firefox
     (vscode-with-extensions.override {
-      vscodeExtensions = with flimpy.nix-vscode-extensions.extensions.${system}.vscode-marketplace; [
+      vscodeExtensions = with flimpy.inputs.nix-vscode-extensions.extensions.${system}.vscode-marketplace; [
         golang.go
         rust-lang.rust-analyzer
         teabyii.ayu
@@ -37,9 +37,9 @@ flimpy: { pkgs, ... }: {
     ];
   };
 
-  xdg.configFile."nushell/config.nu".source = ./dotfiles/nushell/config.nu;
-  xdg.configFile."Code/User/settings.json".source = ./dotfiles/code/settings.json;
-  xdg.configFile."Code/User/keybindings.json".source = ./dotfiles/code/keybindings.json;
+  xdg.configFile."nushell/config.nu".source = ./nushell/config.nu;
+  xdg.configFile."Code/User/settings.json".source = ./code/settings.json;
+  xdg.configFile."Code/User/keybindings.json".source = ./code/keybindings.json;
 
   # The state version is required and should stay at the version you
   # originally installed.

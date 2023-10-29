@@ -3,8 +3,8 @@
   {
     home-manager.useGlobalPkgs = true;
     home-manager.useUserPackages = true;
-    home-manager.users.${userName} = import ./home.nix {
-      nix-vscode-extensions = inputs.nix-vscode-extensions;
+    home-manager.users.${userName} = import ./dotfiles/home.nix {
+      inherit inputs;
     };
   }
 ]
