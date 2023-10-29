@@ -63,6 +63,7 @@
     wget
     git
     inputs.grompt.defaultPackage."${pkgs.system}"
+    inputs.queercat.defaultPackage."${pkgs.system}"
   ];
   environment.sessionVariables = rec {
     EDITOR = "nvim";

@@ -25,6 +25,7 @@ flimpy: { pkgs, ... }: {
     stremio
     neofetch
 
+    gnome.gnome-terminal
     gnomeExtensions.tray-icons-reloaded
     gnomeExtensions.user-themes
     adw-gtk3

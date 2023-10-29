@@ -7,6 +7,7 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     grompt.url = "github:samhamnam/grompt";
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
+    queercat.url = "github:Elsa002/queercat";
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {
