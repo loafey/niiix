@@ -10,12 +10,9 @@
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {
-    nixosConfigurations = {
-      "mango-lemma" = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        specialArgs = { inherit inputs; };
-        modules = [
-          ./configuration.nix
+    nixosConfigurations =
+      let
+        default-modules = [
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
@@ -25,7 +22,13 @@
             };
           }
         ];
+      in
+      {
+        "mango-lemma" = nixpkgs.lib.nixosSystem {
+          system = "x86_64-linux";
+          specialArgs = { inherit inputs; };
+          modules = [ ./configuration.nix ] ++ default-modules;
+        };
       };
-    };
   };
 }

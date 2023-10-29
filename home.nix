@@ -23,6 +23,7 @@ flimpy: { pkgs, ... }: {
     thunderbird
     discord
     nixpkgs-fmt
+    stremio
   ];
   programs.bash.enable = true;
 
