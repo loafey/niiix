@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, inputs, ... }:
+{ userName, host, config, pkgs, inputs, ... }:
 
 {
   imports =
@@ -16,7 +16,7 @@
   boot.loader.grub.device = "/dev/vda";
   boot.loader.grub.useOSProber = true;
 
-  networking.hostName = "mango-lemma"; # Define your hostname.
+  networking.hostName = host; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
@@ -50,7 +50,7 @@
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.displayManager.autoLogin.enable = true;
-  services.xserver.displayManager.autoLogin.user = "lemma";
+  services.xserver.displayManager.autoLogin.user = userName;
   services.xserver.desktopManager.gnome.enable = true;
 
   # Configure keymap in X11
@@ -90,9 +90,9 @@
   # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.lemma = {
+  users.users.${userName} = {
     isNormalUser = true;
-    description = "lemma";
+    description = userName;
     extraGroups = [ "networkmanager" "wheel" ];
     shell = pkgs.nushell;
     packages = [ ];

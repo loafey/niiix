@@ -26,7 +26,11 @@
       {
         "mango-lemma" = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
-          specialArgs = { inherit inputs; };
+          specialArgs = {
+            inherit inputs;
+            host = "mango-lemma";
+            userName = "lemma";
+          };
           modules = [ ./configuration.nix ] ++ default-modules;
         };
       };
