@@ -841,7 +841,6 @@ def sup [] {
 
 def devcode [arg = "."] {
     let path = ["\"", "code ", $arg, "\""] | str join
-    echo $path
     nix develop --command bash -c $path
 }
 
