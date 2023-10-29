@@ -836,6 +836,10 @@ def prompt [] {
 def lsg [arg = "."] { ls $arg | sort-by type name -i | grid -c | str trim }
 def :q [] {exit}
 def sup [] {
+    cd ~/Git/niiix
+    nix flake update
+    git commit add -A flake.lock
+    git push
     sudo nixos-rebuild switch --upgrade
 }
 
