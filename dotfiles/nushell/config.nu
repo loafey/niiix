@@ -839,4 +839,10 @@ def sup [] {
     sudo nixos-rebuild switch --upgrade
 }
 
+def devcode [arg = "."] {
+    let path = ["\"", "code ", $arg, "\""] | str join
+    echo $path
+    nix develop --command bash -c $path
+}
+
 $env.PATH = ($env.PATH | split row (char esep) | append "/home/samuel/.ghcup/bin")
