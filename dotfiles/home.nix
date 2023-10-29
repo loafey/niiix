@@ -28,6 +28,7 @@ flimpy: { pkgs, ... }: {
     gnomeExtensions.tray-icons-reloaded
     gnomeExtensions.user-themes
     adw-gtk3
+    gnome3.gnome-tweaks
   ];
   programs.bash.enable = true;
 
@@ -42,7 +43,8 @@ flimpy: { pkgs, ... }: {
 
   dconf.settings = {
     "org/gnome/desktop/interface" = {
-      color-scheme = "prefer-dark";
+      color-scheme = "default";
+      clock-show-date = false;
     };
 
     "org/gnome/shell" = {
@@ -70,6 +72,7 @@ flimpy: { pkgs, ... }: {
   xdg.configFile."nushell/config.nu".source = ./nushell/config.nu;
   xdg.configFile."Code/User/settings.json".source = ./code/settings.json;
   xdg.configFile."Code/User/keybindings.json".source = ./code/keybindings.json;
+  xdg.configFile."kitty/kitty.conf".source = ./kitty/kitty.conf;
 
   # The state version is required and should stay at the version you
   # originally installed.
