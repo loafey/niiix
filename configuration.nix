@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ userName, hardwareConfig, host, config, pkgs, inputs, ... }:
+{ userName, hardwareConfig, host, serviceSetup, config, pkgs, inputs, ... }:
 
 {
   imports = [ hardwareConfig ];
@@ -31,18 +31,28 @@
   };
 
   # Enable the X11 windowing system.
-  services.xserver.enable = true;
-
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
-
-  services.xserver.displayManager.autoLogin.enable = true;
-  services.xserver.displayManager.autoLogin.user = userName;
-
-  services.xserver = {
-    layout = "se";
-    xkbVariant = "";
-  };
+  services = serviceSetup;
+  #
+  #services.xserver.enable = true;
+  #
+  #services.xserver.displayManager.gdm.enable = true;
+  #services.xserver.desktopManager.gnome.enable = true;
+  #
+  #services.xserver.displayManager.autoLogin.enable = true;
+  #services.xserver.displayManager.autoLogin.user = userName;
+  #services.printing.enable = true;
+  #
+  #services.pipewire = {
+  #  enable = true;
+  #  alsa.enable = true;
+  #  alsa.support32Bit = true;
+  #  pulse.enable = true;
+  #};
+  #
+  #services.xserver = {
+  #  layout = "se";
+  #  xkbVariant = "";
+  #};
 
   fonts.packages = with pkgs; [
     (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
@@ -50,17 +60,11 @@
 
   console.keyMap = "sv-latin1";
 
-  services.printing.enable = true;
 
   sound.enable = true;
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-  };
+
   users.users.${userName} = {
     isNormalUser = true;
     description = userName;
