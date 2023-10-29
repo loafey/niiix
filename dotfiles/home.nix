@@ -18,13 +18,16 @@ flimpy: { pkgs, ... }: {
         jnoortheen.nix-ide
         thenuprojectcontributors.vscode-nushell-lang
       ];
-    }
-    )
+    })
     thunderbird
     discord
     nixpkgs-fmt
     stremio
     neofetch
+
+    gnomeExtensions.tray-icons-reloaded
+    gnomeExtensions.user-themes
+    adw-gtk3
   ];
   programs.bash.enable = true;
 
@@ -36,6 +39,33 @@ flimpy: { pkgs, ... }: {
       { path = "~/.gitconfig.local"; }
     ];
   };
+
+  dconf.settings = {
+    "org/gnome/desktop/interface" = {
+      color-scheme = "prefer-dark";
+    };
+
+    "org/gnome/shell" = {
+      disable-user-extensions = false;
+
+      # `gnome-extensions list` for a list
+      enabled-extensions = [
+        "user-theme@gnome-shell-extensions.gcampax.github.com"
+        "trayIconsReloaded@selfmade.pl"
+      ];
+    };
+  };
+
+  gtk = {
+    enable = true;
+
+    theme = {
+      name = "adw-gtk3";
+      package = pkgs.adw-gtk3;
+    };
+  };
+  home.sessionVariables.GTK_THEME = "adw-gtk3";
+
 
   xdg.configFile."nushell/config.nu".source = ./nushell/config.nu;
   xdg.configFile."Code/User/settings.json".source = ./code/settings.json;
