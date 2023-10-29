@@ -49,7 +49,7 @@
             inputs = inputs;
           };
         };
-        
+
         "mango-lappy" = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           specialArgs = {
@@ -67,6 +67,8 @@
               xserver.displayManager.autoLogin.enable = true;
               xserver.displayManager.autoLogin.user = userName;
               printing.enable = true;
+
+              fwupd.enable = true;
 
               pipewire = {
                 enable = true;
