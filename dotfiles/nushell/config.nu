@@ -839,9 +839,11 @@ def sup [] {
     cd ~/Git/niiix
     nix flake update
     # stinky goodness
-    git add flake.lock
-    git commit -m "System update"
-    git push
+    try {
+        git add flake.lock
+        git commit -m "System update"
+        git push
+    }
     sudo nixos-rebuild switch --upgrade
     sudo nix-collect-garbage --delete-older-than 10d
     sudo nix-env --delete-generations --profile /nix/var/nix/profiles/system 10d
