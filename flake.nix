@@ -21,6 +21,8 @@
             hardwareConfig = ./hardware-configs/mango-vm.nix;
             serviceSetup = {
               xserver.enable = true;
+              #xserver.displayManager.sddm.enable = true;
+              #xserver.desktopManager.plasma5.enable = true;
               xserver.displayManager.gdm.enable = true;
               xserver.desktopManager.gnome.enable = true;
 
