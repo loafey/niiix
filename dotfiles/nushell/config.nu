@@ -843,5 +843,9 @@ def devcode [arg = "."] {
     let path = ["\"", "code ", $arg, "\""] | str join
     nix develop --command bash -c $path
 }
+def devnu [arg = "."] {
+    nix develop --command bash -c "nu"
+}
+
 
 $env.PATH = ($env.PATH | split row (char esep) | append "/home/samuel/.ghcup/bin")
