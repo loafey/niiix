@@ -100,11 +100,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1698589738,
-        "narHash": "sha256-KR38dIQwPXzF3NB+xauveIYPGiRkuKc37Q+mKWG5SwY=",
+        "lastModified": 1698607188,
+        "narHash": "sha256-qNMfVU26jmwCAonUy64CqTZBJEs5iaL5jP27QRVPzSU=",
         "owner": "samhamnam",
         "repo": "grompt",
-        "rev": "415d277342700595697cce92dd8db0c259b9a7a0",
+        "rev": "08f79b9ddee39965a07b324650d4de24f4562e6d",
         "type": "github"
       },
       "original": {
