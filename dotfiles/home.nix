@@ -74,6 +74,8 @@ flimpy: { pkgs, ... }: {
   xdg.configFile."Code/User/settings.json".source = ./code/settings.json;
   xdg.configFile."Code/User/keybindings.json".source = ./code/keybindings.json;
   xdg.configFile."kitty/kitty.conf".source = ./kitty/kitty.conf;
+  xdg.configFile."grompt/config.toml".source = ./grompt/config.toml;
+
 
   # The state version is required and should stay at the version you
   # originally installed.
