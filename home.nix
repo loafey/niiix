@@ -24,6 +24,7 @@ flimpy: { pkgs, ... }: {
     discord
     nixpkgs-fmt
     stremio
+    neofetch
   ];
   programs.bash.enable = true;
 

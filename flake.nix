@@ -12,12 +12,13 @@
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {
     nixosConfigurations =
       let userName = "lemma"; in {
-        "mango-lemma" = nixpkgs.lib.nixosSystem {
+        "mango-vm" = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           specialArgs = {
             inherit inputs;
-            host = "mango-lemma";
+            host = "mango-vm";
             userName = userName;
+            hardwareConfig = ./hardware-configs/mango-vm.nix;
           };
           modules = [ ./configuration.nix ] ++ import ./home-setup.nix {
             userName = userName;
