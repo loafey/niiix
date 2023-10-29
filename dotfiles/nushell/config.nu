@@ -817,7 +817,7 @@ def prompt [] {
     }
 
     let git_status = do {
-        let res = grompt -i -c -S --sc -r -f 30 --sf | str trim
+        let res = grompt -i -c -S --sc -r -f 30 --sf -n | str trim
         if (($res | str length) > 0 ) {
             let a = ([" ", $res] | str join)
             $a 
@@ -838,9 +838,13 @@ def :q [] {exit}
 def sup [] {
     cd ~/Git/niiix
     nix flake update
-    git commit add -A flake.lock
+    # stinky goodness
+    git add flake.lock
+    git commit -m "System update"
     git push
     sudo nixos-rebuild switch --upgrade
+    sudo nix-collect-garbage --delete-older-than 10d
+    sudo nix-env --delete-generations --profile /nix/var/nix/profiles/system 10d
 }
 
 def devcode [arg = "."] {
