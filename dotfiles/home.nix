@@ -17,6 +17,8 @@ flimpy: { pkgs, ... }: {
         pkief.material-icon-theme
         jnoortheen.nix-ide
         thenuprojectcontributors.vscode-nushell-lang
+        james-yu.latex-workshop
+        nvarner.typst-lsp
       ];
     })
     thunderbird

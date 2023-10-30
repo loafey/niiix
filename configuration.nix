@@ -41,6 +41,9 @@
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
 
+  hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
+
   users.users.${userName} = {
     isNormalUser = true;
     description = userName;
