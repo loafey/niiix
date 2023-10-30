@@ -19,3 +19,4 @@ fetch_time = 30
 commit_behind = ""
 commit_ahead = ""
 detailed_info = true
+detect_nix = true
