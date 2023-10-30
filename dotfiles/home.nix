@@ -24,6 +24,7 @@ flimpy: { pkgs, ... }: {
     nixpkgs-fmt
     stremio
     neofetch
+    slack
 
     gnome.gnome-terminal
     gnomeExtensions.tray-icons-reloaded
