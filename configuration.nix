@@ -63,6 +63,7 @@
   environment.systemPackages = with pkgs; [
     neovim
     nushell
+    fish
     wget
     git
   ];
