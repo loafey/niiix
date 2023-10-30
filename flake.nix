@@ -5,9 +5,8 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
-    grompt.url = "github:samhamnam/grompt";
+    git-flakes.url = "./git-flakes";
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
-    queercat.url = "github:Elsa002/queercat";
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {

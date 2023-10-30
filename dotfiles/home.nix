@@ -31,7 +31,7 @@ flimpy: { pkgs, ... }: {
     gnomeExtensions.user-themes
     adw-gtk3
     gnome3.gnome-tweaks
-  ];
+  ] ++ flimpy.inputs.git-flakes.packages."${pkgs.system}";
   programs.bash.enable = true;
 
   programs.git = {
