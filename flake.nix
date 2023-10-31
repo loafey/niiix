@@ -61,8 +61,6 @@
               xserver.enable = true;
               #xserver.displayManager.sddm.enable = true;
               #xserver.desktopManager.plasma5.enable = true;
-              xserver.displayManager.gdm.enable = true;
-              xserver.desktopManager.gnome.enable = true;
 
               xserver.displayManager.autoLogin.enable = true;
               xserver.displayManager.autoLogin.user = userName;
@@ -83,7 +81,7 @@
               };
             };
           };
-          modules = [ ./configuration.nix ] ++ import ./home-setup.nix {
+          modules = [ ./configuration.nix ./desktops/gnome.nix ] ++ import ./home-setup.nix {
             userName = userName;
             home-manager = home-manager;
             inputs = inputs;

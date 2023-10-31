@@ -27,12 +27,6 @@ flimpy: { pkgs, ... }: {
     stremio
     neofetch
     slack
-
-    gnome.gnome-terminal
-    gnomeExtensions.tray-icons-reloaded
-    gnomeExtensions.user-themes
-    adw-gtk3
-    gnome3.gnome-tweaks
   ] ++ flimpy.inputs.git-flakes.packages."${pkgs.system}";
   programs.bash.enable = true;
 
@@ -63,8 +57,6 @@ flimpy: { pkgs, ... }: {
   };
 
   gtk = {
-    enable = true;
-
     theme = {
       name = "adw-gtk3-dark";
       package = pkgs.adw-gtk3;
