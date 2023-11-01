@@ -75,7 +75,7 @@
                 pulse.enable = true;
               };
 
-              #mullvad-vpn.enable = true;
+              mullvad-vpn.enable = true;
 
               xserver = {
                 layout = "se";
