@@ -11,7 +11,7 @@ sudo nix-channel --update
 
 sudo rm /etc/nixos/flake.nix
 sudo rm /etc/nixos/configuration.nix
-sudo ln -s "${CONFIG_PATH}/configuration.nix" /etc/nixos/configuration.nix 
+sudo ln -s "${CONFIG_PATH}/hardware-configs/base-configuration.nix" /etc/nixos/configuration.nix 
 sudo ln -s "${CONFIG_PATH}/flake.nix" /etc/nixos/flake.nix 
 
 

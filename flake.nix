@@ -11,37 +11,27 @@
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {
     nixosConfigurations =
-      let userName = "loafey"; in {
-        "mango-vm" = nixpkgs.lib.nixosSystem {
-          system = "x86_64-linux";
-          specialArgs = {
-            inherit inputs;
-            host = "mango-vm";
-            userName = userName;
-            hardwareConfig = import ./hardware-configs/mango-vm/hardware.nix;
-            serviceSetup = import ./hardware-configs/mango-vm/services.nix { inherit userName; };
-          };
-          modules = [ ./hardware-configs/base-configuration.nix ./desktops/gnome.nix ] ++ import ./home-setup.nix {
-            userName = userName;
-            home-manager = home-manager;
-            inputs = inputs;
-          };
+      let
+        args = {
+          inherit nixpkgs;
+          userName = "loafey";
+          inherit inputs;
+          inherit home-manager;
+        };
+      in
+      {
+        "mango-vm" = import ./hardware-configs/setup-configuration.nix {
+          inherit args;
+          host = "mango-vm";
+          extra-modules = [ ./desktops/gnome.nix ];
+          path = ./hardware-configs/mango-vm;
         };
 
-        "mango-lappy" = nixpkgs.lib.nixosSystem {
-          system = "x86_64-linux";
-          specialArgs = {
-            inherit inputs;
-            host = "mango-lappy";
-            userName = userName;
-            hardwareConfig = import ./hardware-configs/mango-lappy/hardware.nix;
-            serviceSetup = import ./hardware-configs/mango-lappy/services.nix { inherit userName; };
-          };
-          modules = [ ./hardware-configs/base-configuration.nix ./desktops/gnome.nix ] ++ import ./home-setup.nix {
-            userName = userName;
-            home-manager = home-manager;
-            inputs = inputs;
-          };
+        "mango-lappy" = import ./hardware-configs/setup-configuration.nix {
+          inherit args;
+          host = "mango-lappy";
+          extra-modules = [ ./desktops/gnome.nix ];
+          path = ./hardware-configs/mango-lappy;
         };
       };
   };

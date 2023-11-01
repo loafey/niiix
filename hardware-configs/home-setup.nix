@@ -3,7 +3,7 @@
   {
     home-manager.useGlobalPkgs = true;
     home-manager.useUserPackages = true;
-    home-manager.users.${userName} = import ./dotfiles/home.nix {
+    home-manager.users.${userName} = import ./../dotfiles/home.nix {
       inherit inputs;
     };
   }

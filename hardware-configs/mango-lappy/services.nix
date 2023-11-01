@@ -1,7 +1,5 @@
 { userName }: {
   xserver.enable = true;
-  #xserver.displayManager.sddm.enable = true;
-  #xserver.desktopManager.plasma5.enable = true;
 
   xserver.displayManager.autoLogin.enable = true;
   xserver.displayManager.autoLogin.user = userName;
