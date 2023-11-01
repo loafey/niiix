@@ -18,32 +18,10 @@
             inherit inputs;
             host = "mango-vm";
             userName = userName;
-            hardwareConfig = import ./hardware-configs/hardware/mango-vm.nix;
-            serviceSetup = {
-              xserver.enable = true;
-              #xserver.displayManager.sddm.enable = true;
-              #xserver.desktopManager.plasma5.enable = true;
-              xserver.displayManager.gdm.enable = true;
-              xserver.desktopManager.gnome.enable = true;
-
-              xserver.displayManager.autoLogin.enable = true;
-              xserver.displayManager.autoLogin.user = userName;
-              printing.enable = true;
-
-              pipewire = {
-                enable = true;
-                alsa.enable = true;
-                alsa.support32Bit = true;
-                pulse.enable = true;
-              };
-
-              xserver = {
-                layout = "se";
-                xkbVariant = "";
-              };
-            };
+            hardwareConfig = import ./hardware-configs/mango-vm/hardware.nix;
+            serviceSetup = import ./hardware-configs/mango-vm/services.nix { inherit userName; };
           };
-          modules = [ ./hardware-configs/base-configuration.nix ] ++ import ./home-setup.nix {
+          modules = [ ./hardware-configs/base-configuration.nix ./desktops/gnome.nix ] ++ import ./home-setup.nix {
             userName = userName;
             home-manager = home-manager;
             inputs = inputs;
@@ -57,31 +35,7 @@
             host = "mango-lappy";
             userName = userName;
             hardwareConfig = import ./hardware-configs/mango-lappy/hardware.nix;
-            serviceSetup = {
-              xserver.enable = true;
-              #xserver.displayManager.sddm.enable = true;
-              #xserver.desktopManager.plasma5.enable = true;
-
-              xserver.displayManager.autoLogin.enable = true;
-              xserver.displayManager.autoLogin.user = userName;
-              printing.enable = true;
-
-              fwupd.enable = true;
-
-              pipewire = {
-                enable = true;
-                alsa.enable = true;
-                alsa.support32Bit = true;
-                pulse.enable = true;
-              };
-
-              mullvad-vpn.enable = true;
-
-              xserver = {
-                layout = "se";
-                xkbVariant = "";
-              };
-            };
+            serviceSetup = import ./hardware-configs/mango-lappy/services.nix { inherit userName; };
           };
           modules = [ ./hardware-configs/base-configuration.nix ./desktops/gnome.nix ] ++ import ./home-setup.nix {
             userName = userName;
