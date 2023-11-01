@@ -13,6 +13,7 @@
 
   networking.hostName = host;
   networking.networkmanager.enable = true;
+  #networking.iproute2.enable = true;
 
   time.timeZone = "Europe/Stockholm";
 
@@ -66,6 +67,7 @@
     fish
     wget
     git
+    # mullvad-vpn
   ];
   environment.sessionVariables = rec {
     EDITOR = "nvim";
