@@ -18,7 +18,7 @@
             inherit inputs;
             host = "mango-vm";
             userName = userName;
-            hardwareConfig = import ./hardware-configs/mango-vm.nix;
+            hardwareConfig = import ./hardware-configs/hardware/mango-vm.nix;
             serviceSetup = {
               xserver.enable = true;
               #xserver.displayManager.sddm.enable = true;
@@ -43,7 +43,7 @@
               };
             };
           };
-          modules = [ ./configuration.nix ] ++ import ./home-setup.nix {
+          modules = [ ./hardware-configs/base-configuration.nix ] ++ import ./home-setup.nix {
             userName = userName;
             home-manager = home-manager;
             inputs = inputs;
@@ -56,7 +56,7 @@
             inherit inputs;
             host = "mango-lappy";
             userName = userName;
-            hardwareConfig = import ./hardware-configs/mango-lappy.nix;
+            hardwareConfig = import ./hardware-configs/mango-lappy/hardware.nix;
             serviceSetup = {
               xserver.enable = true;
               #xserver.displayManager.sddm.enable = true;
@@ -83,7 +83,7 @@
               };
             };
           };
-          modules = [ ./configuration.nix ./desktops/gnome.nix ] ++ import ./home-setup.nix {
+          modules = [ ./hardware-configs/base-configuration.nix ./desktops/gnome.nix ] ++ import ./home-setup.nix {
             userName = userName;
             home-manager = home-manager;
             inputs = inputs;
