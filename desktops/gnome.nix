@@ -30,5 +30,6 @@
     adw-gtk3
     gnome3.gnome-tweaks
     wl-clipboard
+    nautilus-open-any-terminal
   ];
 }
