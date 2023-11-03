@@ -33,6 +33,13 @@
           extra-modules = [ ./desktops/gnome.nix ];
           path = ./hardware-configs/mango-lappy;
         };
+
+        "mango-pc" = import ./hardware-configs/setup-configuration.nix {
+          inherit args;
+          host = "mango-lappy";
+          extra-modules = [ ./desktops/gnome.nix ];
+          path = ./hardware-configs/mango-pc;
+        };
       };
   };
 }
