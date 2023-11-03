@@ -8,7 +8,7 @@
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
-  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" "usb_storage" "sd_mod" ];
+  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
@@ -16,6 +16,11 @@
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/c9e44d3e-2eb2-42aa-af9d-66d82f89556f";
       fsType = "ext4";
+    };
+
+  fileSystems."/efi" =
+    { device = "systemd-1";
+      fsType = "autofs";
     };
 
   fileSystems."/boot" =
