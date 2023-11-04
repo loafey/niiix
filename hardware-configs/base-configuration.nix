@@ -2,10 +2,10 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ userName, hardwareConfig, host, serviceSetup, config, pkgs, inputs, ... }:
+{ userName, hardwareConfig, host, serviceSetup, config, pkgs, inputs, extra-config, ... }:
 
 {
-  imports = [ hardwareConfig ];
+  imports = [ hardwareConfig extra-config ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;

@@ -36,9 +36,10 @@
 
         "mango-pc" = import ./hardware-configs/setup-configuration.nix {
           inherit args;
-          host = "mango-lappy";
+          host = "mango-pc";
           extra-modules = [ ./desktops/gnome.nix ];
           path = ./hardware-configs/mango-pc;
+          extra-config = ./hardware-configs/mango-pc/nvidia.nix;
         };
       };
   };
