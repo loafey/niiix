@@ -27,6 +27,7 @@ flimpy: { pkgs, ... }: {
     stremio
     neofetch
     slack
+    protonup-qt
   ] ++ flimpy.inputs.git-flakes.packages."${pkgs.system}";
   programs.bash.enable = true;
 
