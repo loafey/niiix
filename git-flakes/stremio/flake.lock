@@ -1,0 +1,42 @@
+{
+  "nodes": {
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1699065553,
+        "narHash": "sha256-j8UmH8fqXcOgL6WrlMcvV2m2XQ6OzU0IBucyuJ0vnyQ=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "8ab9c53eee434651ce170dee1d9727b974e9a6b6",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "stremio": "stremio"
+      }
+    },
+    "stremio": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1698931430,
+        "narHash": "sha256-UmqkMnOsnrVHE6F5MTCkYjGGos1VWBG/QIJOPQZXH9s=",
+        "owner": "Stremio",
+        "repo": "stremio-shell",
+        "rev": "982945f41b65c629c679839216e30edb54cc6b6d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Stremio",
+        "repo": "stremio-shell",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
