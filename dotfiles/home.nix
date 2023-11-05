@@ -28,6 +28,7 @@ flimpy: { pkgs, ... }: {
     neofetch
     slack
     protonup-qt
+    youtube-music
   ] ++ flimpy.inputs.git-flakes.packages."${pkgs.system}";
   programs.bash.enable = true;
 

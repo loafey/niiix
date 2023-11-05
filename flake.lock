@@ -120,12 +120,12 @@
       },
       "locked": {
         "lastModified": 1,
-        "narHash": "sha256-hLABSwFhj7K4SN1T5Hw4VEgSLlD/ABGWDq/EdvsLUVw=",
-        "path": "/nix/store/84y070g3lgzz9mcxiay1gwkpc1bz96r9-source/git-flakes",
+        "narHash": "sha256-WFxuYa06bW+DhTc4M5f1tcYpk8shP50O4spBgK3geTA=",
+        "path": "/nix/store/lcvas6ac9z35v28algrrrc251ddd47is-source/git-flakes",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/84y070g3lgzz9mcxiay1gwkpc1bz96r9-source/git-flakes",
+        "path": "/nix/store/lcvas6ac9z35v28algrrrc251ddd47is-source/git-flakes",
         "type": "path"
       }
     },
