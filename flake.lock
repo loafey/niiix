@@ -116,16 +116,17 @@
         "flake-utils": "flake-utils",
         "grompt": "grompt",
         "nixpkgs": "nixpkgs_3",
-        "queercat": "queercat"
+        "queercat": "queercat",
+        "stremio": "stremio"
       },
       "locked": {
         "lastModified": 1,
-        "narHash": "sha256-VWGsNVFBCNMfUGoJ5NeKekT3p/p9W+gI/xQRvQRs0E0=",
-        "path": "/nix/store/rblsfcky1507wi00vg6d16kjl1m3ack1-source/git-flakes",
+        "narHash": "sha256-RNdxiQ0rXyRZ+dib2gPrEOrTxQBqn4pCeQwwFONRnfE=",
+        "path": "/nix/store/fjfkgsf2llmd4412agsjd0w0fnf939kg-source/git-flakes",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/rblsfcky1507wi00vg6d16kjl1m3ack1-source/git-flakes",
+        "path": "/nix/store/fjfkgsf2llmd4412agsjd0w0fnf939kg-source/git-flakes",
         "type": "path"
       }
     },
@@ -192,7 +193,7 @@
       "inputs": {
         "flake-compat": "flake-compat",
         "flake-utils": "flake-utils_4",
-        "nixpkgs": "nixpkgs_5"
+        "nixpkgs": "nixpkgs_6"
       },
       "locked": {
         "lastModified": 1699060979,
@@ -272,6 +273,20 @@
     },
     "nixpkgs_5": {
       "locked": {
+        "lastModified": 1699065553,
+        "narHash": "sha256-j8UmH8fqXcOgL6WrlMcvV2m2XQ6OzU0IBucyuJ0vnyQ=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "8ab9c53eee434651ce170dee1d9727b974e9a6b6",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_6": {
+      "locked": {
         "lastModified": 1684570954,
         "narHash": "sha256-FX5y4Sm87RWwfu9PI71XFvuRpZLowh00FQpIJ1WfXqE=",
         "owner": "NixOS",
@@ -286,7 +301,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_6": {
+    "nixpkgs_7": {
       "locked": {
         "lastModified": 1698924604,
         "narHash": "sha256-GCFbkl2tj8fEZBZCw3Tc0AkGo0v+YrQlohhEGJ/X4s0=",
@@ -326,7 +341,7 @@
         "git-flakes": "git-flakes",
         "home-manager": "home-manager",
         "nix-vscode-extensions": "nix-vscode-extensions",
-        "nixpkgs": "nixpkgs_6"
+        "nixpkgs": "nixpkgs_7"
       }
     },
     "rust-analyzer-src": {
@@ -344,6 +359,41 @@
         "ref": "nightly",
         "repo": "rust-analyzer",
         "type": "github"
+      }
+    },
+    "stremio": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_5",
+        "stremio": "stremio_2"
+      },
+      "locked": {
+        "lastModified": 1,
+        "narHash": "sha256-E6H8I0/1OnBdQfXFRtAZaLN5A2wVfeLkzaZ6DC9NTIM=",
+        "path": "/nix/store/qw7r3x87hdlpy68n5m0c8ldkzzm3zdm8-source/stremio",
+        "type": "path"
+      },
+      "original": {
+        "path": "/nix/store/qw7r3x87hdlpy68n5m0c8ldkzzm3zdm8-source/stremio",
+        "type": "path"
+      }
+    },
+    "stremio_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1625666797,
+        "narHash": "sha256-OyuTFmEIC8PH4PDzTMn8ibLUAzJoPA/fTILee0xpgQI=",
+        "ref": "refs/tags/v4.4.142",
+        "rev": "77e7925f4ba895190b44535f80404e573fb537bb",
+        "revCount": 735,
+        "submodules": true,
+        "type": "git",
+        "url": "https://github.com/Stremio/stremio-shell/"
+      },
+      "original": {
+        "ref": "refs/tags/v4.4.142",
+        "submodules": true,
+        "type": "git",
+        "url": "https://github.com/Stremio/stremio-shell/"
       }
     },
     "systems": {

@@ -24,7 +24,6 @@ flimpy: { pkgs, ... }: {
     thunderbird
     discord
     nixpkgs-fmt
-    stremio
     neofetch
     slack
     protonup-qt
