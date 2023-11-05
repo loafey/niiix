@@ -32,6 +32,10 @@
         };
         buildPhase = ''
           qmake -o $out/release.makefile
+          sed -i -E "s/(minimumWidth: )([0-9]+)/\1650/" main.qml
+          cp smartcode-stremio.desktop $out/smartcode-stremio.desktop
+          cp images/stremio.png $out/stremio_window.png
+          cp images/stremio.svg $out/stremio.svg
           cd $out
           make -f release.makefile
         '';
@@ -39,10 +43,17 @@
           mkdir $out/bin
           mkdir $out/opt
           mkdir $out/opt/stremio
+          mkdir $out/share
+          mkdir $out/share/applications
+          mkdir $out/share/icons
+          mkdir $out/share/pixmaps
           ln -s ${nodejs}/bin/node $out/opt/stremio/node
           ln -s $server $out/opt/stremio/server.js
           cp $out/stremio $out/opt/stremio/stremio
           ln -s $out/opt/stremio/stremio $out/bin/stremio
+          mv $out/smartcode-stremio.desktop $out/share/applications/smartcode-stremio.desktop
+          install -Dm 644 $out/stremio_window.png $out/share/pixmaps/smartcode-stremio.png
+          install -Dm 644 $out/stremio.svg $out/share/icons/smartcode-stremio.svg
         '';
 
         buildInputs = [ curl libsForQt5.qt5.qtwebengine mpv gcc ];
