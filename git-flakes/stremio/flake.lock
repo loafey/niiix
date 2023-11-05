@@ -23,17 +23,20 @@
     "stremio": {
       "flake": false,
       "locked": {
-        "lastModified": 1698931430,
-        "narHash": "sha256-UmqkMnOsnrVHE6F5MTCkYjGGos1VWBG/QIJOPQZXH9s=",
-        "owner": "Stremio",
-        "repo": "stremio-shell",
-        "rev": "982945f41b65c629c679839216e30edb54cc6b6d",
-        "type": "github"
+        "lastModified": 1625666797,
+        "narHash": "sha256-OyuTFmEIC8PH4PDzTMn8ibLUAzJoPA/fTILee0xpgQI=",
+        "ref": "refs/tags/v4.4.142",
+        "rev": "77e7925f4ba895190b44535f80404e573fb537bb",
+        "revCount": 735,
+        "submodules": true,
+        "type": "git",
+        "url": "https://github.com/Stremio/stremio-shell/"
       },
       "original": {
-        "owner": "Stremio",
-        "repo": "stremio-shell",
-        "type": "github"
+        "ref": "refs/tags/v4.4.142",
+        "submodules": true,
+        "type": "git",
+        "url": "https://github.com/Stremio/stremio-shell/"
       }
     }
   },
