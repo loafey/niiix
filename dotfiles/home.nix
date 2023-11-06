@@ -29,6 +29,7 @@ flimpy: { pkgs, ... }: {
     protonup-qt
     youtube-music
     krita
+    lutris
   ] ++ flimpy.inputs.git-flakes.packages."${pkgs.system}";
   programs.bash.enable = true;
 
