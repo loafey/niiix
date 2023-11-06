@@ -54,6 +54,7 @@
           mv $out/smartcode-stremio.desktop $out/share/applications/smartcode-stremio.desktop
           install -Dm 644 $out/stremio_window.png $out/share/pixmaps/smartcode-stremio.png
           install -Dm 644 $out/stremio.svg $out/share/icons/smartcode-stremio.svg
+          find $out -maxdepth 1 -type f -delete
         '';
 
         buildInputs = [ curl libsForQt5.qt5.qtwebengine mpv gcc ];
