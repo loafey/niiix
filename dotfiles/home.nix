@@ -20,6 +20,7 @@ flimpy: { pkgs, ... }: {
         james-yu.latex-workshop
         nvarner.typst-lsp
         haskell.haskell
+        justusadam.language-haskell
       ];
     })
     thunderbird
