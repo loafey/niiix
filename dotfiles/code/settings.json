@@ -186,7 +186,6 @@
         "*.rs": "rescript",
     },
     "latex-workshop.latex.build.forceRecipeUsage": false,
-    "haskell.manageHLS": "GHCup",
     "workbench.startupEditor": "none",
     "[python]": {
         "editor.formatOnType": true
