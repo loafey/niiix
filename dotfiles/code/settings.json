@@ -238,5 +238,6 @@
     "terminal.integrated.fontFamily": "FiraCode Nerd Font",
     "terminal.integrated.defaultProfile.linux": "nu",
     "breadcrumbs.enabled": false,
-    "typst-lsp.exportPdf": "never"
+    "typst-lsp.exportPdf": "never",
+    "haskell.manageHLS": "PATH"
 }
