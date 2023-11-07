@@ -837,14 +837,15 @@ def lsg [arg = "."] { ls $arg | sort-by type name -i | grid -c | str trim }
 def :q [] {exit}
 def sup [] {
     cd ~/Git/niiix
+    git pull
     nix flake update
+    sudo nixos-rebuild boot --upgrade
     # stinky goodness
     try {
         git add flake.lock
         git commit -m "System update"
         git push
     }
-    sudo nixos-rebuild boot --upgrade
     sudo nix-collect-garbage --delete-older-than 10d
     sudo nix-env --delete-generations --profile /nix/var/nix/profiles/system 10d
 }
