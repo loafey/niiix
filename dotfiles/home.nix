@@ -19,6 +19,7 @@ flimpy: { pkgs, ... }: {
         thenuprojectcontributors.vscode-nushell-lang
         james-yu.latex-workshop
         nvarner.typst-lsp
+        haskell.haskell
       ];
     })
     thunderbird
