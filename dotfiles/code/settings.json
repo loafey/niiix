@@ -96,7 +96,8 @@
     "cSpell.enableFiletypes": [
         "!c",
         "!haskell",
-        "!rust"
+        "!rust",
+        "typst"
     ],
     "cmake.configureOnOpen": true,
     "editor.codeLensFontFamily": "Victor Mono",
