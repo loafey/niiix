@@ -21,6 +21,7 @@ flimpy: { pkgs, ... }: {
         nvarner.typst-lsp
         haskell.haskell
         justusadam.language-haskell
+        ban.spellright
       ];
     })
     thunderbird
@@ -32,6 +33,10 @@ flimpy: { pkgs, ... }: {
     youtube-music
     krita
     lutris
+
+    hunspell
+    hunspellDicts.sv_SE
+    hunspellDicts.en_US
   ] ++ flimpy.inputs.git-flakes.packages."${pkgs.system}";
   programs.bash.enable = true;
 
