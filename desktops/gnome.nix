@@ -4,7 +4,6 @@
   #services.xserver.displayManager.sddm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
   environment.gnome.excludePackages = (with pkgs; [
-    gnome-console
     gnome-photos
     gnome-tour
   ]) ++ (with pkgs.gnome; [
@@ -25,7 +24,6 @@
   programs.dconf.enable = true;
   environment.systemPackages = with pkgs; [
     kitty
-    gnome.gnome-terminal
     gnomeExtensions.tray-icons-reloaded
     gnomeExtensions.user-themes
     adw-gtk3
