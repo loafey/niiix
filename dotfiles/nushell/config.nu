@@ -843,7 +843,7 @@ def nix-update [] {
     # stinky goodness
     try {
         git add flake.lock
-        let s = ["\"[System Update] ", date now | format date "%Y-%m-%d %H:%M" | "\""] | str join
+        let s = ["\"[System Update] ", date now | format date "%Y-%m-%d %H:%M", "\""] | str join
         git commit -m $s
         git push
     }
