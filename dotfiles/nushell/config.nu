@@ -835,7 +835,7 @@ def prompt [] {
 }
 def lsg [arg = "."] { ls $arg | sort-by type name -i | grid -c | str trim }
 def :q [] {exit}
-def sup [] {
+def nix-update [] {
     cd ~/Git/niiix
     git pull
     nix flake update
@@ -849,6 +849,9 @@ def sup [] {
     }
     sudo nix-collect-garbage --delete-older-than 10d
     sudo nix-env --delete-generations --profile /nix/var/nix/profiles/system 10d
+}
+def nix-rebuild [] {
+    sudo nixos-rebuild switch
 }
 
 def devcode [arg = "."] {
