@@ -121,10 +121,11 @@
       },
       "locked": {
         "dir": "git-flakes",
-        "dirtyRev": "8fc48153d8a72f43ca65b3b9759ee3206bb9bd63-dirty",
-        "dirtyShortRev": "8fc4815-dirty",
-        "lastModified": 1699557816,
-        "narHash": "sha256-Sp0JU1y6SAdybLkcjD09mJiydIRn3F/vCtzec9CRSr8=",
+        "lastModified": 1699558143,
+        "narHash": "sha256-psOaqmGcmTAIxykrfqg7GEjxMlgC4Ou/5UYcwzBBbhA=",
+        "ref": "refs/heads/master",
+        "rev": "cd062b8b00220055439f08b96926415ac992ac65",
+        "revCount": 125,
         "type": "git",
         "url": "file:.?dir=git-flakes"
       },
@@ -373,11 +374,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-EZbZxecAQiv6TBQNiH22BW0v4Vwn/OASwfw4TAwcuw8=",
-        "path": "/nix/store/1frvbvxra1mzwp2cp7hq7qff3p0y9gmv-source/git-flakes/stremio",
+        "path": "/nix/store/as1h6jlj4jzdcyky6s4xliv7472fx95x-source/git-flakes/stremio",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/1frvbvxra1mzwp2cp7hq7qff3p0y9gmv-source/git-flakes/stremio",
+        "path": "/nix/store/as1h6jlj4jzdcyky6s4xliv7472fx95x-source/git-flakes/stremio",
         "type": "path"
       }
     },
