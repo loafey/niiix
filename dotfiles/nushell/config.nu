@@ -843,7 +843,8 @@ def sup [] {
     # stinky goodness
     try {
         git add flake.lock
-        git commit -m "System update"
+        let s = ["\"[System Update] ", date now | format date "%Y-%m-%d %H:%M" | "\""] | str join
+        git commit -m $s
         git push
     }
     sudo nix-collect-garbage --delete-older-than 10d
