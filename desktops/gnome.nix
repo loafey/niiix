@@ -23,6 +23,7 @@
   ]);
   programs.dconf.enable = true;
   environment.systemPackages = with pkgs; [
+    gnomeExtensions.gsconnect
     kitty
     gnomeExtensions.tray-icons-reloaded
     gnomeExtensions.user-themes
