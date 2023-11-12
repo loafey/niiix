@@ -59,6 +59,7 @@ flimpy: { pkgs, ... }: {
         "user-theme@gnome-shell-extensions.gcampax.github.com"
         "appindicatorsupport@rgcjonas.gmail.com"
         "dash-to-panel@jderose9.github.com"
+        "gsconnect@andyholmes.github.io"
       ];
     };
   };
