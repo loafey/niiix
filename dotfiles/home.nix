@@ -46,6 +46,9 @@ flimpy: { pkgs, ... }: {
   };
 
   dconf.settings = {
+    "/org/gnome/settings-daemon/plugins/power" = {
+      idle-dim = false;
+    };
     "org/gnome/desktop/interface" = {
       color-scheme = "default";
       clock-show-date = false;
