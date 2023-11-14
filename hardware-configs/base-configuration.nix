@@ -67,6 +67,7 @@
     wget
     git
     mullvad-vpn
+    distrobox
   ];
   environment.sessionVariables = rec {
     EDITOR = "nvim";
@@ -76,6 +77,18 @@
     enable = true;
     remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
     dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+  };
+
+  virtualisation = {
+    podman = {
+      enable = true;
+
+      # Create a `docker` alias for podman, to use it as a drop-in replacement
+      dockerCompat = true;
+
+      # Required for containers under podman-compose to be able to talk to each other.
+      defaultNetwork.settings.dns_enabled = true;
+    };
   };
 
 
