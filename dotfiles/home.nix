@@ -65,7 +65,7 @@ flimpy: { pkgs, ... }: {
         "appindicatorsupport@rgcjonas.gmail.com"
         "dash-to-panel@jderose9.github.com"
         "gsconnect@andyholmes.github.io"
-        "rounded-window-corners@yilozt.shell-extension"
+        "rounded-window-corners@yilozt"
       ];
     };
   };
