@@ -34,6 +34,7 @@ flimpy: { pkgs, ... }: {
     youtube-music
     krita
     lutris
+    gamehub
   ] ++ flimpy.inputs.git-flakes.packages."${pkgs.system}";
   programs.bash.enable = true;
 
