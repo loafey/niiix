@@ -22,6 +22,7 @@ flimpy: { pkgs, ... }: {
         haskell.haskell
         justusadam.language-haskell
         streetsidesoftware.code-spell-checker
+        ms-vsliveshare.vsliveshare
       ];
     })
     thunderbird
@@ -63,6 +64,7 @@ flimpy: { pkgs, ... }: {
         "appindicatorsupport@rgcjonas.gmail.com"
         "dash-to-panel@jderose9.github.com"
         "gsconnect@andyholmes.github.io"
+        "rounded-window-corners@yilozt.shell-extension"
       ];
     };
   };
