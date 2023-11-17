@@ -22,6 +22,9 @@
     gnome-initial-setup
   ]);
   programs.dconf.enable = true;
+  environment.variables = {
+    "QT_STYLE_OVERRIDE" = "breeze";
+  };
   environment.systemPackages = with pkgs; [
     gnomeExtensions.gsconnect
     kitty
@@ -31,5 +34,6 @@
     gnome3.gnome-tweaks
     wl-clipboard
     nautilus-open-any-terminal
+    amberol
   ];
 }

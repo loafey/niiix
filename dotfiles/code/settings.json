@@ -87,7 +87,6 @@
     },
     "redhat.telemetry.enabled": false,
     "security.workspace.trust.untrustedFiles": "open",
-    "zenMode.hideTabs": false,
     "polacode.backgroundColor": "#f2f2f200",
     "polacode.transparentBackground": true,
     "zenMode.hideStatusBar": false,

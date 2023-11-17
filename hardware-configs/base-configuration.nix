@@ -68,6 +68,7 @@
     git
     mullvad-vpn
     distrobox
+    libsForQt5.breeze-qt5
   ];
   environment.sessionVariables = rec {
     EDITOR = "nvim";
