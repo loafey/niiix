@@ -35,5 +35,6 @@
     wl-clipboard
     nautilus-open-any-terminal
     amberol
+    newsflash
   ];
 }
