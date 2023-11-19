@@ -26,7 +26,10 @@ flimpy: { pkgs, ... }: {
       ];
     })
     thunderbird
-    discord
+    (pkgs.discord.override {
+      # remove any overrides that you don't want
+      withVencord = true;
+    })
     nixpkgs-fmt
     neofetch
     slack
