@@ -5,7 +5,7 @@
   xserver.displayManager.autoLogin.user = userName;
   printing.enable = true;
 
-  fwupd.enable = true;
+  fwupd.enable = false;
 
   pipewire = {
     enable = true;
