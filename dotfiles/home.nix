@@ -40,6 +40,15 @@ flimpy: { pkgs, ... }: {
     cartridges
   ] ++ flimpy.inputs.git-flakes.packages."${pkgs.system}";
   programs.bash.enable = true;
+  programs.direnv = {
+    enable = true;
+    enableBashIntegration = true; # see note on other shells below
+    nix-direnv = {
+      enable = true;
+      package = pkgs.nix-direnv;
+    };
+
+  };
 
   programs.git = {
     enable = true;
