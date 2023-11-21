@@ -47,7 +47,6 @@ flimpy: { pkgs, ... }: {
       enable = true;
       package = pkgs.nix-direnv;
     };
-
   };
 
   programs.git = {
