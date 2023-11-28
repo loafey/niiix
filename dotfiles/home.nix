@@ -38,6 +38,7 @@ flimpy: { pkgs, ... }: {
     krita
     lutris
     cartridges
+    obs-studio
   ] ++ flimpy.inputs.git-flakes.packages."${pkgs.system}";
   programs.bash.enable = true;
   programs.direnv = {
