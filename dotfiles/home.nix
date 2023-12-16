@@ -1,4 +1,20 @@
-flimpy: { pkgs, ... }: {
+flimpy: { pkgs, ... }:
+let
+  discord-wayland = pkgs.runCommand "discord
+  "
+    { buildInputs = [ pkgs.makeWrapper pkgs.tree pkgs.gnused ]; } ''
+    makeWrapper ${pkgs.discord}/bin/discord $out/bin/discord --set NIXOS_OZONE_WL 1
+    tree ${pkgs.discord}
+    mkdir $out/share
+    mkdir $out/share/applications
+    mkdir $out/share/icons
+    cp ${pkgs.discord}/opt/Discord/discord.desktop $out/share/applications/discord.desktop
+    sed -i '/\/usr\/share\/discord\/Discord/c\Exec=discord' $out/share/applications/discord.desktop
+    sed -i '/Icon=discord/c\Icon=$out/share/icons/discord.png' $out/share/applications/discord.desktop
+    cp ${pkgs.discord}/opt/Discord/discord.png $out/share/icons/discord.png
+  '';
+in
+{
   nixpkgs = {
     config = {
       allowUnfree = true;
@@ -26,10 +42,7 @@ flimpy: { pkgs, ... }: {
       ];
     })
     thunderbird
-    (pkgs.discord.override {
-      # remove any overrides that you don't want
-      withVencord = true;
-    })
+    discord-wayland
     nixpkgs-fmt
     neofetch
     slack
@@ -97,6 +110,20 @@ flimpy: { pkgs, ... }: {
   xdg.configFile."Code/User/keybindings.json".source = ./code/keybindings.json;
   xdg.configFile."kitty/kitty.conf".source = ./kitty/kitty.conf;
   xdg.configFile."grompt/config.toml".source = ./grompt/config.toml;
+  xdg.configFile."swappy/config".source = ./swappy/config;
+  xdg.configFile."alacritty/alacritty.yml".source = ./alacritty/alacritty.yml;
+  xdg.configFile."hypr" = {
+    source = ./hypr;
+    recursive = true;
+  };
+  xdg.configFile."waybar" = {
+    source = ./waybar;
+    recursive = true;
+  };
+  xdg.configFile."rofi" = {
+    source = ./rofi;
+    recursive = true;
+  };
 
 
   # The state version is required and should stay at the version you

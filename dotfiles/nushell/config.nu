@@ -884,6 +884,10 @@ def setup-direnv [] {
         `
 }
 
+def hyprn [] {
+    bash -c "WLR_NO_HARDWARE_CURSORS=1 Hyprland"
+}
+
 $env.PATH = ($env.PATH | split row (char esep) | append "/home/samuel/.ghcup/bin")
 
 def cargo-init [type = "bin"] {

@@ -6,7 +6,12 @@
     enable = true;
     driSupport = true;
     driSupport32Bit = true;
+    extraPackages = [ pkgs.libvdpau-va-gl ];
   };
+
+  environment.variables.VDPAU_DRIVER = "va_gl";
+  environment.variables.LIBVA_DRIVER_NAME = "nvidia";
+  environment.variables.WLR_NO_HARDWARE_CURSORS = "1";
 
   boot.initrd.kernelModules = [ "nvidia" ];
   boot.extraModulePackages = [ config.boot.kernelPackages.nvidia_x11 ];

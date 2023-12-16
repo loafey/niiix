@@ -7,9 +7,14 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     git-flakes.url = "./git-flakes";
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
+    hyprland = {
+      url = "github:hyprwm/Hyprland";
+      # build with your own instance of nixpkgs
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, hyprland, ... }@inputs: {
     nixosConfigurations =
       let
         args = {
@@ -37,7 +42,7 @@
         "mango-pc" = import ./hardware-configs/setup-configuration.nix {
           inherit args;
           host = "mango-pc";
-          extra-modules = [ ./desktops/gnome.nix ];
+          extra-modules = [ ./desktops/hyprland.nix hyprland.nixosModules.default ];
           path = ./hardware-configs/mango-pc;
           extra-config = ./hardware-configs/mango-pc/nvidia.nix;
         };
