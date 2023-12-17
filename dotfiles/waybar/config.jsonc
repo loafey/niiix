@@ -114,7 +114,7 @@
         },
         "clock": {
             "format": "{:%H:%M %p}",
-            "format-alt": "{:%R 󰃭 %d·%m·%y}",
+            "on-click": "gnome-calendar",
             "tooltip-format": "<tt>{calendar}</tt>",
             "calendar": {
                 "mode": "month",
@@ -383,7 +383,7 @@
         },
         "clock": {
             "format": "{:%H:%M %p}",
-            "format-alt": "{:%R 󰃭 %d·%m·%y}",
+            "on-click": "gnome-calendar",
             "tooltip-format": "<tt>{calendar}</tt>",
             "calendar": {
                 "mode": "month",

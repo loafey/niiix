@@ -4,6 +4,12 @@
   programs.hyprland.enable = true;
   environment.sessionVariables.WLR_NO_HARDWARE_CURSORS = "1";
   security.pam.services.swaylock = { };
+  programs.dconf.enable = true;
+  services.gnome.evolution-data-server.enable = true;
+  # optional to use google/nextcloud calendar
+  services.gnome.gnome-online-accounts.enable = true;
+  # optional to use google/nextcloud calendar
+  services.gnome.gnome-keyring.enable = true;
   xdg.portal = {
     enable = true;
     xdgOpenUsePortal = true;
@@ -29,6 +35,8 @@
     swaynotificationcenter
     cava
     gnome.eog
+    gnome.gnome-calendar
     vlc
+    dex
   ];
 }
