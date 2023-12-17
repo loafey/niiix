@@ -27,5 +27,6 @@
     hyprpicker
     mission-center
     swaynotificationcenter
+    cava
   ];
 }

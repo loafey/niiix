@@ -13,11 +13,7 @@
         // positions generated based on config.ctl //
         "modules-left": [
             "custom/padd",
-            "custom/l_end",
-            "hyprland/workspaces",
-            "custom/r_end",
-            "",
-            "custom/padd"
+            "hyprland/workspaces"
         ],
         "modules-center": [
             "custom/padd",
@@ -28,14 +24,16 @@
             "custom/padd"
         ],
         "modules-right": [
-            "custom/duck"
+            "custom/duck",
+            "custom/padd"
         ],
         // sourced from modules based on config.ctl //
         "empty": {
             "format": " "
         },
         "custom/duck": {
-            "format": "ballin' 󰱫 {}"
+            "format": "ballin' 󰱫 {}",
+            "on-click": "swaync-client -t"
         },
         "custom/power": {
             "format": "{}",
@@ -285,11 +283,7 @@
         // positions generated based on config.ctl //
         "modules-left": [
             "custom/padd",
-            "custom/l_end",
-            "hyprland/workspaces",
-            "custom/r_end",
-            "",
-            "custom/padd"
+            "hyprland/workspaces"
         ],
         "modules-center": [
             "custom/padd",
@@ -299,18 +293,14 @@
             "custom/padd"
         ],
         "modules-right": [
-            "custom/padd",
-            "custom/l_end",
             "tray",
+            "custom/padd",
             "battery",
-            "custom/r_end",
-            "custom/l_end",
             "backlight",
             "network",
             "bluetooth",
             "pulseaudio",
             "pulseaudio#microphone",
-            "custom/r_end",
             "custom/padd"
         ],
         // sourced from modules based on config.ctl //
@@ -416,7 +406,7 @@
         },
         "tray": {
             "icon-size": 18,
-            "spacing": 5
+            "spacing": 10
         },
         "battery": {
             "states": {

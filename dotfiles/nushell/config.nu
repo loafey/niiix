@@ -221,7 +221,7 @@ $env.config = {
         external: {
             enable: true # set to false to prevent nushell looking into $env.PATH to find more suggestions, `false` recommended for WSL users as this look up may be very slow
             max_results: 100 # setting it lower can improve completion performance at the cost of omitting some options
-            completer: $fish_completer # check 'carapace_completer' above as an example
+            completer: $carapace_completer # check 'carapace_completer' above as an example
         }
     }
 
@@ -886,6 +886,10 @@ def setup-direnv [] {
 
 def hyprn [] {
     bash -c "WLR_NO_HARDWARE_CURSORS=1 Hyprland"
+}
+
+def flex [] {
+    neofetch | queercat -f 1
 }
 
 $env.PATH = ($env.PATH | split row (char esep) | append "/home/samuel/.ghcup/bin")

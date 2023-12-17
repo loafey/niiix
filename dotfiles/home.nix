@@ -72,6 +72,9 @@ in
     ];
   };
 
+  programs.carapace.enable = true;
+  programs.carapace.enableNushellIntegration = true;
+
   dconf.settings = {
     # "/org/gnome/settings-daemon/plugins/power" = {
     #   idle-dim = false;
