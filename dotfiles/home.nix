@@ -52,6 +52,7 @@ in
     lutris
     cartridges
     obs-studio
+    libsForQt5.kdenlive
   ] ++ flimpy.inputs.git-flakes.packages."${pkgs.system}";
   programs.bash.enable = true;
   programs.direnv = {
