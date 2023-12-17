@@ -26,5 +26,6 @@
     swaylock
     hyprpicker
     mission-center
+    swaynotificationcenter
   ];
 }
