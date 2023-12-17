@@ -28,5 +28,7 @@
     mission-center
     swaynotificationcenter
     cava
+    gnome.eog
+    vlc
   ];
 }
