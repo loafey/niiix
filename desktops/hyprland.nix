@@ -39,5 +39,8 @@
     gnome.gnome-calendar
     vlc
     dex
+    brightnessctl
+    libinput-gestures
+    wmctrl
   ];
 }

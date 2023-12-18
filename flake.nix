@@ -1,5 +1,5 @@
 {
-  description = "Sampelampans NixOS Flake";
+  description = "Loafeys NixOS Flake";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -35,7 +35,7 @@
         "mango-lappy" = import ./hardware-configs/setup-configuration.nix {
           inherit args;
           host = "mango-lappy";
-          extra-modules = [ ./desktops/gnome.nix ];
+          extra-modules = [ ./desktops/hyprland.nix hyprland.nixosModules.default ];
           path = ./hardware-configs/mango-lappy;
         };
 
