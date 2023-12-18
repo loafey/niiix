@@ -1,14 +1,6 @@
 { pkgs, services, programs, environment, ... }: {
   services.xserver.enable = true;
   services.xserver.displayManager.gdm.enable = true;
-  services.xserver.displayManager.defaultSession = "hyprland";
-  displayManager.session = [
-    {
-      manage = "desktop";
-      name = "hyprland";
-      start = ''exec WLR_NO_HARDWARE_CURSORS=1 Hyprland'';
-    }
-  ];
   #services.xserver.displayManager.sddm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
   environment.gnome.excludePackages = (with pkgs; [
