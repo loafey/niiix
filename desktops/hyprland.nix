@@ -40,7 +40,6 @@
     vlc
     dex
     brightnessctl
-    libinput-gestures
     wmctrl
   ];
 }

@@ -116,7 +116,6 @@ in
   xdg.configFile."grompt/config.toml".source = ./grompt/config.toml;
   xdg.configFile."swappy/config".source = ./swappy/config;
   xdg.configFile."alacritty/alacritty.yml".source = ./alacritty/alacritty.yml;
-  xdg.configFile."libinput-gestures.conf".source = ./libinput-gestures/libinput-gestures.conf;
   xdg.configFile."hypr" = {
     source = ./hypr;
     recursive = true;
