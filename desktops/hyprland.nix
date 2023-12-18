@@ -43,5 +43,7 @@
     brightnessctl
     wmctrl
     swayosd
+    eww-wayland
+    libnotify
   ];
 }

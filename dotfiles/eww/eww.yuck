@@ -1,0 +1,65 @@
+(defvar time-visible true)   ; for :run-while property of below variable
+; when this turns true, the polling starts and
+; var gets updated with given interval
+
+(defpoll time :interval "1s"
+  :initial "initial-value"  ; optional, defaults to poll at startup
+  :run-while time-visible   ; optional, defaults to 'true'
+`date +%H:%M`)
+
+
+(defwindow powermenu
+  ; ... values omitted
+  :geometry (geometry
+    :width "500px"
+    :height "300px"
+    :anchor "top center"
+  )
+  :stacking "bg"
+  :exclusive true
+  :namespace "top"
+  :anchor centers
+  (box
+    :orientation "vertical"
+    :valign "center"
+    :halign "center"
+    :space-evenly true
+    (label :text time :class "power-clock")
+    (box :orientation "horizontal"
+      :valign "center"
+      :halign "center"
+      (
+        button :onclick "poweroff"
+        :class "power-button power-button-left power-button-power"
+        ""
+      )
+      (
+        button :onclick "reboot"
+        :class "power-button power-button-left"
+        ""
+      )
+      (
+        button :onclick "hyprctl dispatch exit"
+        :class "power-button"
+        "󰍃"
+      )
+      (
+        button :onclick "swaylock"
+        :class "power-button"
+        ""
+      )
+      (
+        button :onclick "systemctl suspend & swaylock"
+        :class "power-button"
+        "󰤄"
+      )
+    )
+  )
+)
+
+(defwidget greeter []
+  (box :orientation "horizontal"
+    :valign "center"
+    "${EWW_RAM}"
+    (button :onclick "notify-send 'Hello' 'Hello, dw2'"
+    "Greet")))

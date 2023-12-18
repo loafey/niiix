@@ -39,6 +39,7 @@ in
         justusadam.language-haskell
         streetsidesoftware.code-spell-checker
         ms-vsliveshare.vsliveshare
+        eww-yuck.yuck
       ];
     })
     thunderbird
@@ -126,6 +127,10 @@ in
   };
   xdg.configFile."rofi" = {
     source = ./rofi;
+    recursive = true;
+  };
+  xdg.configFile."eww" = {
+    source = ./eww;
     recursive = true;
   };
 
