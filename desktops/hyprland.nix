@@ -3,6 +3,7 @@
   services.xserver.displayManager.gdm.enable = true;
   programs.hyprland.enable = true;
   environment.sessionVariables.WLR_NO_HARDWARE_CURSORS = "1";
+  environment.sessionVariables.NIXOS_XDG_OPEN_USE_PORTAL = pkgs.lib.mkForce "";
   security.pam.services.swaylock = { };
   programs.dconf.enable = true;
   services.gnome.evolution-data-server.enable = true;
