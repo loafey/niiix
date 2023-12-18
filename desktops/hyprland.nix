@@ -1,6 +1,7 @@
 { pkgs, services, programs, environment, hyprland, ... }: {
   services.xserver.enable = true;
   services.xserver.displayManager.gdm.enable = true;
+  services.xserver.displayManager.gdm.wayland = true;
   programs.hyprland.enable = true;
   environment.sessionVariables.WLR_NO_HARDWARE_CURSORS = "1";
   environment.sessionVariables.NIXOS_XDG_OPEN_USE_PORTAL = pkgs.lib.mkForce "";
@@ -41,5 +42,6 @@
     dex
     brightnessctl
     wmctrl
+    swayosd
   ];
 }
