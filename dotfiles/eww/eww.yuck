@@ -13,9 +13,9 @@
   :geometry (geometry
     :width "500px"
     :height "300px"
-    :anchor "top center"
+    :anchor "center"
   )
-  :stacking "bg"
+  :stacking "overlay"
   :exclusive true
   :namespace "top"
   :anchor centers
