@@ -54,7 +54,7 @@ in
     cartridges
     obs-studio
     libsForQt5.kdenlive
-    prismlauncher-qt5
+    minecraft
     fragments
   ] ++ flimpy.inputs.git-flakes.packages."${pkgs.system}";
   programs.bash.enable = true;
