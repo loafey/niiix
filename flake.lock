@@ -122,11 +122,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-nREUwCMSy39UXQ71uFfumb1DqTh0v6LLWP6alYj8oHw=",
-        "path": "/nix/store/716z5k8pjdayh2jlknlwn8ws6l7c4jlq-source/git-flakes",
+        "path": "/nix/store/v5zl9423y7j8nxb9krdiwzwppjlqxm3q-source/git-flakes",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/716z5k8pjdayh2jlknlwn8ws6l7c4jlq-source/git-flakes",
+        "path": "/nix/store/v5zl9423y7j8nxb9krdiwzwppjlqxm3q-source/git-flakes",
         "type": "path"
       }
     },
@@ -182,11 +182,11 @@
         "xdph": "xdph"
       },
       "locked": {
-        "lastModified": 1703344286,
-        "narHash": "sha256-0w7EuJQSU/e2DoFAnKxDJljHLVH5TLJTsrOOkxLPDO8=",
+        "lastModified": 1703367056,
+        "narHash": "sha256-CCbkUqSKAGFd7PmQZ6QTsHmKrfuoVD+BfvbHpiRaKFU=",
         "owner": "hyprwm",
         "repo": "Hyprland",
-        "rev": "b9c1414f25bfe6972d1996b79566f63c215ec78a",
+        "rev": "d5811283d27619711b031a26db0d04c8d859e6be",
         "type": "github"
       },
       "original": {
