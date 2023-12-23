@@ -997,3 +997,7 @@ version = "0.1.0"
     `
     }
 }
+
+def system-settings [] {
+    nix-shell -p gnome.gnome-control-center --run "XDG_CURRENT_DESKTOP=GNOME gnome-control-center"
+}
