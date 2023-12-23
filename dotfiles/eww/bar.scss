@@ -1,0 +1,42 @@
+$bar-bg: rgba(0, 0, 0, 0.6);
+$tb: #78cbf5;
+$tp: #f197b0;
+$tw: #ffffff;
+$border-size: 2px;
+
+.bar {
+    // border-bottom: 3px $tb solid;
+    background-color: transparent;
+}
+
+.workspaces-widget {
+    padding: 20px;
+}
+
+.workspace {
+    font-size: 0.9em;
+    transition-duration: 200ms;
+    background-color: green;
+    border-right: $border-size $tb solid;
+    border-bottom: $border-size $tb solid;
+    border-radius: 0 0 0 0;
+    padding: 0px 8px 0px;
+}
+
+
+.workspace-current {
+    color: $tw;
+    background-color: $tp;
+}
+
+.workspace-occupied {
+    // background-color: transparent;
+    // border-radius: 0px;
+    // transition-duration: 200ms;
+}
+
+.workspace-empty {
+    // background-color: transparent;
+    // border-radius: 0px;
+    // transition-duration: 200ms;
+}

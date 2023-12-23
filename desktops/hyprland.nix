@@ -45,5 +45,8 @@
     swayosd
     eww-wayland
     libnotify
+    socat
+    jq
+    python3
   ];
 }

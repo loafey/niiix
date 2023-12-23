@@ -8,6 +8,7 @@
 `date +%H:%M`)
 
 (include "./powermenu.yuck")
+(include "./bar.yuck")
 
 (defwidget greeter []
   (box :orientation "horizontal"
