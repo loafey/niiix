@@ -14,6 +14,9 @@
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
 
+  hardware.bluetooth.enable = true; # enables support for Bluetooth
+  hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
+
   fileSystems."/" =
     {
       device = "/dev/disk/by-uuid/a7d3f40c-a480-413f-ac60-ea8e0ae9cefe";
@@ -28,7 +31,7 @@
       fsType = "vfat";
     };
 
-  swapDevices = lib.mkForce [];
+  swapDevices = lib.mkForce [ ];
   #  [{
   #    device = "/var/lib/swapfile";
   #    size = 16 * 1024;
