@@ -52,12 +52,12 @@
           "󰍃"
         )
         (
-          button :onclick "swaylock"
+          button :onclick "swaylock -c 000000"
           :class "power-button"
           ""
         )
         (
-          button :onclick "bash -c \"systemctl suspend & swaylock & eww close powermenu\""
+          button :onclick "bash -c \"systemctl suspend & swaylock -c 000000 & eww close powermenu\""
           :class "power-button"
           "󰤄"
         )
