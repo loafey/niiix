@@ -7,6 +7,8 @@
 
   blueman.enable = true;
 
+  fstrim.enable = true;
+
   fwupd.enable = false;
 
   pipewire = {

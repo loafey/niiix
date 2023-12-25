@@ -56,6 +56,7 @@ in
     libsForQt5.kdenlive
     minecraft
     fragments
+    wineWowPackages.stable
   ] ++ flimpy.inputs.git-flakes.packages."${pkgs.system}";
   programs.bash.enable = true;
   programs.direnv = {
