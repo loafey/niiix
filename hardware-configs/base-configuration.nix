@@ -83,6 +83,8 @@
     dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
   };
 
+  programs.noisetorch.enable = true;
+
   virtualisation = {
     podman = {
       enable = true;

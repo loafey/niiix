@@ -57,7 +57,6 @@ in
     minecraft
     fragments
     wineWowPackages.stable
-    noisetorch
   ] ++ flimpy.inputs.git-flakes.packages."${pkgs.system}";
   programs.bash.enable = true;
   programs.direnv = {
