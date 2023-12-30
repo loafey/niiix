@@ -57,6 +57,7 @@ in
     minecraft
     fragments
     wineWowPackages.stable
+    neovide
   ] ++ flimpy.inputs.git-flakes.packages."${pkgs.system}";
   programs.bash.enable = true;
   programs.direnv = {
