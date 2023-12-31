@@ -121,6 +121,10 @@ in
   xdg.configFile."grompt/config.toml".source = ./grompt/config.toml;
   xdg.configFile."swappy/config".source = ./swappy/config;
   xdg.configFile."alacritty/alacritty.yml".source = ./alacritty/alacritty.yml;
+  xdg.configFile."nvim" = {
+    source = ./nvim;
+    recursive = true;
+  };
   xdg.configFile."hypr" = {
     source = ./hypr;
     recursive = true;
