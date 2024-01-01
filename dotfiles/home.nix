@@ -58,6 +58,7 @@ in
     fragments
     wineWowPackages.stable
     neovide
+    r2modman
   ] ++ flimpy.inputs.git-flakes.packages."${pkgs.system}";
   programs.bash.enable = true;
   programs.direnv = {
