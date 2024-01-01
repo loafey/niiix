@@ -122,11 +122,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-nREUwCMSy39UXQ71uFfumb1DqTh0v6LLWP6alYj8oHw=",
-        "path": "/nix/store/z6f6bd2wchcsyb4ma3lg4ips0y88x0si-source/git-flakes",
+        "path": "/nix/store/llqrncsvhy93hgx9wv00wxrfnf1hhzhm-source/git-flakes",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/z6f6bd2wchcsyb4ma3lg4ips0y88x0si-source/git-flakes",
+        "path": "/nix/store/llqrncsvhy93hgx9wv00wxrfnf1hhzhm-source/git-flakes",
         "type": "path"
       }
     },

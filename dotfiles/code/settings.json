@@ -239,5 +239,6 @@
     "terminal.integrated.defaultProfile.linux": "nu",
     "breadcrumbs.enabled": false,
     "typst-lsp.exportPdf": "never",
-    "haskell.manageHLS": "PATH"
+    "haskell.manageHLS": "PATH",
+    "keyboard.dispatch": "keyCode"
 }
