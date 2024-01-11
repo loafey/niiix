@@ -892,6 +892,10 @@ def flex [] {
     neofetch | queercat -f 1
 }
 
+def activate-flex-mode [] {
+    display3d  ~/Git/niiix/git-flakes/display3d/resources/blahaj.obj -t 0,0,3.5
+}
+
 $env.PATH = ($env.PATH | split row (char esep) | append "/home/samuel/.ghcup/bin")
 
 def cargo-init [type = "bin"] {

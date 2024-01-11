@@ -6,6 +6,7 @@
     queercat.url = "github:Elsa002/queercat";
 
     stremio.url = "./stremio";
+    display3d.url = "./display3d";
 
     flake-utils.url = "github:numtide/flake-utils";
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -21,6 +22,7 @@
             inputs.queercat.defaultPackage."${pkgs.system}"
             inputs.grompt.defaultPackage."${pkgs.system}"
             inputs.stremio.defaultPackage."${pkgs.system}"
+            inputs.display3d.defaultPackage."${pkgs.system}"
           ];
         }
       );
