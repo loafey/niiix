@@ -121,12 +121,12 @@
       },
       "locked": {
         "lastModified": 1,
-        "narHash": "sha256-nREUwCMSy39UXQ71uFfumb1DqTh0v6LLWP6alYj8oHw=",
-        "path": "/nix/store/15dgiraxgph4fkv0if515yv32fbl7ldr-source/git-flakes",
+        "narHash": "sha256-GKQQOVpLY8j8516WOnnbUrsbToH9A8C1OlVfb+XraGA=",
+        "path": "/nix/store/yqa7iqr5gkhh6ww062d20bniycdrxy4s-source/git-flakes",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/15dgiraxgph4fkv0if515yv32fbl7ldr-source/git-flakes",
+        "path": "/nix/store/yqa7iqr5gkhh6ww062d20bniycdrxy4s-source/git-flakes",
         "type": "path"
       }
     },
@@ -453,11 +453,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-EZbZxecAQiv6TBQNiH22BW0v4Vwn/OASwfw4TAwcuw8=",
-        "path": "/nix/store/565kb33k5i9dbsh2hfj4vi3330l9zsdf-source/stremio",
+        "path": "/nix/store/qirfnb8zpzmxks2irz0j10dyxvgq6d7c-source/stremio",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/565kb33k5i9dbsh2hfj4vi3330l9zsdf-source/stremio",
+        "path": "/nix/store/qirfnb8zpzmxks2irz0j10dyxvgq6d7c-source/stremio",
         "type": "path"
       }
     },
