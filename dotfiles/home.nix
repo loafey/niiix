@@ -40,6 +40,9 @@ in
         streetsidesoftware.code-spell-checker
         ms-vsliveshare.vsliveshare
         eww-yuck.yuck
+        ms-vscode.cpptools
+        ms-vscode.cmake-tools
+        twxs.cmake
       ];
     })
     thunderbird
