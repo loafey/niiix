@@ -9,7 +9,6 @@
   ]) ++ (with pkgs.gnome; [
     cheese # webcam tool
     gnome-music
-    gedit # text editor
     epiphany # web browser
     geary # email reader
     gnome-characters
@@ -26,6 +25,7 @@
     "QT_STYLE_OVERRIDE" = "breeze";
   };
   environment.systemPackages = with pkgs; [
+    gedit # text editor
     gnomeExtensions.gsconnect
     kitty
     gnomeExtensions.tray-icons-reloaded

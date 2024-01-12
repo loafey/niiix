@@ -36,12 +36,14 @@
           inherit args;
           host = "mango-lappy";
           extra-modules = [ ./desktops/hyprland.nix hyprland.nixosModules.default ];
+          # extra-modules = [ ./desktops/gnome.nix ];
           path = ./hardware-configs/mango-lappy;
         };
 
         "mango-pc" = import ./hardware-configs/setup-configuration.nix {
           inherit args;
           host = "mango-pc";
+          # extra-modules = [ ./desktops/gnome.nix ];
           extra-modules = [ ./desktops/hyprland.nix hyprland.nixosModules.default ];
           path = ./hardware-configs/mango-pc;
           extra-config = ./hardware-configs/mango-pc/nvidia.nix;
