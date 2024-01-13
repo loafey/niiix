@@ -62,6 +62,7 @@ in
     wineWowPackages.stable
     neovide
     r2modman
+    element-desktop
   ] ++ flimpy.inputs.git-flakes.packages."${pkgs.system}";
   programs.bash.enable = true;
   programs.direnv = {
