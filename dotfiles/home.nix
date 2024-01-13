@@ -63,6 +63,7 @@ in
     neovide
     r2modman
     element-desktop
+    cinny-desktop
   ] ++ flimpy.inputs.git-flakes.packages."${pkgs.system}";
   programs.bash.enable = true;
   programs.direnv = {
