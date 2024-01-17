@@ -1005,3 +1005,15 @@ version = "0.1.0"
 def system-settings [] {
     nix-shell -p gnome.gnome-control-center --run "XDG_CURRENT_DESKTOP=GNOME gnome-control-center"
 }
+
+def splat [] {
+    bash -c `
+    tmux new-session -s "splat" -d
+    tmux split-window -h
+    tmux split-window -v
+    tmux swap-pane -s 0
+    tmux split-window -v
+    tmux set synchronize-panes on
+    tmux -2 attach-session -d 
+    `
+}
