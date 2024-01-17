@@ -126,7 +126,7 @@ in
   xdg.configFile."kitty/kitty.conf".source = ./kitty/kitty.conf;
   xdg.configFile."grompt/config.toml".source = ./grompt/config.toml;
   xdg.configFile."swappy/config".source = ./swappy/config;
-  xdg.configFile."alacritty/alacritty.yml".source = ./alacritty/alacritty.yml;
+  xdg.configFile."alacritty/alacritty.toml".source = ./alacritty/alacritty.toml;
   xdg.configFile."nvim" = {
     source = ./nvim;
     recursive = true;
