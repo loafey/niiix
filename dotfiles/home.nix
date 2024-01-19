@@ -64,6 +64,7 @@ in
     r2modman
     element-desktop
     cinny-desktop
+    gnome.aisleriot
   ] ++ flimpy.inputs.git-flakes.packages."${pkgs.system}";
   programs.bash.enable = true;
   programs.direnv = {
