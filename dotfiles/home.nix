@@ -43,6 +43,7 @@ in
         ms-vscode.cpptools
         ms-vscode.cmake-tools
         twxs.cmake
+        pest.pest-ide-tools
       ];
     })
     thunderbird
