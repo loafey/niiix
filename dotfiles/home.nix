@@ -95,7 +95,7 @@ in
       WantedBy = [ "default.target" ];
     };
     Service = {
-      ExecStart = "mullvad-exclude ${pkgs.protonmail-bridge}/bin/protonmail-bridge --noninteractive --log-level info";
+      ExecStart = "${pkgs.protonmail-bridge}/bin/protonmail-bridge --noninteractive --log-level info";
     };
   };
 
