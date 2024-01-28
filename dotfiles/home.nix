@@ -66,6 +66,7 @@ in
     element-desktop
     cinny-desktop
     gnome.aisleriot
+    protonmail-bridge
   ] ++ flimpy.inputs.git-flakes.packages."${pkgs.system}";
   programs.bash.enable = true;
   programs.direnv = {
@@ -84,6 +85,18 @@ in
     includes = [
       { path = "~/.gitconfig.local"; }
     ];
+  };
+
+  systemd.user.services.protonmail-bridge = {
+    Unit = {
+      Description = "Protonmail Bridge";
+    };
+    Install = {
+      WantedBy = [ "default.target" ];
+    };
+    Service = {
+      ExecStart = "mullvad-exclude ${pkgs.protonmail-bridge}/bin/protonmail-bridge --noninteractive --log-level info";
+    };
   };
 
   programs.carapace.enable = true;
