@@ -4,6 +4,7 @@
   xserver.displayManager.autoLogin.enable = true;
   xserver.displayManager.autoLogin.user = userName;
   printing.enable = true;
+  auto-cpufreq.enable = true;
 
   blueman.enable = true;
 

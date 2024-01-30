@@ -75,6 +75,7 @@
     pass
     pinentry-curses
     gnupg
+    auto-cpufreq
   ];
   environment.sessionVariables = rec {
     EDITOR = "nvim";
