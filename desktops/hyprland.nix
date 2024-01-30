@@ -43,6 +43,7 @@
   services.gnome.gnome-online-accounts.enable = true;
   # optional to use google/nextcloud calendar
   services.gnome.gnome-keyring.enable = true;
+  security.pam.services.gdm.enableGnomeKeyring = true;
   xdg.portal = {
     enable = true;
     xdgOpenUsePortal = true;

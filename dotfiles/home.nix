@@ -87,17 +87,17 @@ in
     ];
   };
 
-  systemd.user.services.protonmail-bridge = {
-    Unit = {
-      Description = "Protonmail Bridge";
-    };
-    Install = {
-      WantedBy = [ "default.target" ];
-    };
-    Service = {
-      ExecStart = "${pkgs.protonmail-bridge}/bin/protonmail-bridge --noninteractive --log-level info";
-    };
-  };
+  # systemd.user.services.protonmail-bridge = {
+  #   Unit = {
+  #     Description = "Protonmail Bridge";
+  #   };
+  #   Install = {
+  #     WantedBy = [ "default.target" ];
+  #   };
+  #   Service = {
+  #     ExecStart = "${pkgs.protonmail-bridge}/bin/protonmail-bridge --noninteractive --log-level info";
+  #   };
+  # };
 
   programs.carapace.enable = true;
   programs.carapace.enableNushellIntegration = true;

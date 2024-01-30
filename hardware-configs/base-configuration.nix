@@ -72,6 +72,9 @@
     distrobox
     libsForQt5.breeze-qt5
     tmux
+    pass
+    pinentry-curses
+    gnupg
   ];
   environment.sessionVariables = rec {
     EDITOR = "nvim";
