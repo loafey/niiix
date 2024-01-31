@@ -73,10 +73,15 @@
     libsForQt5.breeze-qt5
     tmux
     pass
-    pinentry-curses
-    gnupg
     auto-cpufreq
   ];
+
+  programs.gnupg.agent = {
+    enable = true;
+    pinentryFlavor = "curses";
+    enableSSHSupport = true;
+  };
+
   environment.sessionVariables = rec {
     EDITOR = "nvim";
   };

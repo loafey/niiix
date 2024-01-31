@@ -3,6 +3,8 @@
 
   printing.enable = true;
 
+  pcscd.enable = true;
+
   fwupd.enable = false;
 
   pipewire = {

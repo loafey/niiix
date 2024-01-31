@@ -6,6 +6,8 @@
   printing.enable = true;
   auto-cpufreq.enable = true;
 
+  pcscd.enable = true;
+
   blueman.enable = true;
 
   fstrim.enable = true;
