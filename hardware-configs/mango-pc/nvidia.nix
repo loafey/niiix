@@ -13,6 +13,9 @@
   environment.variables.LIBVA_DRIVER_NAME = "nvidia";
   environment.variables.WLR_NO_HARDWARE_CURSORS = "1";
 
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
+
   boot.initrd.kernelModules = [ "nvidia" ];
   boot.extraModulePackages = [ config.boot.kernelPackages.nvidia_x11 ];
   boot.blacklistedKernelModules = [ "nouveau" ];
