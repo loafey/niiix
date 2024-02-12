@@ -44,6 +44,7 @@ in
         ms-vscode.cmake-tools
         twxs.cmake
         pest.pest-ide-tools
+        wakatime.vscode-wakatime
       ];
     })
     thunderbird
