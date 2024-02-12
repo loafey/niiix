@@ -67,6 +67,7 @@ in
     cinny-desktop
     gnome.aisleriot
     protonmail-bridge
+    newsflash
   ] ++ flimpy.inputs.git-flakes.packages."${pkgs.system}";
   programs.bash.enable = true;
   programs.direnv = {
