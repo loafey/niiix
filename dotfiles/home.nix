@@ -45,6 +45,7 @@ in
         twxs.cmake
         pest.pest-ide-tools
         wakatime.vscode-wakatime
+        ndmitchell.haskell-ghcid
       ];
     })
     thunderbird
