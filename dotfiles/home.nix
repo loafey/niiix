@@ -41,7 +41,7 @@ in
         ms-vsliveshare.vsliveshare
         eww-yuck.yuck
         ms-vscode.cpptools
-        ms-vscode.cmake-tools
+        # ms-vscode.cmake-tools
         twxs.cmake
         pest.pest-ide-tools
         wakatime.vscode-wakatime
