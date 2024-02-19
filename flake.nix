@@ -43,8 +43,9 @@
         "mango-pc" = import ./hardware-configs/setup-configuration.nix {
           inherit args;
           host = "mango-pc";
+          extra-modules = [ ./desktops/plasma.nix ];
           # extra-modules = [ ./desktops/gnome.nix ];
-          extra-modules = [ ./desktops/hyprland.nix hyprland.nixosModules.default ];
+          # extra-modules = [ ./desktops/hyprland.nix hyprland.nixosModules.default ];
           path = ./hardware-configs/mango-pc;
           extra-config = ./hardware-configs/mango-pc/nvidia.nix;
         };

@@ -49,6 +49,7 @@ in
       ];
     })
     thunderbird
+    # discord
     discord-wayland
     nixpkgs-fmt
     neofetch
