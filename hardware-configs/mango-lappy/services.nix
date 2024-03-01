@@ -8,7 +8,7 @@
 
   pcscd.enable = true;
 
-  blueman.enable = true;
+  blueman.enable = false;
 
   fstrim.enable = true;
 

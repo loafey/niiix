@@ -70,7 +70,7 @@
     git
     mullvad-vpn
     distrobox
-    libsForQt5.breeze-qt5
+    # :WQlibsForQt5.breeze-qt5
     tmux
     pass
     auto-cpufreq

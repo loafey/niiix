@@ -35,7 +35,8 @@
         "mango-lappy" = import ./hardware-configs/setup-configuration.nix {
           inherit args;
           host = "mango-lappy";
-          extra-modules = [ ./desktops/hyprland.nix hyprland.nixosModules.default ];
+          extra-modules = [ ./desktops/plasma.nix ];
+          # extra-modules = [ ./desktops/hyprland.nix hyprland.nixosModules.default ];
           # extra-modules = [ ./desktops/gnome.nix ];
           path = ./hardware-configs/mango-lappy;
         };
