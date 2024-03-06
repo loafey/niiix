@@ -46,6 +46,7 @@ in
         pest.pest-ide-tools
         wakatime.vscode-wakatime
         ndmitchell.haskell-ghcid
+        guidotapia2.unicode-math-vscode
       ];
     })
     thunderbird

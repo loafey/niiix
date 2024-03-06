@@ -157,11 +157,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-QkyKGqspPAAqvCaIKV6t8D+4REQEx82p4nTpx8OT50w=",
-        "path": "/nix/store/hmx2mkm37a8g144lwx0k679fhlg7hvfd-source/git-flakes",
+        "path": "/nix/store/q7x3a801nla7wsl2gfcrarf0g6y77wr2-source/git-flakes",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/hmx2mkm37a8g144lwx0k679fhlg7hvfd-source/git-flakes",
+        "path": "/nix/store/q7x3a801nla7wsl2gfcrarf0g6y77wr2-source/git-flakes",
         "type": "path"
       }
     },
