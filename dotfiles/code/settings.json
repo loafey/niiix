@@ -240,5 +240,9 @@
     "breadcrumbs.enabled": false,
     "typst-lsp.exportPdf": "never",
     "haskell.manageHLS": "PATH",
-    "keyboard.dispatch": "keyCode"
+    "keyboard.dispatch": "keyCode",
+    "editor.quickSuggestions": {
+        "comments": true,
+        "strings": true
+    }
 }

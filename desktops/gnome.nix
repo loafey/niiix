@@ -13,7 +13,7 @@
     geary # email reader
     gnome-characters
     tali # poker game
-    iagno # go game
+    iagno # go game 
     hitori # sudoku game
     atomix # puzzle game
     yelp # Help view
