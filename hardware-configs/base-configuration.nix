@@ -74,8 +74,10 @@
     tmux
     pass
     auto-cpufreq
-    comma
   ];
+
+  programs.nix-index-database.comma.enable = true;
+  programs.command-not-found.enable = false;
 
   programs.gnupg.agent = {
     enable = true;

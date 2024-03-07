@@ -8,7 +8,10 @@
     serviceSetup = import (path + /services.nix) { userName = args.userName; };
     inherit extra-config;
   };
-  modules = [ ./base-configuration.nix ] ++ extra-modules ++ import ./home-setup.nix {
+  modules = [
+    ./base-configuration.nix
+    args.index
+  ] ++ extra-modules ++ import ./home-setup.nix {
     userName = args.userName;
     home-manager = args.home-manager;
     inputs = args.inputs;

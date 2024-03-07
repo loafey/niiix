@@ -12,9 +12,12 @@
       # build with your own instance of nixpkgs
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nix-index-database.url = "github:nix-community/nix-index-database";
+    nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { self, nixpkgs, home-manager, hyprland, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, hyprland, nix-index-database, ... }@inputs: {
     nixosConfigurations =
       let
         args = {
@@ -22,6 +25,7 @@
           userName = "loafey";
           inherit inputs;
           inherit home-manager;
+          index = nix-index-database.nixosModules.nix-index;
         };
       in
       {

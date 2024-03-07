@@ -157,11 +157,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-QkyKGqspPAAqvCaIKV6t8D+4REQEx82p4nTpx8OT50w=",
-        "path": "/nix/store/8kxdy0lk72h1dfa7ic52baivsqbkvrld-source/git-flakes",
+        "path": "/nix/store/mp8kjs54ryqclzhlyi5dzfaglmfdp2r2-source/git-flakes",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/8kxdy0lk72h1dfa7ic52baivsqbkvrld-source/git-flakes",
+        "path": "/nix/store/mp8kjs54ryqclzhlyi5dzfaglmfdp2r2-source/git-flakes",
         "type": "path"
       }
     },
@@ -296,6 +296,26 @@
       "original": {
         "owner": "nix-community",
         "repo": "naersk",
+        "type": "github"
+      }
+    },
+    "nix-index-database": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1709708644,
+        "narHash": "sha256-XAFOkZ6yexsqeJrCXWoHxopq0i+7ZqbwATXomMnGmr4=",
+        "owner": "nix-community",
+        "repo": "nix-index-database",
+        "rev": "94a1e46434736a40f976a454f8bd3ea2144f349b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "nix-index-database",
         "type": "github"
       }
     },
@@ -465,6 +485,7 @@
         "git-flakes": "git-flakes",
         "home-manager": "home-manager",
         "hyprland": "hyprland",
+        "nix-index-database": "nix-index-database",
         "nix-vscode-extensions": "nix-vscode-extensions",
         "nixpkgs": "nixpkgs_8"
       }
