@@ -101,7 +101,8 @@
     "cmake.configureOnOpen": true,
     "editor.codeLensFontFamily": "Victor Mono",
     "editor.unicodeHighlight.allowedCharacters": {
-        "𝑄": true
+        "𝑄": true,
+        "𝓛": true
     },
     "workbench.colorTheme": "Ayu Mirage",
     "workbench.productIconTheme": "icons-carbon",
