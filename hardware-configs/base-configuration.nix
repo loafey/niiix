@@ -74,6 +74,7 @@
     tmux
     pass
     auto-cpufreq
+    comma
   ];
 
   programs.gnupg.agent = {
