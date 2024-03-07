@@ -245,5 +245,6 @@
     "editor.quickSuggestions": {
         "comments": true,
         "strings": true
-    }
+    },
+    "editor.unicodeHighlight.ambiguousCharacters": false
 }
