@@ -11,5 +11,10 @@
     # xorg.libXcursor
     kdePackages.kcmutils
     kdePackages.kate
+    clinfo
+    glxinfo
+    vulkan-tools
+    wayland-utils
+    aha
   ];
 }
