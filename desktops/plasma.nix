@@ -16,5 +16,6 @@
     vulkan-tools
     wayland-utils
     aha
+    xwaylandvideobridge
   ];
 }
