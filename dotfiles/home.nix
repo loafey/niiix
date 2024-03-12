@@ -72,6 +72,13 @@ in
     gnome.aisleriot
     protonmail-bridge
     newsflash
+    (retroarch.override {
+      cores = with libretro; [
+        genesis-plus-gx
+        snes9x
+        beetle-psx-hw
+      ];
+    })
   ] ++ flimpy.inputs.git-flakes.packages."${pkgs.system}";
   programs.bash.enable = true;
   programs.direnv = {
