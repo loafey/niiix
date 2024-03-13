@@ -12,7 +12,7 @@
 
   fstrim.enable = true;
 
-  fwupd.enable = false;
+  fwupd.enable = true;
 
   pipewire = {
     enable = true;
