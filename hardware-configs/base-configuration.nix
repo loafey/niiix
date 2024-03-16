@@ -78,6 +78,7 @@
 
   programs.nix-index-database.comma.enable = true;
   programs.command-not-found.enable = false;
+  programs.gamemode.enable = true;
 
   programs.gnupg.agent = {
     enable = true;
