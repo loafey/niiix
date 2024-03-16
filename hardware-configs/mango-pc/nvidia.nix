@@ -19,7 +19,7 @@
   boot.initrd.kernelModules = [ "nvidia" ];
   boot.extraModulePackages = [ config.boot.kernelPackages.nvidia_x11 ];
   boot.blacklistedKernelModules = [ "nouveau" ];
-  boot.kernelParams = [ "nomodeset" "nvidia_drm.modeset=1" "nvidia_drm.fbdev=1" ];
+  # boot.kernelParams = [ "nomodeset" "nvidia_drm.modeset=1" "nvidia_drm.fbdev=1" ];
 
   # Load nvidia driver for Xorg and Wayland
   services.xserver.videoDrivers = [ "nvidia" ];
