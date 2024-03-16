@@ -61,7 +61,7 @@ in
     lutris
     cartridges
     obs-studio
-    libsForQt5.kdenlive
+    kdePackages.kdenlive
     minecraft
     fragments
     wineWowPackages.stable
