@@ -138,14 +138,14 @@ in
     };
   };
 
-  gtk = {
-    enable = true;
-    theme = {
-      name = "adw-gtk3-dark";
-      package = pkgs.adw-gtk3;
-    };
-  };
-  home.sessionVariables.GTK_THEME = "adw-gtk3-dark";
+  # gtk = {
+  #   enable = true;
+  #   theme = {
+  #     name = "adw-gtk3-dark";
+  #     package = pkgs.adw-gtk3;
+  #   };
+  # };
+  # home.sessionVariables.GTK_THEME = "adw-gtk3-dark";
 
 
   xdg.configFile."nushell/config.nu".source = ./nushell/config.nu;
