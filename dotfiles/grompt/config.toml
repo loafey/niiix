@@ -9,7 +9,8 @@ icon_override = [
         "https://github.com|\ue708",
         "git@github.com|\ue708",
         "https://gitlab.com|\uf296 |252,109,38",
-        "git@gitlab.com|\uf296 |252,109,38"
+        "git@gitlab.com|\uf296 |252,109,38",
+        "git@git.chalmers.se|󰇷|252,109,38"
     ]
 icon_color = true
 commit_arrow = true
