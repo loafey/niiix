@@ -80,11 +80,11 @@
   programs.command-not-found.enable = false;
   programs.gamemode.enable = true;
 
-  programs.gnupg.agent = {
-    enable = true;
-    # pinentryPackage = pkgs.pinentry-curses;
-    enableSSHSupport = true;
-  };
+  # programs.gnupg.agent = {
+  #   enable = true;
+  #   # pinentryPackage = pkgs.pinentry-curses;
+  #   enableSSHSupport = true;
+  # };
 
   environment.sessionVariables = rec {
     EDITOR = "nvim";

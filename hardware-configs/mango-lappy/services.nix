@@ -23,8 +23,8 @@
 
   mullvad-vpn.enable = true;
 
-  xserver.xkb = {
+  xserver = {
     layout = "se";
-    variant = "";
+    xkbVariant = "";
   };
 }
