@@ -69,7 +69,7 @@
         },
     ],
     "zenMode.centerLayout": false,
-    "haskell.formattingProvider": "stylish-haskell",
+    "haskell.formattingProvider": "fourmolu",
     "vsicons.dontShowNewVersionMessage": true,
     "notebook.cellToolbarLocation": {
         "default": "right",
