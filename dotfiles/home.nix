@@ -82,6 +82,7 @@ in
         mupen64plus
       ];
     })
+    chromium
 
     doomseeker
     gzdoom
