@@ -74,6 +74,7 @@
     tmux
     pass
     auto-cpufreq
+    p7zip
   ];
 
   programs.nix-index-database.comma.enable = true;
