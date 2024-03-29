@@ -78,6 +78,7 @@ in
         genesis-plus-gx
         snes9x
         beetle-psx-hw
+        mame
       ];
     })
 
