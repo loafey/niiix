@@ -79,6 +79,7 @@ in
         snes9x
         beetle-psx-hw
         mame
+        mupen64plus
       ];
     })
 
