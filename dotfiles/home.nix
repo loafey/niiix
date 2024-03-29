@@ -63,7 +63,7 @@ in
     cartridges
     obs-studio
     kdePackages.kdenlive
-    minecraft
+    prismlauncher
     fragments
     wineWowPackages.stable
     neovide
