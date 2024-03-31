@@ -73,6 +73,7 @@ in
     gnome.aisleriot
     protonmail-bridge
     newsflash
+    protonmail-desktop
     (retroarch.override {
       cores = with libretro; [
         genesis-plus-gx
