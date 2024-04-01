@@ -4,6 +4,7 @@
   inputs = {
     grompt.url = "github:samhamnam/grompt";
     queercat.url = "github:Elsa002/queercat";
+    bunbun.url = "github:devraza/bunbun";
 
     stremio.url = "./stremio";
     display3d.url = "./display3d";
@@ -23,6 +24,7 @@
             inputs.grompt.defaultPackage."${pkgs.system}"
             inputs.stremio.defaultPackage."${pkgs.system}"
             inputs.display3d.defaultPackage."${pkgs.system}"
+            inputs.bunbun.packages."${pkgs.system}".default
           ];
         }
       );

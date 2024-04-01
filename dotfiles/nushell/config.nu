@@ -1017,3 +1017,5 @@ def splat [] {
     tmux -2 attach-session -d 
     `
 }
+
+bunbun
