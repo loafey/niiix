@@ -848,7 +848,7 @@ def nix-update [] {
     cd ~/Git/niiix
     git pull
     nix flake update
-    sudo nixos-rebuild boot --upgrade
+    sudo nixos-rebuild switch --upgrade
     # stinky goodness
     try {
         git add flake.lock
@@ -856,8 +856,12 @@ def nix-update [] {
         git commit -m $s
         git push
     }
-    sudo nix-collect-garbage --delete-older-than 10d
+    print "- collecting garbage -"
+    sudo nix-collect-garbage -d
     sudo nix-env --delete-generations --profile /nix/var/nix/profiles/system 10d
+
+    print "- linking -"
+    sudo nix-store --optimise
 }
 def nix-rebuild [] {
     sudo nixos-rebuild switch
