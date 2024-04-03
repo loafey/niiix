@@ -857,8 +857,8 @@ def nix-update [] {
         git push
     }
     print "- collecting garbage -"
-    sudo nix-collect-garbage -d
-    sudo nix-env --delete-generations --profile /nix/var/nix/profiles/system 10d
+    nix-collect-garbage -d --delete-old
+    sudo nix-collect-garbage -d --delete-old
 
     print "- linking -"
     sudo nix-store --optimise
