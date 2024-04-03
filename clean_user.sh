@@ -1,0 +1,1 @@
+find ~/ -name .direnv -exec rm -rf {} \;
