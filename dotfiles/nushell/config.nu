@@ -857,7 +857,7 @@ def nix-update [] {
         git push
     }
     print "- collecting garbage -"
-    try{
+    try {
         bash ~/Git/niiix/clean_user.sh
     }
     nix-collect-garbage -d --delete-old
