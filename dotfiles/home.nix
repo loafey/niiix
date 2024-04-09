@@ -193,7 +193,8 @@ in
     initExtra = ''
       setopt PROMPT_SUBST
       alias p="pwd | sed -E \"s/\\/home\\/[a-z]*/~/\" | sed -E \"s/~$//\""
-      PS1="%F{blue}$(p)%f 🦦 "
+      alias grompt="grompt -i -c -S --sc -r -f 30 --sf -n"
+      PS1="%F{blue}$(p)%f $(grompt) 🦦 "
       bindkey "^[[1;5C" forward-word
       bindkey "^[[1;5D" backward-word
     '';
