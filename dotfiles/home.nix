@@ -1,4 +1,4 @@
-flimpy: { pkgs, ... }:
+flimpy: { pkgs, config, ... }:
 let
   discord-wayland = pkgs.runCommand "discord
   "
@@ -84,6 +84,7 @@ in
   programs.direnv = {
     enable = true;
     enableBashIntegration = true; # see note on other shells below
+    enableZshIntegration = true;
     nix-direnv = {
       enable = true;
       package = pkgs.nix-direnv;
@@ -178,8 +179,32 @@ in
     recursive = true;
   };
 
+  programs.zsh = {
+    enable = true;
+    enableCompletion = true;
+    autosuggestion.enable = true;
+    syntaxHighlighting.enable = true;
+
+    shellAliases = {
+      ll = "ls -l";
+      update = "sudo nixos-rebuild switch";
+    };
+    initExtraFirst = "bunbun";
+    initExtra = ''
+      setopt PROMPT_SUBST
+      alias p="pwd | sed -E \"s/\\/home\\/[a-z]*/~/\" | sed -E \"s/~$//\""
+      PS1="%F{blue}$(p)%f 🦦 "
+      bindkey "^[[1;5C" forward-word
+      bindkey "^[[1;5D" backward-word
+    '';
+
+    history.size = 10000;
+    history.path = "${config.xdg.dataHome}/zsh/history";
+  };
+
 
   # The state version is required and should stay at the version you
   # originally installed.
   home.stateVersion = "23.05";
 }
+

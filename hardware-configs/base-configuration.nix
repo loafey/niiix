@@ -48,7 +48,7 @@
     isNormalUser = true;
     description = userName;
     extraGroups = [ "networkmanager" "wheel" "input" "dialout" ];
-    shell = pkgs.nushell;
+    shell = pkgs.zsh;
     packages = [ ];
   };
 
@@ -80,6 +80,7 @@
   programs.nix-index-database.comma.enable = true;
   programs.command-not-found.enable = false;
   programs.gamemode.enable = true;
+  programs.zsh.enable = true;
 
   # programs.gnupg.agent = {
   #   enable = true;
