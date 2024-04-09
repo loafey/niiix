@@ -100,25 +100,10 @@ in
     ];
   };
 
-  # systemd.user.services.protonmail-bridge = {
-  #   Unit = {
-  #     Description = "Protonmail Bridge";
-  #   };
-  #   Install = {
-  #     WantedBy = [ "default.target" ];
-  #   };
-  #   Service = {
-  #     ExecStart = "${pkgs.protonmail-bridge}/bin/protonmail-bridge --noninteractive --log-level info";
-  #   };
-  # };
-
   programs.carapace.enable = true;
   programs.carapace.enableNushellIntegration = true;
 
   dconf.settings = {
-    # "/org/gnome/settings-daemon/plugins/power" = {
-    #   idle-dim = false;
-    # };
     "org/gnome/desktop/interface" = {
       color-scheme = "default";
       clock-show-date = false;
@@ -127,7 +112,6 @@ in
     "org/gnome/shell" = {
       disable-user-extensions = false;
 
-      # `gnome-extensions list` for a list
       enabled-extensions = [
         "user-theme@gnome-shell-extensions.gcampax.github.com"
         "appindicatorsupport@rgcjonas.gmail.com"
@@ -138,14 +122,6 @@ in
     };
   };
 
-  # gtk = {
-  #   enable = true;
-  #   theme = {
-  #     name = "adw-gtk3-dark";
-  #     package = pkgs.adw-gtk3;
-  #   };
-  # };
-  # home.sessionVariables.GTK_THEME = "adw-gtk3-dark";
 
 
   xdg.configFile."nushell/config.nu".source = ./nushell/config.nu;
@@ -212,6 +188,7 @@ in
       }
 
       export PS1='$(prompt)'
+      export DIRENV_LOG_FORMAT=""
       bindkey "^[[1;5C" forward-word
       bindkey "^[[1;5D" backward-word
     '';
