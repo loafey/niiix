@@ -1025,4 +1025,8 @@ def splat [] {
     `
 }
 
+def pulk [] {
+    git pull --rebase
+}
+
 bunbun
