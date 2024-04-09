@@ -74,15 +74,6 @@ in
     protonmail-bridge
     newsflash
     protonmail-desktop
-    (retroarch.override {
-      cores = with libretro; [
-        genesis-plus-gx
-        snes9x
-        beetle-psx-hw
-        mame
-        mupen64plus
-      ];
-    })
     chromium
 
     doomseeker
