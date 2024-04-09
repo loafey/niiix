@@ -163,7 +163,9 @@ in
 
     shellAliases = {
       ll = "ls -l";
-      update = "sudo nixos-rebuild switch";
+      nix-update = "nu ~/Git/niiix/dotfiles/update.nu";
+      devcode = "nix develop --command bash -c \"code . --enable-features=UseOzonePlatform --ozone-platform=wayland\"";
+      devnu = "nix develop --command bash -c \"zsh\"";
     };
     initExtraFirst = "bunbun";
     initExtra = ''
