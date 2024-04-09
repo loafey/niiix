@@ -192,9 +192,18 @@ in
     initExtraFirst = "bunbun";
     initExtra = ''
       setopt PROMPT_SUBST
-      alias p="pwd | sed -E \"s/\\/home\\/[a-z]*/~/\" | sed -E \"s/~$//\""
-      alias grompt="grompt -i -c -S --sc -r -f 30 --sf -n"
-      PS1="%F{blue}$(p)%f $(grompt) 🦦 "
+
+      alias trim="sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//'"
+
+      function prompt() {
+        local P=$(pwd | sed -E "s/\\/home\\/[a-z]*/~/" | sed -E "s/~$//" | sed -E "s/\n//")
+        local G=$(grompt)
+        local left="%{\033[1;33m%}"$P"%{\033[0m%} $G "
+        local T=$(echo $left | trim)
+        print $T" 🦦 "
+      }
+
+      export PS1='$(prompt)'
       bindkey "^[[1;5C" forward-word
       bindkey "^[[1;5D" backward-word
     '';
