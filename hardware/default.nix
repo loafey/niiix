@@ -9,9 +9,9 @@
     inherit extra-config;
   };
   modules = [
-    ./base-configuration.nix
+    ./base.nix
     args.index
-  ] ++ extra-modules ++ import ./home-setup.nix {
+  ] ++ extra-modules ++ import ./home.nix {
     userName = args.userName;
     home-manager = args.home-manager;
     inputs = args.inputs;

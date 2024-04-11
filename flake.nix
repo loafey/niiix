@@ -23,28 +23,28 @@
         };
       in
       {
-        "mango-vm" = import ./hardware-configs/setup-configuration.nix {
+        "mango-vm" = import ./hardware {
           inherit args;
           host = "mango-vm";
           extra-modules = [ ./desktops/gnome.nix ];
-          path = ./hardware-configs/mango-vm;
+          path = ./hardware/mango-vm;
         };
 
-        "mango-lappy" = import ./hardware-configs/setup-configuration.nix {
+        "mango-lappy" = import ./hardware {
           inherit args;
           host = "mango-lappy";
           extra-modules = [ ./desktops/plasma.nix ];
           # extra-modules = [ ./desktops/gnome.nix ];
-          path = ./hardware-configs/mango-lappy;
+          path = ./hardware/mango-lappy;
         };
 
-        "mango-pc" = import ./hardware-configs/setup-configuration.nix {
+        "mango-pc" = import ./hardware {
           inherit args;
           host = "mango-pc";
           extra-modules = [ ./desktops/plasma.nix ];
           # extra-modules = [ ./desktops/gnome.nix ];
-          path = ./hardware-configs/mango-pc;
-          extra-config = ./hardware-configs/mango-pc/nvidia.nix;
+          path = ./hardware/mango-pc;
+          extra-config = ./hardware/mango-pc/nvidia.nix;
         };
       };
   };
