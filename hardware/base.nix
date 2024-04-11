@@ -1,13 +1,8 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
-
 { userName, hardwareConfig, host, serviceSetup, config, pkgs, inputs, extra-config, ... }:
 
 {
   imports = [ hardwareConfig extra-config ];
 
-  # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
@@ -70,7 +65,6 @@
     git
     mullvad-vpn
     distrobox
-    # :WQlibsForQt5.breeze-qt5
     tmux
     pass
     auto-cpufreq
@@ -82,11 +76,6 @@
   programs.gamemode.enable = true;
   programs.zsh.enable = true;
 
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   # pinentryPackage = pkgs.pinentry-curses;
-  #   enableSSHSupport = true;
-  # };
 
   environment.sessionVariables = rec {
     EDITOR = "nvim";
@@ -94,8 +83,8 @@
 
   programs.steam = {
     enable = true;
-    remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
-    dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+    remotePlay.openFirewall = true;
+    dedicatedServer.openFirewall = true;
   };
 
   programs.noisetorch.enable = true;
@@ -103,11 +92,7 @@
   virtualisation = {
     podman = {
       enable = true;
-
-      # Create a `docker` alias for podman, to use it as a drop-in replacement
       dockerCompat = true;
-
-      # Required for containers under podman-compose to be able to talk to each other.
       defaultNetwork.settings.dns_enabled = true;
     };
   };

@@ -34,7 +34,6 @@
           inherit args;
           host = "mango-lappy";
           extra-modules = [ ./desktops/plasma.nix ];
-          # extra-modules = [ ./desktops/gnome.nix ];
           path = ./hardware/mango-lappy;
         };
 
@@ -42,7 +41,6 @@
           inherit args;
           host = "mango-pc";
           extra-modules = [ ./desktops/plasma.nix ];
-          # extra-modules = [ ./desktops/gnome.nix ];
           path = ./hardware/mango-pc;
           extra-config = ./hardware/mango-pc/nvidia.nix;
         };

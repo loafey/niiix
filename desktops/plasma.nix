@@ -8,7 +8,6 @@
   programs.dconf.enable = true;
 
   environment.systemPackages = with pkgs; [
-    # xorg.libXcursor
     kdePackages.kcmutils
     kdePackages.kate
     clinfo
