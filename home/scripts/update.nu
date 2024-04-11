@@ -4,7 +4,7 @@ nix flake update
 cd git-flakes/
 nix flake update
 cd ..
-sudo nixos-rebuild switch --upgrade
+sudo nixos-rebuild switch --upgrade -v
 # stinky goodness
 try {
     git add flake.lock
