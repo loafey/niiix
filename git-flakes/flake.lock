@@ -10,7 +10,7 @@
         "narHash": "sha256-HshYqSgM1wGI2RBtgR/vOYTKazFDkW+UAQVi40dOhtA=",
         "owner": "devraza",
         "repo": "bunbun",
-        "rev": "80cdc501e3aa015cc804d7846d899f0874316d88",
+        "rev": "f289c51cc09c19cf4f1e1a7873ec00afa0deb5ff",
         "type": "github"
       },
       "original": {
@@ -27,11 +27,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-vQ6lbispVaV1tQ6zwGQzHVp6CAOMP0ASwN1fBPRYjBY=",
-        "path": "/nix/store/hfjfh8ybx8r982r7w0l42ba6hwr90icc-source/git-flakes/display3d",
+        "path": "/nix/store/afx0618d3i0232ray315l9psilsvajj4-source/git-flakes/display3d",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/hfjfh8ybx8r982r7w0l42ba6hwr90icc-source/git-flakes/display3d",
+        "path": "/nix/store/afx0618d3i0232ray315l9psilsvajj4-source/git-flakes/display3d",
         "type": "path"
       }
     },
@@ -329,11 +329,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-EZbZxecAQiv6TBQNiH22BW0v4Vwn/OASwfw4TAwcuw8=",
-        "path": "/nix/store/hfjfh8ybx8r982r7w0l42ba6hwr90icc-source/git-flakes/stremio",
+        "path": "/nix/store/afx0618d3i0232ray315l9psilsvajj4-source/git-flakes/stremio",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/hfjfh8ybx8r982r7w0l42ba6hwr90icc-source/git-flakes/stremio",
+        "path": "/nix/store/afx0618d3i0232ray315l9psilsvajj4-source/git-flakes/stremio",
         "type": "path"
       }
     },
