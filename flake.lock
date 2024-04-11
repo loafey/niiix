@@ -175,13 +175,13 @@
         "stremio": "stremio"
       },
       "locked": {
-        "lastModified": 1,
+        "lastModified": 1712851816,
         "narHash": "sha256-CzE6D7an9i9UHBCMPIBKO3oAIcFtTsxbGGUFDR5jz7Q=",
-        "path": "./git-flakes",
+        "path": "/home/loafey/Git/niiix/git-flakes",
         "type": "path"
       },
       "original": {
-        "path": "./git-flakes",
+        "path": "/home/loafey/Git/niiix/git-flakes",
         "type": "path"
       }
     },
