@@ -5,7 +5,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
-    git-flakes.url = "path:/home/loafey/Git/niiix/git-flakes";
+    git-flakes.url = "./git-flakes";
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
     nix-index-database.url = "github:nix-community/nix-index-database";
     nix-index-database.inputs.nixpkgs.follows = "nixpkgs";

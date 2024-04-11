@@ -3,6 +3,7 @@
 
   inputs = {
     grompt.url = "github:loafey/grompt";
+    # rrompt.url = "git+ssh://git@github.com/loafey/rrompt.git";
     queercat.url = "github:Elsa002/queercat";
     bunbun.url = "github:devraza/bunbun";
 
@@ -22,6 +23,7 @@
           packages = [
             inputs.queercat.defaultPackage."${pkgs.system}"
             inputs.grompt.defaultPackage."${pkgs.system}"
+            # inputs.rrompt.defaultPackage."${pkgs.system}"
             inputs.stremio.defaultPackage."${pkgs.system}"
             inputs.display3d.defaultPackage."${pkgs.system}"
             inputs.bunbun.packages."${pkgs.system}".default
