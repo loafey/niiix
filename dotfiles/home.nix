@@ -129,29 +129,12 @@ in
   xdg.configFile."Code/User/keybindings.json".source = ./code/keybindings.json;
   xdg.configFile."kitty/kitty.conf".source = ./kitty/kitty.conf;
   xdg.configFile."grompt/config.toml".source = ./grompt/config.toml;
-  xdg.configFile."swappy/config".source = ./swappy/config;
   xdg.configFile."alacritty" = {
     source = ./alacritty;
     recursive = true;
   };
   xdg.configFile."nvim" = {
     source = ./nvim;
-    recursive = true;
-  };
-  xdg.configFile."hypr" = {
-    source = ./hypr;
-    recursive = true;
-  };
-  xdg.configFile."waybar" = {
-    source = ./waybar;
-    recursive = true;
-  };
-  xdg.configFile."rofi" = {
-    source = ./rofi;
-    recursive = true;
-  };
-  xdg.configFile."eww" = {
-    source = ./eww;
     recursive = true;
   };
 

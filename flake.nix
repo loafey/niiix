@@ -11,7 +11,7 @@
     nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { self, nixpkgs, home-manager, hyprland, nix-index-database, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, nix-index-database, ... }@inputs: {
     nixosConfigurations =
       let
         args = {
