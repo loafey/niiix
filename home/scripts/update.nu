@@ -1,6 +1,9 @@
 cd ~/Git/niiix
 git pull
 nix flake update
+cd git-flakes/
+nix flake update
+cd ..
 sudo nixos-rebuild switch --upgrade
 # stinky goodness
 try {
