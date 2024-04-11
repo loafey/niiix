@@ -2,7 +2,7 @@
   description = "Other flakes :^)";
 
   inputs = {
-    grompt.url = "github:samhamnam/grompt";
+    grompt.url = "github:loafey/grompt";
     queercat.url = "github:Elsa002/queercat";
     bunbun.url = "github:devraza/bunbun";
 

@@ -27,11 +27,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-vQ6lbispVaV1tQ6zwGQzHVp6CAOMP0ASwN1fBPRYjBY=",
-        "path": "/nix/store/zqv0i7cn8msasz72jsxp60bcll2fvhrn-source/display3d",
+        "path": "/nix/store/j4zazm4q1mcwv56fwgvgypsqcxr2wg74-source/display3d",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/zqv0i7cn8msasz72jsxp60bcll2fvhrn-source/display3d",
+        "path": "/nix/store/j4zazm4q1mcwv56fwgvgypsqcxr2wg74-source/display3d",
         "type": "path"
       }
     },
@@ -176,12 +176,12 @@
       },
       "locked": {
         "lastModified": 1,
-        "narHash": "sha256-u05NOVgZ1j/kSeMAUj2utAdkaRQgRRLJ88WludnA0lE=",
-        "path": "/nix/store/cnliwawy3n532qw9naqx60jy97vs452h-source/git-flakes",
+        "narHash": "sha256-CzE6D7an9i9UHBCMPIBKO3oAIcFtTsxbGGUFDR5jz7Q=",
+        "path": "./git-flakes",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/cnliwawy3n532qw9naqx60jy97vs452h-source/git-flakes",
+        "path": "./git-flakes",
         "type": "path"
       }
     },
@@ -195,13 +195,13 @@
       "locked": {
         "lastModified": 1711447024,
         "narHash": "sha256-tgzDMgqVpUWrdP5P+afgpkugI2qXNrEwyvjFhQcvGnI=",
-        "owner": "samhamnam",
+        "owner": "loafey",
         "repo": "grompt",
         "rev": "9ac43142c783443166ef1d28d6081d1f607f5d6b",
         "type": "github"
       },
       "original": {
-        "owner": "samhamnam",
+        "owner": "loafey",
         "repo": "grompt",
         "type": "github"
       }
@@ -475,11 +475,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-EZbZxecAQiv6TBQNiH22BW0v4Vwn/OASwfw4TAwcuw8=",
-        "path": "/nix/store/zqv0i7cn8msasz72jsxp60bcll2fvhrn-source/stremio",
+        "path": "/nix/store/j4zazm4q1mcwv56fwgvgypsqcxr2wg74-source/stremio",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/zqv0i7cn8msasz72jsxp60bcll2fvhrn-source/stremio",
+        "path": "/nix/store/j4zazm4q1mcwv56fwgvgypsqcxr2wg74-source/stremio",
         "type": "path"
       }
     },
