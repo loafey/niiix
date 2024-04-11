@@ -27,11 +27,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-vQ6lbispVaV1tQ6zwGQzHVp6CAOMP0ASwN1fBPRYjBY=",
-        "path": "/nix/store/j4zazm4q1mcwv56fwgvgypsqcxr2wg74-source/display3d",
+        "path": "/nix/store/hrywhk4ijj0iv345qgkm1azy3mji9297-source/display3d",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/j4zazm4q1mcwv56fwgvgypsqcxr2wg74-source/display3d",
+        "path": "/nix/store/hrywhk4ijj0iv345qgkm1azy3mji9297-source/display3d",
         "type": "path"
       }
     },
@@ -175,8 +175,8 @@
         "stremio": "stremio"
       },
       "locked": {
-        "lastModified": 1712851816,
-        "narHash": "sha256-CzE6D7an9i9UHBCMPIBKO3oAIcFtTsxbGGUFDR5jz7Q=",
+        "lastModified": 1712858837,
+        "narHash": "sha256-wd6sl49ex6HkN/khEWox24+0JjVPQvw8Zfc8pI/6HAY=",
         "path": "/home/loafey/Git/niiix/git-flakes",
         "type": "path"
       },
@@ -213,11 +213,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1712688495,
-        "narHash": "sha256-NrVLXkpT9ZigiI8md6NIzHS+3lE4QTj30IgXG57O9iM=",
+        "lastModified": 1712759992,
+        "narHash": "sha256-2APpO3ZW4idlgtlb8hB04u/rmIcKA8O7pYqxF66xbNY=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "b00d0e4fe9cba0047f54e77418ddda5f17e6ef2c",
+        "rev": "31357486b0ef6f4e161e002b6893eeb4fafc3ca9",
         "type": "github"
       },
       "original": {
@@ -271,11 +271,11 @@
         "nixpkgs": "nixpkgs_7"
       },
       "locked": {
-        "lastModified": 1712625377,
-        "narHash": "sha256-v8RR09JPLkABBX/EQPjg2rFLY6XoP2IcGVFBPTjzkrI=",
+        "lastModified": 1712798884,
+        "narHash": "sha256-Q1qzg/UTsCdRx4g4rlweDL2yBQFnevsXTr74ONGoGm4=",
         "owner": "nix-community",
         "repo": "nix-vscode-extensions",
-        "rev": "6ba2f93fe02839fe1b09057b3df1871a2e946d7a",
+        "rev": "df5f35ed20d9f4fd64429c8e8c0bde079702f767",
         "type": "github"
       },
       "original": {
@@ -475,11 +475,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-EZbZxecAQiv6TBQNiH22BW0v4Vwn/OASwfw4TAwcuw8=",
-        "path": "/nix/store/j4zazm4q1mcwv56fwgvgypsqcxr2wg74-source/stremio",
+        "path": "/nix/store/hrywhk4ijj0iv345qgkm1azy3mji9297-source/stremio",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/j4zazm4q1mcwv56fwgvgypsqcxr2wg74-source/stremio",
+        "path": "/nix/store/hrywhk4ijj0iv345qgkm1azy3mji9297-source/stremio",
         "type": "path"
       }
     },
