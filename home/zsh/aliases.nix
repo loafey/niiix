@@ -4,4 +4,8 @@
   devcode = "nix develop --command bash -c \"code . --enable-features=UseOzonePlatform --ozone-platform=wayland\"";
   devnu = "nix develop --command bash -c \"zsh\"";
   pulk = "git pull --rebase";
+  pull = "git pull";
+  push = "git push";
+  commit = "git commit -m";
+  add = "git add";
 }
