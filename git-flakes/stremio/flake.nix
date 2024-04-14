@@ -14,7 +14,7 @@
       url = "https://github.com/Stremio/stremio-shell/";
       flake = false;
       submodules = true;
-      ref = "refs/tags/v4.4.142";
+      ref = "refs/tags/v4.4.168";
     };
 
   };

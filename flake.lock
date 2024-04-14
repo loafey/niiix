@@ -27,11 +27,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-vQ6lbispVaV1tQ6zwGQzHVp6CAOMP0ASwN1fBPRYjBY=",
-        "path": "/nix/store/sb0j9gc1myr9jryzj40p9p8g9p9xvg1y-source/display3d",
+        "path": "/nix/store/5w115b5iar1c1bk3ws6rxx8mwrb47j1p-source/display3d",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/sb0j9gc1myr9jryzj40p9p8g9p9xvg1y-source/display3d",
+        "path": "/nix/store/5w115b5iar1c1bk3ws6rxx8mwrb47j1p-source/display3d",
         "type": "path"
       }
     },
@@ -176,12 +176,12 @@
       },
       "locked": {
         "lastModified": 1,
-        "narHash": "sha256-oTHxBXiCqIqxg8Tv+g7z9ij7s14hD3L74t6pYBqfQCk=",
-        "path": "/nix/store/frqlf020641kdqavrsfdzvw4d146i8w3-source/git-flakes",
+        "narHash": "sha256-SkmY1qG9Ikq6Sr5waXD0Wxvv9mJOtw3SknQsr4bC/fo=",
+        "path": "/nix/store/b5nc203xxrcqprs6dhr555lgy7ifg175-source/git-flakes",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/frqlf020641kdqavrsfdzvw4d146i8w3-source/git-flakes",
+        "path": "/nix/store/b5nc203xxrcqprs6dhr555lgy7ifg175-source/git-flakes",
         "type": "path"
       }
     },
@@ -472,29 +472,29 @@
       },
       "locked": {
         "lastModified": 1,
-        "narHash": "sha256-EZbZxecAQiv6TBQNiH22BW0v4Vwn/OASwfw4TAwcuw8=",
-        "path": "/nix/store/sb0j9gc1myr9jryzj40p9p8g9p9xvg1y-source/stremio",
+        "narHash": "sha256-5hgR2VdOTMm2UPPk9PvQJLlYFN5emc2AGyg1gWcTHmM=",
+        "path": "/nix/store/5w115b5iar1c1bk3ws6rxx8mwrb47j1p-source/stremio",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/sb0j9gc1myr9jryzj40p9p8g9p9xvg1y-source/stremio",
+        "path": "/nix/store/5w115b5iar1c1bk3ws6rxx8mwrb47j1p-source/stremio",
         "type": "path"
       }
     },
     "stremio_2": {
       "flake": false,
       "locked": {
-        "lastModified": 1625666797,
-        "narHash": "sha256-OyuTFmEIC8PH4PDzTMn8ibLUAzJoPA/fTILee0xpgQI=",
-        "ref": "refs/tags/v4.4.142",
-        "rev": "77e7925f4ba895190b44535f80404e573fb537bb",
-        "revCount": 735,
+        "lastModified": 1711535500,
+        "narHash": "sha256-pz1mie0kJov06GcyitvZu5Gg0Vz3YnigjDqFujGKqZM=",
+        "ref": "refs/tags/v4.4.168",
+        "rev": "7cd1203b6364edee148b24a08830e3f57ebe1029",
+        "revCount": 847,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/Stremio/stremio-shell/"
       },
       "original": {
-        "ref": "refs/tags/v4.4.142",
+        "ref": "refs/tags/v4.4.168",
         "submodules": true,
         "type": "git",
         "url": "https://github.com/Stremio/stremio-shell/"
