@@ -20,9 +20,14 @@ function prompt() {
 
 export PS1='$(prompt)'
 export DIRENV_LOG_FORMAT=""
-bindkey "^[[1;5C" forward-word
-bindkey "^[[1;5D" backward-word
+
 
 
 # set cursor to line
 echo '\e[5 q'
+
+# keybinds
+bindkey '^H' backward-kill-word
+bindkey '5~' kill-word
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
