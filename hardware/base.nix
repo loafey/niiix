@@ -69,6 +69,8 @@
     pass
     auto-cpufreq
     p7zip
+    podman-tui
+    docker-compose
   ];
 
   programs.nix-index-database.comma.enable = true;
