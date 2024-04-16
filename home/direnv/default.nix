@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   programs.direnv = {
-    enable = true;
+    enable = false;
     enableBashIntegration = true; # see note on other shells below
     enableZshIntegration = true;
     nix-direnv = {
