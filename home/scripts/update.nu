@@ -14,6 +14,7 @@ try {
     git push
 }
 print "- collecting garbage -"
+let before = df -h
 #try {
 #    bash ~/Git/niiix/clean_user.sh
 #}
@@ -22,3 +23,10 @@ sudo nix-collect-garbage -d --delete-old
 
 print "- linking -"
 sudo nix-store --optimise
+
+let after = df -h
+
+print " - Before - "
+print $before
+print " - After - "
+print $after
