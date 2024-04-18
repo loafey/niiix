@@ -24,6 +24,7 @@
     newsflash
     protonmail-desktop
     chromium
+    alacritty
 
     doomseeker
     gzdoom
