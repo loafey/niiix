@@ -23,7 +23,7 @@
         twxs.cmake
         wakatime.vscode-wakatime
         ndmitchell.haskell-ghcid
-        guidotapia2.unicode-math-vscode
+        # guidotapia2.unicode-math-vscode
         ms-vscode.hexeditor
         ms-azuretools.vscode-docker
       ];
