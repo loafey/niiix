@@ -24,6 +24,7 @@
         wakatime.vscode-wakatime
         ndmitchell.haskell-ghcid
         # guidotapia2.unicode-math-vscode
+        marp-team.marp-vscode
         ms-vscode.hexeditor
         ms-azuretools.vscode-docker
       ];
