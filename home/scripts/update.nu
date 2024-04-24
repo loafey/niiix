@@ -4,7 +4,7 @@ nix flake update
 cd git-flakes/
 nix flake update
 cd ..
-sudo nh os switch .
+nh os switch .
 # stinky goodness
 try {
     git add flake.lock
