@@ -10,6 +10,7 @@
   environment.systemPackages = with pkgs; [
     kdePackages.kcmutils
     kdePackages.kate
+    vlc
     clinfo
     glxinfo
     vulkan-tools
