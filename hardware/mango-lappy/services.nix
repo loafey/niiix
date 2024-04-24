@@ -1,8 +1,8 @@
 { userName }: {
   xserver.enable = true;
 
-  xserver.displayManager.autoLogin.enable = true;
-  xserver.displayManager.autoLogin.user = userName;
+  displayManager.autoLogin.enable = true;
+  displayManager.autoLogin.user = userName;
   printing.enable = true;
   auto-cpufreq.enable = true;
 
