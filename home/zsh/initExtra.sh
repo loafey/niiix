@@ -31,3 +31,8 @@ bindkey '^H' backward-kill-word
 bindkey '5~' kill-word
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
+
+autoload -U compinit
+compinit -i
+setopt complete_in_word
+setopt always_to_end
