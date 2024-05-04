@@ -13,9 +13,9 @@ function emoji() {
 function prompt() {
     local P=$(pwd | sed -E "s/\\/home\\/[a-z]*/~/" | sed -E "s/~$//" | sed -E "s/\n//")
     local G=$(grompt)
-    local left="%{\033[1;33m%}"$P"%{\033[0m%} $G "
+    local left="%{\033[1;33m"$P"\033[0m%} $G"
     local T=$(echo $left | trim)
-    print $T" "$(emoji)" "
+    print -r $T" "$(emoji)" "
 }
 
 export PS1='$(prompt)'
