@@ -27,6 +27,7 @@
         marp-team.marp-vscode
         ms-vscode.hexeditor
         ms-azuretools.vscode-docker
+        rreverser.llvm
       ];
     })
   ];
