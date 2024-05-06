@@ -178,7 +178,7 @@
     "[css]": {
         "editor.defaultFormatter": "vscode.css-language-features"
     },
-    "workbench.preferredDarkColorTheme": "Adwaita Dark",
+    "workbench.preferredDarkColorTheme": "Ayu Mirage Bordered",
     "workbench.preferredLightColorTheme": "Adwaita Light",
     "window.autoDetectColorScheme": true,
     "rust-analyzer.inlayHints.closingBraceHints.enable": false,
