@@ -28,6 +28,7 @@
         ms-vscode.hexeditor
         ms-azuretools.vscode-docker
         rreverser.llvm
+        diku.futhark-vscode
       ];
     })
   ];
