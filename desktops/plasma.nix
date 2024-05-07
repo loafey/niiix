@@ -6,6 +6,7 @@
   services.displayManager.defaultSession = "plasma";
   services.displayManager.sddm.wayland.enable = true;
   programs.dconf.enable = true;
+  programs.kdeconnect.enable = true;
 
   environment.systemPackages = with pkgs; [
     kdePackages.kcmutils
