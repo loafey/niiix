@@ -18,5 +18,6 @@
     wayland-utils
     aha
     xwaylandvideobridge
+    kde-rounded-corners
   ];
 }
