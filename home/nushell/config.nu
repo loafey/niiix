@@ -1029,4 +1029,4 @@ def pulk [] {
     git pull --rebase
 }
 
-bunbun
+# bunbun
