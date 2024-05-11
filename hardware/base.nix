@@ -1,7 +1,11 @@
 { userName, hardwareConfig, host, serviceSetup, config, pkgs, inputs, extra-config, ... }:
 
 {
-  imports = [ hardwareConfig extra-config ];
+  imports = [
+    hardwareConfig
+    extra-config
+    (import ./../home/flatpak.nix { inherit inputs; })
+  ];
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;

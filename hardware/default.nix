@@ -11,6 +11,7 @@
   modules = [
     ./base.nix
     args.index
+    args.flatpak
   ] ++ extra-modules ++ import ./home.nix {
     userName = args.userName;
     home-manager = args.home-manager;

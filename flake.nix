@@ -9,9 +9,10 @@
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
     nix-index-database.url = "github:nix-community/nix-index-database";
     nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
+    nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=v0.4.1";
   };
 
-  outputs = { self, nixpkgs, home-manager, nix-index-database, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, nix-index-database, nix-flatpak, ... }@inputs: {
     nixosConfigurations =
       let
         args = {
@@ -20,6 +21,7 @@
           inherit inputs;
           inherit home-manager;
           index = nix-index-database.nixosModules.nix-index;
+          flatpak = nix-flatpak.nixosModules.nix-flatpak;
         };
       in
       {
