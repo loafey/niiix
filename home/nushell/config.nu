@@ -844,6 +844,11 @@ def prompt [] {
 }
 def lsg [arg = "."] { ls $arg | sort-by type name -i | grid -c | str trim }
 def :q [] {exit}
+
+def gc [] {
+    bash -c "sudo nix-collect-garbage -d --quiet 2> /dev/null; nix-collect-garbage -d --quiet 2> /dev/null"
+}
+
 def nix-update [] {
     cd ~/Git/niiix
     git pull
@@ -857,11 +862,7 @@ def nix-update [] {
         git push
     }
     print "- collecting garbage -"
-    #try {
-    #    bash ~/Git/niiix/clean_user.sh
-    #}
-    nix-collect-garbage -d --delete-old
-    sudo nix-collect-garbage -d --delete-old
+    gc
 
     print "- linking -"
     sudo nix-store --optimise
