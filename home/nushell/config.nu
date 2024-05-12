@@ -1030,4 +1030,8 @@ def pulk [] {
     git pull --rebase
 }
 
+def pc [] {
+    ssh mango-pi -t "./pc"
+}
+
 # bunbun

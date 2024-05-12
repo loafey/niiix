@@ -18,8 +18,9 @@
 
   openssh = {
     enable = true;
-    passwordAuthentication = false;
-    # I'll disable this once I can connect.
+    settings = {
+      PasswordAuthentication = false;
+    };
   };
 
   xserver = {

@@ -75,6 +75,7 @@
     p7zip
     podman-tui
     docker-compose
+    ethtool
   ];
 
   programs.nix-index-database.comma.enable = true;
