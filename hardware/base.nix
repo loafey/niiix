@@ -84,7 +84,6 @@
   programs.gamemode.enable = true;
   programs.zsh.enable = true;
 
-
   environment.sessionVariables = rec {
     EDITOR = "nvim";
   };

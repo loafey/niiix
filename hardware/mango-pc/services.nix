@@ -23,6 +23,8 @@
     };
   };
 
+  vscode-server.enable = true;
+
   xserver = {
     xkb = {
       variant = "";
