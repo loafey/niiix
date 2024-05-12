@@ -8,4 +8,5 @@
   push = "git push";
   commit = "git commit -m";
   add = "git add";
+  pc = "ssh dev.loafey.se -t \"./pc\"";
 }
