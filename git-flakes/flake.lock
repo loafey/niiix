@@ -27,11 +27,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-vQ6lbispVaV1tQ6zwGQzHVp6CAOMP0ASwN1fBPRYjBY=",
-        "path": "/nix/store/2biq5anxzmlzxf8hpjdj2w4374m4aaqp-source/git-flakes/display3d",
+        "path": "/nix/store/rg75lycff3i1z1syyl5zw6rkydnp51q3-source/git-flakes/display3d",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/2biq5anxzmlzxf8hpjdj2w4374m4aaqp-source/git-flakes/display3d",
+        "path": "/nix/store/rg75lycff3i1z1syyl5zw6rkydnp51q3-source/git-flakes/display3d",
         "type": "path"
       }
     },
@@ -198,11 +198,11 @@
         "nixpkgs": "nixpkgs_5"
       },
       "locked": {
-        "lastModified": 1715277648,
-        "narHash": "sha256-59/GkzF8Tq4sNHJBF6rYjwl2uhTYASVV59cWeYgGloo=",
+        "lastModified": 1715549243,
+        "narHash": "sha256-18qqf6WHlPO6YzXQBwiiL9JMUXXey4N5pDmNWkmz6FA=",
         "owner": "loafey",
         "repo": "grompt-prompt",
-        "rev": "d96b866f4875e3ebd52b4da889cfa9be9c7f1f32",
+        "rev": "1f8b484bf8b5265dc960c09152335100ef913dcb",
         "type": "github"
       },
       "original": {
@@ -335,11 +335,11 @@
     },
     "nixpkgs_6": {
       "locked": {
-        "lastModified": 1715266358,
-        "narHash": "sha256-doPgfj+7FFe9rfzWo1siAV2mVCasW+Bh8I1cToAXEE4=",
+        "lastModified": 1715447595,
+        "narHash": "sha256-VsVAUQOj/cS1LCOmMjAGeRksXIAdPnFIjCQ0XLkCsT0=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "f1010e0469db743d14519a1efd37e23f8513d714",
+        "rev": "062ca2a9370a27a35c524dc82d540e6e9824b652",
         "type": "github"
       },
       "original": {
@@ -452,11 +452,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-5hgR2VdOTMm2UPPk9PvQJLlYFN5emc2AGyg1gWcTHmM=",
-        "path": "/nix/store/2biq5anxzmlzxf8hpjdj2w4374m4aaqp-source/git-flakes/stremio",
+        "path": "/nix/store/rg75lycff3i1z1syyl5zw6rkydnp51q3-source/git-flakes/stremio",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/2biq5anxzmlzxf8hpjdj2w4374m4aaqp-source/git-flakes/stremio",
+        "path": "/nix/store/rg75lycff3i1z1syyl5zw6rkydnp51q3-source/git-flakes/stremio",
         "type": "path"
       }
     },
