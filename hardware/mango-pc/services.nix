@@ -16,6 +16,12 @@
 
   mullvad-vpn.enable = true;
 
+  openssh = {
+    enable = true;
+    passwordAuthentication = false;
+    # I'll disable this once I can connect.
+  };
+
   xserver = {
     xkb = {
       variant = "";
