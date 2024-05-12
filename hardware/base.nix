@@ -76,6 +76,7 @@
     podman-tui
     docker-compose
     ethtool
+    cloudflared
   ];
 
   programs.nix-index-database.comma.enable = true;
