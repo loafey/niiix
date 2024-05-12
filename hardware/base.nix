@@ -47,7 +47,7 @@
     isNormalUser = true;
     description = userName;
     extraGroups = [ "networkmanager" "wheel" "input" "dialout" ];
-    shell = pkgs.nushell;
+    shell = pkgs.zsh;
     packages = [ ];
   };
 
