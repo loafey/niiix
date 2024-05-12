@@ -1031,7 +1031,7 @@ def pulk [] {
 }
 
 def pc [] {
-    ssh mango-pi -t "./pc"
+    ssh dev.loafey.se -t "./pc"
 }
 
 # bunbun
