@@ -23,7 +23,10 @@
     };
   };
 
-  vscode-server.enable = true;
+  vscode-server = {
+    enable = true;
+    enableFHS = true;
+  };
 
   xserver = {
     xkb = {
