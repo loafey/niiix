@@ -31,6 +31,7 @@
         # diku.futhark-vscode
         pgourlain.erlang
         ms-vscode-remote.remote-ssh
+        eamodio.gitlens
       ];
     })
   ];
