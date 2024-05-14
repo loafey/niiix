@@ -9,4 +9,5 @@
   commit = "git commit -m";
   add = "git add";
   pc = "ssh dev.loafey.se -t \"./pc\"";
+  direnv-setup = "echo \"use flake\" > .envrc; direnv allow";
 }
