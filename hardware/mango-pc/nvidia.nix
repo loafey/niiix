@@ -11,7 +11,7 @@
 
   environment.variables.VDPAU_DRIVER = "va_gl";
   environment.variables.LIBVA_DRIVER_NAME = "nvidia";
-  environment.variables.WLR_NO_HARDWARE_CURSORS = "1";
+  # environment.variables.WLR_NO_HARDWARE_CURSORS = "1";
 
   virtualisation.libvirtd.enable = true;
   programs.virt-manager.enable = true;
@@ -19,7 +19,7 @@
   boot.initrd.kernelModules = [ "nvidia" ];
   boot.extraModulePackages = [ config.boot.kernelPackages.nvidia_x11 ];
   boot.blacklistedKernelModules = [ "nouveau" ];
-  # boot.kernelParams = [ "nomodeset" "nvidia_drm.modeset=1" "nvidia_drm.fbdev=1" ];
+  boot.kernelParams = [ "nvidia_drm.modeset=1" "nvidia_drm.fbdev=1" ];
 
   # Load nvidia driver for Xorg and Wayland
   services.xserver.videoDrivers = [ "nvidia" ];
@@ -48,6 +48,15 @@
     nvidiaSettings = true;
 
     # Optionally, you may need to select the appropriate driver version for your specific GPU.
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
+    # package = config.boot.kernelPackages.nvidiaPackages.stable;
+    package = config.boot.kernelPackages.nvidiaPackages.beta;
+    # package = config.boot.kernelPackages.nvidiaPackages.mkDriver {
+    #   version = "555.42.02";
+    #   sha256_64bit = "sha256-k7cI3ZDlKp4mT46jMkLaIrc2YUx1lh1wj/J4SVSHWyk=";
+    #   sha256_aarch64 = "sha256-rtDxQjClJ+gyrCLvdZlT56YyHQ4sbaL+d5tL4L4VfkA=";
+    #   openSha256 = "sha256-rtDxQjClJ+gyrCLvdZlT56YyHQ4sbaL+d5tL4L4VfkA=";
+    #   settingsSha256 = "sha256-rtDxQjClJ+gyrCLvdZlT56YyHQ4sbaL+d5tL4L4VfkA=";
+    #   persistencedSha256 = lib.fakeSha256;
+    # };
   };
 }
