@@ -1,5 +1,5 @@
 {
-  ll = "ls -l";
+  ll = "lsd -lh";
   nix-update = "nu ~/Git/niiix/home/scripts/update.nu";
   devcode = "nix develop --command bash -c \"code . --enable-features=UseOzonePlatform --ozone-platform=wayland\"";
   devnu = "nix develop --command bash -c \"zsh\"";
@@ -10,4 +10,5 @@
   add = "git add";
   pc = "ssh dev.loafey.se -t \"./pc\"";
   direnv-setup = "echo \"use flake\" > .envrc; direnv allow";
+  ls = "lsd";
 }

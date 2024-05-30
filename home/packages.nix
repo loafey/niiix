@@ -25,9 +25,6 @@
     protonmail-desktop
     chromium
     alacritty
-
-    doomseeker
-    gzdoom
-    zandronum
+    lsd
   ] ++ inputs.git-flakes.packages."${pkgs.system}";
 }
