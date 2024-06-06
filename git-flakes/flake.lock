@@ -27,11 +27,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-vQ6lbispVaV1tQ6zwGQzHVp6CAOMP0ASwN1fBPRYjBY=",
-        "path": "/nix/store/fr3galpkmpvhkkwd9rwsngvmz7qb1xaw-source/git-flakes/display3d",
+        "path": "/nix/store/wn2413zh62pa55wxghrz5ps2zqpf385m-source/git-flakes/display3d",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/fr3galpkmpvhkkwd9rwsngvmz7qb1xaw-source/git-flakes/display3d",
+        "path": "/nix/store/wn2413zh62pa55wxghrz5ps2zqpf385m-source/git-flakes/display3d",
         "type": "path"
       }
     },
@@ -335,11 +335,11 @@
     },
     "nixpkgs_6": {
       "locked": {
-        "lastModified": 1717196966,
-        "narHash": "sha256-yZKhxVIKd2lsbOqYd5iDoUIwsRZFqE87smE2Vzf6Ck0=",
+        "lastModified": 1717602782,
+        "narHash": "sha256-pL9jeus5QpX5R+9rsp3hhZ+uplVHscNJh8n8VpqscM0=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "57610d2f8f0937f39dbd72251e9614b1561942d8",
+        "rev": "e8057b67ebf307f01bdcc8fba94d94f75039d1f6",
         "type": "github"
       },
       "original": {
@@ -452,11 +452,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-5hgR2VdOTMm2UPPk9PvQJLlYFN5emc2AGyg1gWcTHmM=",
-        "path": "/nix/store/fr3galpkmpvhkkwd9rwsngvmz7qb1xaw-source/git-flakes/stremio",
+        "path": "/nix/store/wn2413zh62pa55wxghrz5ps2zqpf385m-source/git-flakes/stremio",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/fr3galpkmpvhkkwd9rwsngvmz7qb1xaw-source/git-flakes/stremio",
+        "path": "/nix/store/wn2413zh62pa55wxghrz5ps2zqpf385m-source/git-flakes/stremio",
         "type": "path"
       }
     },
