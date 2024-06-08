@@ -6,11 +6,11 @@
         "utils": "utils"
       },
       "locked": {
-        "lastModified": 1717182202,
-        "narHash": "sha256-qbdkMlWcM3vAid4iMwAdA1hplP/RIGibFHkxD5ph7jc=",
+        "lastModified": 1717792591,
+        "narHash": "sha256-3g6t1n7x+4BlZkbr2NEznbp6bvdTzy1oPlULJci7/ig=",
         "owner": "devraza",
         "repo": "bunbun",
-        "rev": "1ff7cd1d6c767a2cf86c92bcf535e754da49b243",
+        "rev": "c9e73cf823cdaf60c8a609aa86d2857fe38cc5b5",
         "type": "github"
       },
       "original": {
@@ -27,11 +27,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-vQ6lbispVaV1tQ6zwGQzHVp6CAOMP0ASwN1fBPRYjBY=",
-        "path": "/nix/store/wn2413zh62pa55wxghrz5ps2zqpf385m-source/git-flakes/display3d",
+        "path": "/nix/store/qdlhi8m95scgygc8kys0la47cji86siv-source/git-flakes/display3d",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/wn2413zh62pa55wxghrz5ps2zqpf385m-source/git-flakes/display3d",
+        "path": "/nix/store/qdlhi8m95scgygc8kys0la47cji86siv-source/git-flakes/display3d",
         "type": "path"
       }
     },
@@ -452,11 +452,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-5hgR2VdOTMm2UPPk9PvQJLlYFN5emc2AGyg1gWcTHmM=",
-        "path": "/nix/store/wn2413zh62pa55wxghrz5ps2zqpf385m-source/git-flakes/stremio",
+        "path": "/nix/store/qdlhi8m95scgygc8kys0la47cji86siv-source/git-flakes/stremio",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/wn2413zh62pa55wxghrz5ps2zqpf385m-source/git-flakes/stremio",
+        "path": "/nix/store/qdlhi8m95scgygc8kys0la47cji86siv-source/git-flakes/stremio",
         "type": "path"
       }
     },
