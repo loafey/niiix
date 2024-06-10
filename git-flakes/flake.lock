@@ -27,11 +27,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-vQ6lbispVaV1tQ6zwGQzHVp6CAOMP0ASwN1fBPRYjBY=",
-        "path": "/nix/store/3jqjzdqpyg5xilgiraa5jq6lx9bsfg4s-source/git-flakes/display3d",
+        "path": "/nix/store/gdqbp52k69x56n3yc0n69g1y6mqw13gl-source/git-flakes/display3d",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/3jqjzdqpyg5xilgiraa5jq6lx9bsfg4s-source/git-flakes/display3d",
+        "path": "/nix/store/gdqbp52k69x56n3yc0n69g1y6mqw13gl-source/git-flakes/display3d",
         "type": "path"
       }
     },
@@ -452,11 +452,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-5hgR2VdOTMm2UPPk9PvQJLlYFN5emc2AGyg1gWcTHmM=",
-        "path": "/nix/store/3jqjzdqpyg5xilgiraa5jq6lx9bsfg4s-source/git-flakes/stremio",
+        "path": "/nix/store/gdqbp52k69x56n3yc0n69g1y6mqw13gl-source/git-flakes/stremio",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/3jqjzdqpyg5xilgiraa5jq6lx9bsfg4s-source/git-flakes/stremio",
+        "path": "/nix/store/gdqbp52k69x56n3yc0n69g1y6mqw13gl-source/git-flakes/stremio",
         "type": "path"
       }
     },
