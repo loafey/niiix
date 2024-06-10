@@ -7,6 +7,7 @@
     # rrompt.url = "git+ssh://git@github.com/loafey/rrompt.git";
     queercat.url = "github:Elsa002/queercat";
     bunbun.url = "github:devraza/bunbun";
+    hey.url = "git+https://git.blek.codes/blek/hey";
 
     stremio.url = "./stremio";
     display3d.url = "./display3d";
@@ -28,6 +29,7 @@
             inputs.stremio.defaultPackage."${pkgs.system}"
             inputs.display3d.defaultPackage."${pkgs.system}"
             inputs.bunbun.packages."${pkgs.system}".default
+            inputs.hey.defaultPackage."${pkgs.system}"
           ];
         }
       );
