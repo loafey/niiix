@@ -11,5 +11,6 @@
   pc = "ssh dev.loafey.se -t \"./pc\"";
   direnv-setup = "echo \"use flake\" > .envrc; direnv allow";
   ls = "lsd";
+  flake = "nix flake";
   gc = "sudo nix-collect-garbage -d --quiet 2> /dev/null; nix-collect-garbage -d --quiet 2> /dev/null";
 }
