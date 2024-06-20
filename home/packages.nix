@@ -26,5 +26,6 @@
     chromium
     alacritty
     lsd
+    floorp
   ] ++ inputs.git-flakes.packages."${pkgs.system}";
 }
