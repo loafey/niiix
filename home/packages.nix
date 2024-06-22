@@ -28,5 +28,6 @@
     lsd
     floorp
     protontricks
+    gnome.zenity
   ] ++ inputs.git-flakes.packages."${pkgs.system}";
 }
