@@ -27,5 +27,6 @@
     alacritty
     lsd
     floorp
+    protontricks
   ] ++ inputs.git-flakes.packages."${pkgs.system}";
 }
