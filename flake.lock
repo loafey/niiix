@@ -27,11 +27,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-vQ6lbispVaV1tQ6zwGQzHVp6CAOMP0ASwN1fBPRYjBY=",
-        "path": "/nix/store/4mh5lf5yh3jwdjh1m9b5pln88kszsyd6-source/display3d",
+        "path": "/nix/store/cmichbfcmb9iz8dy9vi8i330sz01fvdk-source/display3d",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/4mh5lf5yh3jwdjh1m9b5pln88kszsyd6-source/display3d",
+        "path": "/nix/store/cmichbfcmb9iz8dy9vi8i330sz01fvdk-source/display3d",
         "type": "path"
       }
     },
@@ -255,12 +255,12 @@
       },
       "locked": {
         "lastModified": 1,
-        "narHash": "sha256-ge8wVLyclF5/ggGeY1KNobQzjFx8btl8y3G3fNBlEho=",
-        "path": "/nix/store/dc7l667vigyfc8kfl8ngjj5vg9l1jr28-source/git-flakes",
+        "narHash": "sha256-9S3h2A90h76zIyxOVs6QiuA8In2sWiXA/C8IutBezgU=",
+        "path": "/nix/store/fq8dy5bghvjjrdcgxbfs3c3j7dbfc9q2-source/git-flakes",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/dc7l667vigyfc8kfl8ngjj5vg9l1jr28-source/git-flakes",
+        "path": "/nix/store/fq8dy5bghvjjrdcgxbfs3c3j7dbfc9q2-source/git-flakes",
         "type": "path"
       }
     },
@@ -632,11 +632,11 @@
     },
     "nixpkgs_8": {
       "locked": {
-        "lastModified": 1719075281,
-        "narHash": "sha256-CyyxvOwFf12I91PBWz43iGT1kjsf5oi6ax7CrvaMyAo=",
+        "lastModified": 1719254875,
+        "narHash": "sha256-ECni+IkwXjusHsm9Sexdtq8weAq/yUyt1TWIemXt3Ko=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "a71e967ef3694799d0c418c98332f7ff4cc5f6af",
+        "rev": "2893f56de08021cffd9b6b6dfc70fd9ccd51eb60",
         "type": "github"
       },
       "original": {
@@ -734,11 +734,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-5hgR2VdOTMm2UPPk9PvQJLlYFN5emc2AGyg1gWcTHmM=",
-        "path": "/nix/store/4mh5lf5yh3jwdjh1m9b5pln88kszsyd6-source/stremio",
+        "path": "/nix/store/cmichbfcmb9iz8dy9vi8i330sz01fvdk-source/stremio",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/4mh5lf5yh3jwdjh1m9b5pln88kszsyd6-source/stremio",
+        "path": "/nix/store/cmichbfcmb9iz8dy9vi8i330sz01fvdk-source/stremio",
         "type": "path"
       }
     },
