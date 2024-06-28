@@ -29,5 +29,6 @@
     floorp
     protontricks
     gnome.zenity
+    ripgrep
   ] ++ inputs.git-flakes.packages."${pkgs.system}";
 }
