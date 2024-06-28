@@ -4,7 +4,7 @@
   displayManager.autoLogin.enable = true;
   displayManager.autoLogin.user = userName;
   printing.enable = true;
-  auto-cpufreq.enable = true;
+  auto-cpufreq.enable = false;
 
   pcscd.enable = true;
 

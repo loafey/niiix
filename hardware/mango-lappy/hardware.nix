@@ -9,11 +9,10 @@
       (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
-  hardware.opengl = {
+  hardware.graphics = {
     enable = true;
     extraPackages = [ pkgs.mesa.drivers ];
-    driSupport = true;
-    driSupport32Bit = true;
+    enable32Bit = true;
   };
 
   boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "usb_storage" "sd_mod" ];
