@@ -30,7 +30,7 @@
     protontricks
     gnome.zenity
     ripgrep
-
+    lazygit
     libreoffice-qt
     hunspell
     hunspellDicts.uk_UA
