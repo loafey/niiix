@@ -81,3 +81,6 @@ cmp.setup({
       { name = 'buffer' },
     })
 })
+
+require("autoclose").setup()
+

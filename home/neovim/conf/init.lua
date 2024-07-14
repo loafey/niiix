@@ -40,7 +40,8 @@ require("lazy").setup({
     'hrsh7th/cmp-path',
     'hrsh7th/cmp-cmdline',
     'hrsh7th/nvim-cmp',
-    'nvim-telescope/telescope.nvim'
+    'nvim-telescope/telescope.nvim',
+    'm4xshen/autoclose.nvim'
 })
 require('lsp')
 require('tree')

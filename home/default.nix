@@ -20,6 +20,7 @@
     ./grompt
     ./neovim
     ./zsh
+    ./tmux
     (import ./code { inherit inputs; })
     (import ./packages.nix { inherit inputs; })
   ];
@@ -28,4 +29,3 @@
   # originally installed.
   home.stateVersion = "23.05";
 }
-

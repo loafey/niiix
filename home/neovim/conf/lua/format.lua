@@ -1,7 +1,9 @@
 local format_on_save = require("format-on-save")
 local formatters = require("format-on-save.formatters")
+local vim_notify = require("format-on-save.error-notifiers.vim-notify")
 
 format_on_save.setup({
+  error_notifier = vim_notify,
   exclude_path_patterns = {
     "/node_modules/",
     ".local/share/nvim/lazy",

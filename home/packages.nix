@@ -26,6 +26,7 @@
     protonmail-desktop
     chromium
     alacritty
+    prettierd
     lsd
     floorp
     protontricks

@@ -7,7 +7,7 @@ function fancyPrompt() {
     print $(sed 's/\\033\[[0-9;]*m/%{\0%}/g' <<< $prompty)
 }
 
-export PS1='$(fancyPrompt) '
+export PS1=' $(fancyPrompt) '
 export DIRENV_LOG_FORMAT=""
 
 # set cursor to line
