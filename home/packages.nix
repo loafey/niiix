@@ -25,6 +25,7 @@
     newsflash
     protonmail-desktop
     chromium
+    wl-clipboard
     alacritty
     prettierd
     lsd

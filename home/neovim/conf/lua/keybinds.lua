@@ -51,7 +51,11 @@ map('n', '<A-g>', '<Cmd>NvimTreeFocus<CR>', opts)
 
 
 -- Ide
--- vim.lsp.buf.rename()
+-- vim.lsp.buf.definition()
+map('n', '<F3>', '<Cmd>lua vim.lsp.buf.definition()<CR>')
+map('n', '<F2>', '<Cmd>lua vim.lsp.buf.rename()<CR>')
+map('n', '<F2>', '<Cmd>lua vim.lsp.buf.rename()<CR>')
+map('n', '<F2>', '<Cmd>lua vim.lsp.buf.rename()<CR>')
 map('n', '<F2>', '<Cmd>lua vim.lsp.buf.rename()<CR>')
 map('n', '<A-x>', '<Cmd>RustLsp expandMacro<CR>')
 map('n', '<A-.>', '<Cmd>RustLsp hover actions<CR>')
