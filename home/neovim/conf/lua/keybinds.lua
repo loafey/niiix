@@ -39,11 +39,20 @@ map('n', '<A-p>', '<Cmd>BufferPin<CR>', opts)
 -- Close buffer
 map('n', '<A-c>', '<Cmd>BufferClose<CR>', opts)
 
+-- Telescope
+map('n', '<A-h>', '<Cmd>Telescope keymaps<CR>')
+
+-- LazyGit
+map('n', '<A-l>', '<Cmd>LazyGit<CR>', opts)
 
 -- Tree
 map('n', '<A-t>', '<Cmd>NvimTreeToggle<CR>', opts)
+map('n', '<A-g>', '<Cmd>NvimTreeFocus<CR>', opts)
 
---map('i','<Up>','<Nop>', {})
---map('i','<Left>','<Nop>', {})
---map('i','<Right>','<Nop>', {})
---map('i','<Down>','<Nop>', {})
+
+-- Ide
+-- vim.lsp.buf.rename()
+map('n', '<F2>', '<Cmd>lua vim.lsp.buf.rename()<CR>')
+map('n', '<A-x>', '<Cmd>RustLsp expandMacro<CR>')
+map('n', '<A-.>', '<Cmd>RustLsp hover actions<CR>')
+map('n', '<A-Enter>', '<Cmd>RustLsp codeAction<CR>')

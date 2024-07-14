@@ -13,6 +13,7 @@
     obs-studio
     kdePackages.kdenlive
     prismlauncher
+    ripgrep
     fragments
     wineWowPackages.stable
     neovide
