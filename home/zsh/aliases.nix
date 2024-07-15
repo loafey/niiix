@@ -1,8 +1,8 @@
 {
   ll = "lsd -lh";
   nix-update = "nu ~/Git/niiix/home/scripts/update.nu";
-  devcode = "nix develop --command nvim .";
-  # devcode = "nix develop --command bash -c \"code . --enable-features=UseOzonePlatform --ozone-platform=wayland\"";
+  devnvim = "nix develop --command nvim .";
+  devcode = "nix develop --command bash -c \"code . --enable-features=UseOzonePlatform --ozone-platform=wayland\"";
   devnu = "nix develop --command bash -c \"zsh\"";
   pulk = "git pull --rebase";
   pull = "git pull";
@@ -12,7 +12,6 @@
   pc = "ssh dev.loafey.se -t \"./pc\"";
   direnv-setup = "echo \"use flake\" > .envrc; direnv allow";
   ls = "lsd";
-  code = "nvim";
   flake = "nix flake";
   gc = "sudo nix-collect-garbage -d --quiet 2> /dev/null; nix-collect-garbage -d --quiet 2> /dev/null";
 }
