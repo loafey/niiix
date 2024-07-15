@@ -60,3 +60,16 @@ map('n', '<F2>', '<Cmd>lua vim.lsp.buf.rename()<CR>')
 map('n', '<A-x>', '<Cmd>RustLsp expandMacro<CR>')
 map('n', '<A-->', '<Cmd>RustLsp hover actions<CR>')
 map('n', '<A-Enter>', '<Cmd>RustLsp codeAction<CR>')
+
+local function search() 
+    local input_string = vim.fn.input("Search For > ")
+    if (input_string == '') then
+       return
+    end
+    require("telescope.builtin").grep_string({
+       search = input_string,
+    })
+end
+vim.api.nvim_create_user_command('SearchString', search, { nargs = 0 })
+
+map('n', '<A-f>', '<Cmd>SearchString<CR>')
