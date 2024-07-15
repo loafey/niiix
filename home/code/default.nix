@@ -19,6 +19,7 @@
         ms-vsliveshare.vsliveshare
         eww-yuck.yuck
         ms-vscode.cpptools
+	asvetliakov.vscode-neovim
         # ms-vscode.cmake-tools
         twxs.cmake
         wakatime.vscode-wakatime
