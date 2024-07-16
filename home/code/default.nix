@@ -20,7 +20,7 @@
         eww-yuck.yuck
         ms-vscode.cpptools
         qwtel.sqlite-viewer
-        asvetliakov.vscode-neovim
+        # asvetliakov.vscode-neovim
         # ms-vscode.cmake-tools
         twxs.cmake
         wakatime.vscode-wakatime
