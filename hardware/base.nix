@@ -36,7 +36,6 @@
 
   console.keyMap = "sv-latin1";
 
-  sound.enable = true;
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
 
