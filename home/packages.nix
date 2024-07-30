@@ -38,5 +38,6 @@
     hunspell
     hunspellDicts.uk_UA
     hunspellDicts.th_TH
+    bitwarden-desktop
   ] ++ inputs.git-flakes.packages."${pkgs.system}";
 }
