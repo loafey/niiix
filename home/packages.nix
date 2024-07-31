@@ -39,5 +39,6 @@
     hunspellDicts.uk_UA
     hunspellDicts.th_TH
     bitwarden-desktop
+    waypipe
   ] ++ inputs.git-flakes.packages."${pkgs.system}";
 }
