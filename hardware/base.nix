@@ -76,7 +76,9 @@
     docker-compose
     ethtool
     cloudflared
+    sshfs
   ];
+
 
   programs.nix-index-database.comma.enable = true;
   programs.command-not-found.enable = false;
@@ -120,14 +122,57 @@
 
   fileSystems."/mnt/shared" = {
     device = "loafey@mango-pi:/mnt/storage/shared";
+    label = "BreadBox";
     fsType = "sshfs";
+    depends = [ "/" ];
     options = [
       "nodev"
       "noatime"
       "allow_other"
       "IdentityFile=/root/.ssh/id_ed25519"
+      # "sshfs_debug"
+      # "loglevel=debug"
     ];
   };
+
+  environment.etc.cloudflared = {
+    source = "${pkgs.cloudflared}/bin/cloudflared";
+    target = "cloudflared";
+  };
+
+  # systemd.mounts = [{
+  #   description = "Shared Breadbox";
+  #   what = "loafey@mango-pi:/mnt/storage/shared";
+  #   where = "/mnt/shared";
+  #   type = "fuse.sshfs";
+  #   options = "nodev,noatime,allow_other,IdentityFile=/root/.ssh/id_ed25519,sshfs_debug,loglevel=debug";
+  #   enable = true;
+  # }];
+  # systemd.automounts = [{
+  #   description = "Shared Breadbox";
+  #   where = "/mnt/shared";
+  #   wantedBy = [ "multi-user.target" ];
+  # }];
+
+  # environment.etc."rclone-mnt.conf".text = ''
+  #   [breadbox]
+  #   type = sftp
+  #   host = dev.loafey.se
+  #   user = loafey
+  #   key_file = /root/.ssh/id_ed25519
+  # '';
+
+  # fileSystems."/mnt/shared" = {
+  #   device = "breadbox:/mnt/storage/shared";
+  #   fsType = "rclone";
+  #   options = [
+  #     "nodev"
+  #     "nofail"
+  #     "allow_other"
+  #     "args2env"
+  #     "config=/etc/rclone-mnt.conf"
+  #   ];
+  # };
 
 
   # This value determines the NixOS release from which the default
