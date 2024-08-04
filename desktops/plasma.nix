@@ -19,5 +19,6 @@
     aha
     xwaylandvideobridge
     kde-rounded-corners
+    kdePackages.plasma-vault
   ];
 }
