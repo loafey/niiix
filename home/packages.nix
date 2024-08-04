@@ -40,5 +40,6 @@
     hunspellDicts.th_TH
     bitwarden-desktop
     waypipe
+    mpv
   ] ++ inputs.git-flakes.packages."${pkgs.system}";
 }
