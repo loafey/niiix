@@ -130,6 +130,8 @@
       "noatime"
       "allow_other"
       "IdentityFile=/root/.ssh/id_ed25519"
+      "x-systemd.automount"
+      "x-systemd.mount-timeout=5s"
       # "sshfs_debug"
       # "loglevel=debug"
     ];
