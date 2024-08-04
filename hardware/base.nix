@@ -118,6 +118,17 @@
     clean.extraArgs = "-d";
   };
 
+  fileSystems."/mnt/shared" = {
+    device = "loafey@mango-pi:/mnt/storage/shared";
+    fsType = "sshfs";
+    options = [
+      "nodev"
+      "noatime"
+      "allow_other"
+      "IdentityFile=/root/.ssh/id_ed25519"
+    ];
+  };
+
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
