@@ -41,5 +41,6 @@
     bitwarden-desktop
     waypipe
     mpv
+    iozone
   ] ++ inputs.git-flakes.packages."${pkgs.system}";
 }
