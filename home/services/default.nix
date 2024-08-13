@@ -12,7 +12,7 @@
     {
       ssh-tunnels = {
         Unit = {
-          Description = ''SSH Tunnel 10666-10676'';
+          Description = ''SSH Tunnel 2049 10666-10676'';
         };
 
         Install = {
@@ -20,9 +20,11 @@
         };
         Service = {
           ExecStart = "${pkgs.writeShellScript "ssh-tunnels" ''
-        #!/run/current-system/sw/bin/bash
-        ssh -nNT ${range} dev.loafey.se
-      ''}";
+              #!/run/current-system/sw/bin/bash
+              ${pkgs.openssh}/bin/ssh -nNT -L 2049:localhost:2049 ${range} dev.loafey.se
+              ''}";
+          Restart = "always";
+          RestartSec = "5s";
         };
       };
     };

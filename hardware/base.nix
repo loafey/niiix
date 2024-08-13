@@ -120,22 +120,44 @@
     clean.extraArgs = "-d";
   };
 
-  fileSystems."/mnt/shared" = {
-    device = "loafey@mango-pi:/mnt/storage/shared";
-    label = "BreadBox";
-    fsType = "sshfs";
-    depends = [ "/" ];
+  security.wrappers."mount.nfs" = {
+    setuid = true;
+    owner = "root";
+    group = "root";
+    source = "${pkgs.nfs-utils.out}/bin/mount.nfs";
+  };
+
+
+  fileSystems."/home/loafey/BreadBox" = {
+    device = "localhost:/mnt/storage/shared";
+    fsType = "nfs";
     options = [
-      "nodev"
-      "noatime"
-      "allow_other"
-      "IdentityFile=/root/.ssh/id_ed25519"
-      "x-systemd.automount"
-      "x-systemd.mount-timeout=5s"
+      "defaults"
+      "user"
+      "noauto"
+      "relatime"
+      "rw"
       # "sshfs_debug"
       # "loglevel=debug"
     ];
   };
+
+  # fileSystems."/mnt/shared" = {
+  #   device = "loafey@mango-pi:/mnt/storage/shared";
+  #   label = "BreadBox";
+  #   fsType = "sshfs";
+  #   depends = [ "/" ];
+  #   options = [
+  #     "nodev"
+  #     "noatime"
+  #     "allow_other"
+  #     "IdentityFile=/root/.ssh/id_ed25519"
+  #     "x-systemd.automount"
+  #     "x-systemd.mount-timeout=5s"
+  #     # "sshfs_debug"
+  #     # "loglevel=debug"
+  #   ];
+  # };
 
   environment.etc.cloudflared = {
     source = "${pkgs.cloudflared}/bin/cloudflared";
