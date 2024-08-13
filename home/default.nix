@@ -21,6 +21,7 @@
     ./neovim
     ./zsh
     ./tmux
+    ./services
     (import ./code { inherit inputs; })
     (import ./packages.nix { inherit inputs; })
   ];
