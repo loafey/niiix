@@ -137,6 +137,7 @@
       "noauto"
       "relatime"
       "rw"
+      "x-systemd.requires=network-online.target"
       # "sshfs_debug"
       # "loglevel=debug"
     ];
