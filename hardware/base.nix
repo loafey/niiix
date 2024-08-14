@@ -127,6 +127,7 @@
     source = "${pkgs.nfs-utils.out}/bin/mount.nfs";
   };
 
+  systemd.extraConfig = "DefaultTimeoutStopSec=10s";
 
   fileSystems."/home/loafey/BreadBox" = {
     device = "localhost:/mnt/storage/shared";
@@ -136,8 +137,11 @@
       "user"
       "noauto"
       "relatime"
+      "nofail"
       "rw"
-      "x-systemd.requires=network-online.target"
+      "x-systemd.automount"
+      "x-systemd.mount-timeout=30"
+      "_netdev"
       # "sshfs_debug"
       # "loglevel=debug"
     ];
