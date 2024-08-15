@@ -35,6 +35,8 @@
         ms-vscode-remote.remote-ssh
         mkhl.direnv
         streetsidesoftware.code-spell-checker-swedish
+        dart-code.flutter
+        dart-code.dart-code
       ];
     })
   ];

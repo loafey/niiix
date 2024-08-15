@@ -289,11 +289,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-5QPHxAOxJkWFAO2wGaLizss3Udmql1lOeBdEQURTYeA=",
-        "path": "/nix/store/kqj9xs4zawpf3ic4cqqvkrf3asaqs6qk-source/git-flakes",
+        "path": "/nix/store/p9g1nk4214pdd6hd6v1fsz0yaklsr5c0-source/git-flakes",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/kqj9xs4zawpf3ic4cqqvkrf3asaqs6qk-source/git-flakes",
+        "path": "/nix/store/p9g1nk4214pdd6hd6v1fsz0yaklsr5c0-source/git-flakes",
         "type": "path"
       }
     },

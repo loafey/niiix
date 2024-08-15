@@ -192,30 +192,20 @@
         "editor.formatOnType": true
     },
     "terminal.integrated.profiles.linux": {
-        "bash": {
-            "path": "bash",
-            "icon": "terminal-bash"
-        },
         "zsh": {
-            "path": "/bin/zsh",
+            "path": "zsh",
             "args": [
                 "-l",
                 "-i"
             ]
         },
-        "fish": {
-            "path": "fish"
+        "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
         },
         "tmux": {
             "path": "tmux",
             "icon": "terminal-tmux"
-        },
-        "pwsh": {
-            "path": "pwsh",
-            "icon": "terminal-powershell"
-        },
-        "nu": {
-            "path": "/bin/nu"
         }
     },
     "latex-workshop.message.latexlog.exclude": [
