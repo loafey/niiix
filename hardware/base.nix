@@ -132,6 +132,7 @@
   fileSystems."/home/loafey/BreadBox" = {
     device = "localhost:/mnt/storage/shared";
     fsType = "nfs";
+    label = "BreadBox";
     options = [
       "defaults"
       "user"

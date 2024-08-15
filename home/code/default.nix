@@ -6,7 +6,7 @@
         golang.go
         rust-lang.rust-analyzer
         teabyii.ayu
-        serayuzgur.crates
+        fill-labs.dependi
         icrawl.discord-vscode
         pkief.material-icon-theme
         jnoortheen.nix-ide

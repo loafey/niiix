@@ -19,7 +19,6 @@
     neovide
     r2modman
     element-desktop
-    cinny-desktop
     gnome.aisleriot
     protonmail-bridge
     newsflash
@@ -31,7 +30,7 @@
     lsd
     floorp
     protontricks
-    gnome.zenity
+    zenity
     ripgrep
     lazygit
     libreoffice-qt
