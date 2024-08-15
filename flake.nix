@@ -7,10 +7,17 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     git-flakes.url = "./git-flakes";
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
-    nix-index-database.url = "github:nix-community/nix-index-database";
-    nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
+    nix-index-database = {
+      url = "github:nix-community/nix-index-database";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=v0.4.1";
     vscode-server.url = "github:nix-community/nixos-vscode-server";
+
+    lix-module = {
+      url = "https://git.lix.systems/lix-project/nixos-module/archive/2.91.0.tar.gz";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -20,6 +27,7 @@
     , nix-index-database
     , nix-flatpak
     , vscode-server
+    , lix-module
     , ...
     }@inputs: {
       nixosConfigurations =
@@ -32,6 +40,7 @@
             index = nix-index-database.nixosModules.nix-index;
             flatpak = nix-flatpak.nixosModules.nix-flatpak;
             vscode-server = vscode-server.nixosModules.default;
+            lix-module = lix-module.nixosModules.default;
           };
         in
         {

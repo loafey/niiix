@@ -1,5 +1,4 @@
 { userName, hardwareConfig, host, serviceSetup, config, pkgs, inputs, extra-config, ... }:
-
 {
   imports = [
     hardwareConfig
