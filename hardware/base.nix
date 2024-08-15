@@ -131,7 +131,7 @@
   systemd.mounts = [{
     type = "nfs";
     mountConfig = {
-      Options = "defaults,user,noauto,relatime,nofail,rw,x-systemd.automount,x-systemd.mount-timeout=30,_netdev";
+      Options = "defaults,user,noauto,relatime,nofail,rw,x-systemd.automount,x-systemd.mount-timeout=30,x-systemd.requires=network-online.target,_netdev";
     };
     what = "localhost:/mnt/storage/shared";
     where = "/home/loafey/BreadBox";
@@ -144,6 +144,19 @@
     };
     where = "/home/loafey/BreadBox";
   }];
+
+  systemd.services.chuck-bread-box = {
+    enable = true;
+    before = [ "shutdown.target" ];
+    wantedBy = [ "halt.target" "reboot.target" "shutdown.target" ];
+
+    serviceConfig = {
+      Type = "oneshot";
+      RemainAfterExit = "true";
+      ExecStop = "umount -f /home/loafey/BreadBox";
+    };
+  };
+
   # fileSystems."/home/loafey/BreadBox" = {
   #   device = "localhost:/mnt/storage/shared";
   #   fsType = "nfs";
