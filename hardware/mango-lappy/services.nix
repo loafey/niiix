@@ -13,6 +13,7 @@
   fstrim.enable = true;
 
   fwupd.enable = true;
+  rpcbind.enable = true;
 
   pipewire = {
     enable = true;

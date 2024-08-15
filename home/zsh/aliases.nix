@@ -13,5 +13,6 @@
   direnv-setup = "echo \"use flake\" > .envrc; direnv allow";
   ls = "lsd";
   flake = "nix flake";
+  nixos-rebuild = "nixos-rebuild --use-remote-sudo";
   gc = "sudo nix-collect-garbage -d --quiet 2> /dev/null; nix-collect-garbage -d --quiet 2> /dev/null";
 }

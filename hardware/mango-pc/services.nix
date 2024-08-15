@@ -15,6 +15,7 @@
   };
 
   mullvad-vpn.enable = true;
+  rpcbind.enable = true;
 
   openssh = {
     enable = true;

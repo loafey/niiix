@@ -128,24 +128,38 @@
 
   systemd.extraConfig = "DefaultTimeoutStopSec=10s";
 
-  fileSystems."/home/loafey/BreadBox" = {
-    device = "localhost:/mnt/storage/shared";
-    fsType = "nfs";
-    label = "BreadBox";
-    options = [
-      "defaults"
-      "user"
-      "noauto"
-      "relatime"
-      "nofail"
-      "rw"
-      "x-systemd.automount"
-      "x-systemd.mount-timeout=30"
-      "_netdev"
-      # "sshfs_debug"
-      # "loglevel=debug"
-    ];
-  };
+  systemd.mounts = [{
+    type = "nfs";
+    mountConfig = {
+      Options = "defaults,user,noauto,relatime,nofail,rw,x-systemd.automount,x-systemd.mount-timeout=30,_netdev";
+    };
+    what = "localhost:/mnt/storage/shared";
+    where = "/home/loafey/BreadBox";
+  }];
+
+  systemd.automounts = [{
+    wantedBy = [ "multi-user.target" ];
+    automountConfig = {
+      TimeoutIdleSec = "600";
+    };
+    where = "/home/loafey/BreadBox";
+  }];
+  # fileSystems."/home/loafey/BreadBox" = {
+  #   device = "localhost:/mnt/storage/shared";
+  #   fsType = "nfs";
+  #   label = "BreadBox";
+  #   options = [
+  #     "defaults"
+  #     "user"
+  #     "noauto"
+  #     "relatime"
+  #     "nofail"
+  #     "rw"
+  #     "x-systemd.automount"
+  #     "x-systemd.mount-timeout=30"
+  #     "_netdev"
+  #   ];
+  # };
 
   # fileSystems."/mnt/shared" = {
   #   device = "loafey@mango-pi:/mnt/storage/shared";
