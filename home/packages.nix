@@ -41,5 +41,6 @@
     waypipe
     mpv
     iozone
+    monero-gui
   ] ++ inputs.git-flakes.packages."${pkgs.system}";
 }
