@@ -42,5 +42,6 @@
     mpv
     iozone
     monero-gui
+    monero-cli
   ] ++ inputs.git-flakes.packages."${pkgs.system}";
 }
