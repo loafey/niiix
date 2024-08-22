@@ -42,6 +42,7 @@
     mpv
     iozone
     monero-gui
+    monero-cli
     feather
     xmrig-mo
   ] ++ inputs.git-flakes.packages."${pkgs.system}";
