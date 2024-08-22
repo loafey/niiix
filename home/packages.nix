@@ -43,5 +43,6 @@
     iozone
     monero-gui
     feather
+    xmrig-mo
   ] ++ inputs.git-flakes.packages."${pkgs.system}";
 }
