@@ -45,5 +45,6 @@
     monero-cli
     feather
     xmrig-mo
+    p2pool
   ] ++ inputs.git-flakes.packages."${pkgs.system}";
 }
