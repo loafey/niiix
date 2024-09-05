@@ -38,6 +38,8 @@
         dart-code.flutter
         dart-code.dart-code
         svelte.svelte-vscode
+
+        banacorn.agda-mode
       ];
     })
   ];
