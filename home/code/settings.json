@@ -368,5 +368,5 @@
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
     },
-    "agdaMode.connection.agdaLanguageServer": true
+    "agdaMode.connection.agdaLanguageServer": false
 }
