@@ -162,5 +162,15 @@
         "key": "alt+f8",
         "command": "-editor.action.marker.next",
         "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+escape",
+        "command": "agda-mode.input-symbol[Activate]",
+        "when": "editorTextFocus && editorLangId == 'agda' || editorTextFocus && editorLangId == 'lagda-md' || editorTextFocus && editorLangId == 'lagda-rst' || editorTextFocus && editorLangId == 'lagda-tex'"
+    },
+    {
+        "key": "\\",
+        "command": "-agda-mode.input-symbol[Activate]",
+        "when": "editorTextFocus && editorLangId == 'agda' || editorTextFocus && editorLangId == 'lagda-md' || editorTextFocus && editorLangId == 'lagda-rst' || editorTextFocus && editorLangId == 'lagda-tex'"
     }
 ]
