@@ -46,5 +46,6 @@
     feather
     xmrig-mo
     p2pool
+    bruno
   ] ++ inputs.git-flakes.packages."${pkgs.system}";
 }
