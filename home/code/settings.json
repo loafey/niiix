@@ -368,5 +368,6 @@
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
     },
-    "agdaMode.connection.agdaLanguageServer": false
+    "agdaMode.connection.agdaLanguageServer": false,
+    "agdaMode.connection.commandLineOptions": "-l standard-library -i ."
 }
