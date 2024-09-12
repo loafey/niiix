@@ -19,7 +19,7 @@
     neovide
     r2modman
     element-desktop
-    gnome.aisleriot
+    aisleriot
     protonmail-bridge
     newsflash
     protonmail-desktop
