@@ -47,5 +47,6 @@
     xmrig-mo
     p2pool
     bruno
+    zsh-history-substring-search
   ] ++ inputs.git-flakes.packages."${pkgs.system}";
 }

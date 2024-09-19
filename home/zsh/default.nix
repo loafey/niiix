@@ -1,4 +1,4 @@
-{ config, ... }:
+{ config, pkgs, ... }:
 {
   programs.zsh = {
     enable = true;
@@ -7,7 +7,9 @@
     syntaxHighlighting.enable = true;
 
     shellAliases = import ./aliases.nix;
-    initExtraFirst = (builtins.readFile ./initExtraFirst.sh);
+    initExtraFirst = ''
+      source ${pkgs.zsh-history-substring-search}/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+    '';
     initExtra = (builtins.readFile ./initExtra.sh);
 
     history = {

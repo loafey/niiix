@@ -24,3 +24,7 @@ compinit -i
 setopt complete_in_word
 setopt always_to_end
 setopt prompt_subst
+
+bindkey '^[[A' history-substring-search-up # or '\eOA'
+bindkey '^[[B' history-substring-search-down # or '\eOB'
+export HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=1
