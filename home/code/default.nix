@@ -18,7 +18,7 @@
         streetsidesoftware.code-spell-checker
         ms-vsliveshare.vsliveshare
         eww-yuck.yuck
-        # ms-vscode.cpptools
+        kaysonwu.cpptask
         qwtel.sqlite-viewer
         # asvetliakov.vscode-neovim
         # ms-vscode.cmake-tools
