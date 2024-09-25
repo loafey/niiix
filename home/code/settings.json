@@ -369,5 +369,6 @@
         "asvetliakov.vscode-neovim": 1
     },
     "agdaMode.connection.agdaLanguageServer": false,
-    "agdaMode.connection.commandLineOptions": "-l standard-library -i ."
+    "agdaMode.connection.commandLineOptions": "-l standard-library -i .",
+    "window.commandCenter": false
 }
