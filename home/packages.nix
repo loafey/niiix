@@ -48,5 +48,6 @@
     p2pool
     bruno
     zsh-history-substring-search
+    obsidian
   ] ++ inputs.git-flakes.packages."${pkgs.system}";
 }
