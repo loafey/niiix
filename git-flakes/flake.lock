@@ -6,11 +6,11 @@
         "utils": "utils"
       },
       "locked": {
-        "lastModified": 1727209719,
-        "narHash": "sha256-aQFnxlltP2Gh/tNlTAt4joBE9ENacHiHX8Hf+9b3zL0=",
+        "lastModified": 1728462013,
+        "narHash": "sha256-GIk39ArcViaFsoASPSjsVyD2KZMvgHJ7pjW1CF1Siqk=",
         "owner": "devraza",
         "repo": "bunbun",
-        "rev": "14a3e874617892641c2d19bb1ea0789b16b57cf8",
+        "rev": "996d82a836f69d416c09e4d8c4d3f911816602a1",
         "type": "github"
       },
       "original": {
@@ -27,11 +27,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-vQ6lbispVaV1tQ6zwGQzHVp6CAOMP0ASwN1fBPRYjBY=",
-        "path": "/nix/store/3lzwfaq21slqvirxjl3ry2y089zil2p0-source/git-flakes/display3d",
+        "path": "/nix/store/q94bri6m2k8jrbdrg5zjybc7f7wf8jgg-source/git-flakes/display3d",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/3lzwfaq21slqvirxjl3ry2y089zil2p0-source/git-flakes/display3d",
+        "path": "/nix/store/q94bri6m2k8jrbdrg5zjybc7f7wf8jgg-source/git-flakes/display3d",
         "type": "path"
       }
     },
@@ -414,11 +414,11 @@
     },
     "nixpkgs_10": {
       "locked": {
-        "lastModified": 1728018373,
-        "narHash": "sha256-NOiTvBbRLIOe5F6RbHaAh6++BNjsb149fGZd1T4+KBg=",
+        "lastModified": 1728492678,
+        "narHash": "sha256-9UTxR8eukdg+XZeHgxW5hQA9fIKHsKCdOIUycTryeVw=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "bc947f541ae55e999ffdb4013441347d83b00feb",
+        "rev": "5633bcff0c6162b9e4b5f1264264611e950c8ec7",
         "type": "github"
       },
       "original": {
@@ -662,11 +662,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-5hgR2VdOTMm2UPPk9PvQJLlYFN5emc2AGyg1gWcTHmM=",
-        "path": "/nix/store/3lzwfaq21slqvirxjl3ry2y089zil2p0-source/git-flakes/stremio",
+        "path": "/nix/store/q94bri6m2k8jrbdrg5zjybc7f7wf8jgg-source/git-flakes/stremio",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/3lzwfaq21slqvirxjl3ry2y089zil2p0-source/git-flakes/stremio",
+        "path": "/nix/store/q94bri6m2k8jrbdrg5zjybc7f7wf8jgg-source/git-flakes/stremio",
         "type": "path"
       }
     },
