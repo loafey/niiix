@@ -331,11 +331,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-T5hY2gyrDMynzzKYyQAJXhCo5e8QUbu9bkvX1/1tq2E=",
-        "path": "/nix/store/92dhidnwllff0wksycbawg8bfgak0i21-source/git-flakes",
+        "path": "/nix/store/gw8a7zdzmiqw0h1l2n7cfnhvi4sbfx00-source/git-flakes",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/92dhidnwllff0wksycbawg8bfgak0i21-source/git-flakes",
+        "path": "/nix/store/gw8a7zdzmiqw0h1l2n7cfnhvi4sbfx00-source/git-flakes",
         "type": "path"
       }
     },
