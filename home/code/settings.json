@@ -370,5 +370,7 @@
     },
     "agdaMode.connection.agdaLanguageServer": false,
     "agdaMode.connection.commandLineOptions": "-l standard-library -i .",
-    "window.commandCenter": false
+    "window.commandCenter": false,
+    "rust-analyzer.inlayHints.closureStyle": "hide",
+    "rust-analyzer.inlayHints.genericParameterHints.const.enable": false
 }
