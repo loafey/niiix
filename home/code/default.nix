@@ -40,6 +40,7 @@
         svelte.svelte-vscode
 
         banacorn.agda-mode
+        jbenden.c-cpp-flylint
       ];
     })
   ];
