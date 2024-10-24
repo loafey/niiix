@@ -1,14 +1,14 @@
 cd ~/Git/niiix
 git pull
 nix flake update
-cd git-flakes/
-nix flake update
-cd ..
+# cd git-flakes/
+# nix flake update
+# cd ..
 nh os switch .
 # stinky goodness
 try {
     git add flake.lock
-    git add git-flakes/flake.lock
+    # git add git-flakes/flake.lock
     let s = ["\"[System Update] ", (date now | format date "%Y-%m-%d %H:%M"),"\""] | str join
     git commit -m $s
     git push
