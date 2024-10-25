@@ -30,6 +30,7 @@
   services = serviceSetup;
 
   fonts.packages = with pkgs; [
+    cantarell-fonts
     (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
   ];
 
