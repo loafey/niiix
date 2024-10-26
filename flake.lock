@@ -276,11 +276,11 @@
         "stremio": "stremio"
       },
       "locked": {
-        "lastModified": 1729804941,
-        "narHash": "sha256-FhKkFLNgO9PTbtX9nHBnH1Z/CD3Y2/sWLKga7DrHD9s=",
+        "lastModified": 1729944626,
+        "narHash": "sha256-GDHn1L09oxWfJ986XWzCKZ8frFBruF5/IDTIxvtV58k=",
         "owner": "loafey",
         "repo": "git-flakes",
-        "rev": "06400420b31901b24a61b7fbcc5e7039d2bb5b38",
+        "rev": "c09e8fa10692665b1438b009092bcb8ff1281d59",
         "type": "github"
       },
       "original": {
@@ -358,12 +358,12 @@
       },
       "locked": {
         "lastModified": 1,
-        "narHash": "sha256-ZrgZrO2Ae2uAACmhmgLvqmwa7w4AA7JzpUnCanVpB4o=",
-        "path": "/nix/store/zkz5kl7fy82sjgmf06b91c3xlnbcjiw9-source/klassy",
+        "narHash": "sha256-p7yxQxSnL4g15/lnsmAdIe/1daqnj8hClh+VK9WxZkA=",
+        "path": "/nix/store/9kp9kgm9zwfgzk7fxk1p3c1gscfxq2m7-source/klassy",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/zkz5kl7fy82sjgmf06b91c3xlnbcjiw9-source/klassy",
+        "path": "/nix/store/9kp9kgm9zwfgzk7fxk1p3c1gscfxq2m7-source/klassy",
         "type": "path"
       }
     },
@@ -843,12 +843,12 @@
       },
       "locked": {
         "lastModified": 1,
-        "narHash": "sha256-ElVBEz+GUIdOJCnPL224JTM/TvMBdxCWBYqlEoFOzMk=",
-        "path": "/nix/store/zkz5kl7fy82sjgmf06b91c3xlnbcjiw9-source/stremio",
+        "narHash": "sha256-nDy4HGa7tQQO1D2paCputy+WyxkVumt2G/m+C9pYrnU=",
+        "path": "/nix/store/9kp9kgm9zwfgzk7fxk1p3c1gscfxq2m7-source/stremio",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/zkz5kl7fy82sjgmf06b91c3xlnbcjiw9-source/stremio",
+        "path": "/nix/store/9kp9kgm9zwfgzk7fxk1p3c1gscfxq2m7-source/stremio",
         "type": "path"
       }
     },
