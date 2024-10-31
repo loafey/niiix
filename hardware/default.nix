@@ -13,7 +13,7 @@
     args.index
     args.flatpak
     args.vscode-server
-    args.lix-module
+    # args.lix-module
   ] ++ extra-modules ++ import ./home.nix {
     userName = args.userName;
     home-manager = args.home-manager;
