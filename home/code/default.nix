@@ -41,6 +41,7 @@
 
         banacorn.agda-mode
         jbenden.c-cpp-flylint
+        janisdd.vscode-edit-csv
       ];
     })
   ];
