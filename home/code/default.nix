@@ -12,7 +12,7 @@
         jnoortheen.nix-ide
         thenuprojectcontributors.vscode-nushell-lang
         james-yu.latex-workshop
-        nvarner.typst-lsp
+        myriad-dreamin.tinymist
         haskell.haskell
         justusadam.language-haskell
         streetsidesoftware.code-spell-checker
