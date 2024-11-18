@@ -1,8 +1,15 @@
 { inputs }: { pkgs, ... }:
 {
-  home.packages = with pkgs; [
-    (vscode-with-extensions.override {
-      vscodeExtensions = with inputs.nix-vscode-extensions.extensions.${system}.vscode-marketplace; [
+  home.packages = [
+    (pkgs.vscode-with-extensions.override {
+      vscode = pkgs.vscode.overrideAttrs (old: {
+        installPhase = old.installPhase + ''
+          # yo
+          mkdir -p "$out/lib/vscode/resources/app/out/vs/workbench/"
+          cat "${./custom.css}" >> $out/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.css
+        '';
+      });
+      vscodeExtensions = with inputs.nix-vscode-extensions.extensions.${pkgs.system}.vscode-marketplace; [
         golang.go
         rust-lang.rust-analyzer
         teabyii.ayu

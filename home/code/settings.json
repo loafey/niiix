@@ -372,5 +372,10 @@
     "agdaMode.connection.commandLineOptions": "-l standard-library -i .",
     "window.commandCenter": false,
     "rust-analyzer.inlayHints.closureStyle": "hide",
-    "rust-analyzer.inlayHints.genericParameterHints.const.enable": false
+    "rust-analyzer.inlayHints.genericParameterHints.const.enable": false,
+    "workbench.activityBar.location": "hidden",
+    "workbench.editor.showTabs": "none",
+    "vscode_custom_css.imports": [
+        "file:///home/loafey/Git/niiix/home/code/custom.css"
+    ]
 }

@@ -172,5 +172,13 @@
         "key": "\\",
         "command": "-agda-mode.input-symbol[Activate]",
         "when": "editorTextFocus && editorLangId == 'agda' || editorTextFocus && editorLangId == 'lagda-md' || editorTextFocus && editorLangId == 'lagda-rst' || editorTextFocus && editorLangId == 'lagda-tex'"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "workbench.action.showAllEditors"
+    },
+    {
+        "key": "ctrl+k ctrl+p",
+        "command": "-workbench.action.showAllEditors"
     }
 ]
