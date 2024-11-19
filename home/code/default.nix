@@ -32,6 +32,8 @@
         twxs.cmake
         wakatime.vscode-wakatime
         ndmitchell.haskell-ghcid
+        kevin-kwong.vscode-autohide-keyboard
+        kvoon.command-task
         # guidotapia2.unicode-math-vscode
         marp-team.marp-vscode
         ms-vscode.hexeditor

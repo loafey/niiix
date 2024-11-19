@@ -11,3 +11,16 @@
 .monaco-workbench .part.statusbar>.items-container>.statusbar-item.remote-kind {
     background-color: #F5A9B8 !important;
 }
+
+/* 
+.sidebar {
+    position: absolute !important;
+    width: 500px !important;
+    height: 500px !important;
+}
+
+.sidebar .content {
+    width: 500px !important;
+    height: 500px !important;
+    background-color: #1E2330 !important;
+} */

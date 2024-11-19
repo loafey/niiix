@@ -375,7 +375,13 @@
     "rust-analyzer.inlayHints.genericParameterHints.const.enable": false,
     "workbench.activityBar.location": "hidden",
     "workbench.editor.showTabs": "none",
-    "vscode_custom_css.imports": [
-        "file:///home/loafey/Git/niiix/home/code/custom.css"
-    ]
+    "workbench.sideBar.location": "right",
+    "autoHide.ui": {
+        "sidebar": true,
+        "auxiliaryBar": true,
+        "panel": false,
+        "references": false,
+        "notifications": true,
+        "cursor": false
+    }
 }
