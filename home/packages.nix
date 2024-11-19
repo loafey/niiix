@@ -16,8 +16,7 @@
     ripgrep
     fragments
     wineWowPackages.stable
-    neovide
-    r2modman
+    # r2modman
     element-desktop
     aisleriot
     protonmail-bridge
@@ -40,7 +39,6 @@
     bitwarden-desktop
     waypipe
     mpv
-    iozone
     monero-gui
     monero-cli
     feather
