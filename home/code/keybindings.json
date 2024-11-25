@@ -180,5 +180,9 @@
     {
         "key": "ctrl+k ctrl+p",
         "command": "-workbench.action.showAllEditors"
+    },
+    {
+        "key": "ctrl+alt+n",
+        "command": "workbench.action.moveEditorToNewWindow"
     }
 ]
