@@ -227,8 +227,7 @@
         "editor.defaultFormatter": "ms-dotnettools.csharp"
     },
     "terminal.integrated.fontFamily": "FiraCode Nerd Font",
-    "terminal.integrated.defaultProfile.linux": "nu",
-    "breadcrumbs.enabled": false,
+    "breadcrumbs.enabled": true,
     "typst-lsp.exportPdf": "never",
     "haskell.manageHLS": "PATH",
     "keyboard.dispatch": "keyCode",
