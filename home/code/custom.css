@@ -12,6 +12,19 @@
     background-color: #F5A9B8 !important;
 }
 
+.statusbar {
+    border-top: solid 1px #4F516F !important;
+    --status-border-top-color: unset !important;
+}
+
+.panel {
+    border-top: solid 1px #4F516F !important;
+}
+
+.breadcrumbs-control {
+    border-bottom: solid 1px #4F516F !important;
+}
+
 /* 
 .sidebar {
     position: absolute !important;
