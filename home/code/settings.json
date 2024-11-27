@@ -1,192 +1,386 @@
-// Place your key bindings in this file to override the defaultsauto[]
-[
-    {
-        "key": "ctrl+[Semicolon]",
-        "command": "workbench.action.terminal.toggleTerminal"
+{
+    "editor.fontFamily": "FiraCode Nerd Font",
+    "editor.fontLigatures": true,
+    "editor.minimap.enabled": false,
+    "window.menuBarVisibility": "toggle",
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer"
     },
-    {
-        "key": "ctrl+shift+[Equal]",
-        "command": "-workbench.action.terminal.toggleTerminal"
+    "csharp.referencesCodeLens.enabled": false,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    "rust-client.engine": "rust-analyzer",
+    "todo-tree.tree.showScanModeButton": false,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "rust-analyzer.checkOnSave.command": "clippy",
+    "workbench.editorAssociations": {
+        "*.rdb": "hexEditor.hexedit",
+        "*.ipynb": "jupyter-notebook"
     },
-    {
-        "key": "alt+r",
-        "command": "rust-analyzer.restartServer"
+    "rust-analyzer.diagnostics.disabled": [
+        "macro-error",
+        "unresolved-proc-macro"
+    ],
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
     },
-    {
-        "key": "alt+x",
-        "command": "rust-analyzer.expandMacro"
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.statusBar.enabled": false,
+    "rust-analyzer.procMacro.enable": true,
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "XXX",
+        "[ ]",
+        "[x]"
+    ],
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+    "explorer.confirmDragAndDrop": false,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
     },
-    {
-        "key": "ctrl+l",
-        "command": "workbench.action.nextEditor"
+    "explorer.confirmDelete": false,
+    "[haskell]": {
+        "editor.defaultFormatter": "haskell.haskell"
     },
-    {
-        "key": "ctrl+pagedown",
-        "command": "-workbench.action.nextEditor"
-    },
-    {
-        "key": "ctrl+h",
-        "command": "workbench.action.previousEditor"
-    },
-    {
-        "key": "ctrl+pageup",
-        "command": "-workbench.action.previousEditor"
-    },
-    {
-        "command": "runCommands",
-        "key": "ctrl+j",
-        "args": {
-            "commands": [
-                "workbench.action.focusSideBar",
-                "workbench.action.focusSideBar"
+    "zenMode.fullScreen": false,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.silentNotifications": false,
+    "restoreTerminals.terminals": [
+        {
+            "splitTerminals": [
+                {
+                    "name": "Terminal",
+                    "commands": [
+                        "ls"
+                    ]
+                }
             ]
+        },
+    ],
+    "zenMode.centerLayout": false,
+    "haskell.formattingProvider": "fourmolu",
+    "vsicons.dontShowNewVersionMessage": true,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "omnisharp.useGlobalMono": "always",
+    "discord.lowerDetailsEditing": "Workspace: {git_repo_name}",
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "javascript.format.semicolons": "insert",
+    "typescript.format.semicolons": "insert",
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "redhat.telemetry.enabled": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "polacode.backgroundColor": "#f2f2f200",
+    "polacode.transparentBackground": true,
+    "zenMode.hideStatusBar": false,
+    "git.ignoreRebaseWarning": true,
+    "rust-analyzer.lens.implementations": false,
+    "cSpell.enableFiletypes": [
+        "!c",
+        "!haskell",
+        "!rust",
+        "typst"
+    ],
+    "cmake.configureOnOpen": true,
+    "editor.codeLensFontFamily": "Victor Mono",
+    "editor.unicodeHighlight.allowedCharacters": {
+        "𝑄": true,
+        "𝓛": true
+    },
+    "workbench.colorTheme": "Ayu Mirage",
+    "workbench.productIconTheme": "icons-carbon",
+    "workbench.iconTheme": "material-icon-theme",
+    "security.workspace.trust.startupPrompt": "never",
+    "security.workspace.trust.enabled": false,
+    "cSpell.userWords": [
+        "Aktivitet",
+        "Arrangör",
+        "boardofstudies",
+        "bypassable",
+        "concats",
+        "Consequentialist",
+        "cryptosystem",
+        "Deontological",
+        "DFBM",
+        "Diffie",
+        "downcasting",
+        "dummyframe",
+        "dvarm",
+        "dvrk",
+        "Endianness",
+        "Evaluable",
+        "femmepp",
+        "floatbin",
+        "Hammersberg",
+        "harddrive",
+        "HIDS",
+        "Intelli",
+        "Ints",
+        "Keyloggers",
+        "Kommittéer",
+        "Lerp",
+        "lualatex",
+        "marp",
+        "Mathf",
+        "misprediction",
+        "Monomorphism",
+        "NIDS",
+        "nonumber",
+        "phising",
+        "polymorhpism",
+        "println",
+        "qouge",
+        "rehype",
+        "reimplement",
+        "rgba",
+        "Sandboxing",
+        "selftext",
+        "serde",
+        "Steamworks",
+        "Steganography",
+        "stringstyle",
+        "struct",
+        "structs",
+        "Studienämnd",
+        "subtyping",
+        "swordlord",
+        "tscn",
+        "tuplify",
+        "Twople",
+        "Vecture",
+        "Xform"
+    ],
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    "markdown.marp.enableHtml": true,
+    "rust-analyzer.inlayHints.enable": false,
+    "rust-analyzer.inlayHints.renderColons": false,
+    "rust-analyzer.cargo.buildScripts.enable": true,
+    "rust-analyzer.inlayHints.chainingHints.enable": false,
+    "rust-analyzer.inlayHints.parameterHints.enable": false,
+    "rust-analyzer.inlayHints.typeHints.enable": false,
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "workbench.preferredDarkColorTheme": "Ayu Mirage",
+    "workbench.preferredLightColorTheme": "Adwaita Light",
+    "window.autoDetectColorScheme": true,
+    "rust-analyzer.inlayHints.closingBraceHints.enable": false,
+    "material-icon-theme.folders.color": "#90a4af",
+    "material-icon-theme.files.associations": {
+        "*.rs": "rescript",
+    },
+    "latex-workshop.latex.build.forceRecipeUsage": false,
+    "workbench.startupEditor": "none",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "terminal.integrated.profiles.linux": {
+        "zsh": {
+            "path": "zsh",
+            "args": [
+                "-l",
+                "-i"
+            ]
+        },
+        "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
         }
     },
-    {
-        "key": "ctrl+0",
-        "command": "-workbench.action.focusSideBar"
+    "latex-workshop.message.latexlog.exclude": [
+        "Some font shapes were not available, defaults substituted.",
+        "Font shape `.*' undefined"
+    ],
+    "rust-analyzer.checkOnSave": true,
+    "rust-analyzer.check.command": "clippy",
+    "git.openRepositoryInParentFolders": "always",
+    "editor.acceptSuggestionOnEnter": "off",
+    "errorLens.excludeBySource": [
+        "rustc(Click for full compiler diagnostic)"
+    ],
+    "editor.formatOnSave": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "editor.linkedEditing": true,
+    "slint.preview.style": "fluent",
+    "[csharp]": {
+        "editor.defaultFormatter": "ms-dotnettools.csharp"
     },
-    {
-        "key": "ctrl+k",
-        "command": "workbench.action.toggleSidebarVisibility"
+    "terminal.integrated.fontFamily": "FiraCode Nerd Font",
+    "breadcrumbs.enabled": true,
+    "typst-lsp.exportPdf": "never",
+    "haskell.manageHLS": "PATH",
+    "keyboard.dispatch": "keyCode",
+    "editor.quickSuggestions": {
+        "comments": true,
+        "strings": true
     },
-    {
-        "key": "ctrl+b",
-        "command": "-workbench.action.toggleSidebarVisibility"
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-shell-escape",
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "lualatexmk",
+            "command": "latexmk",
+            "args": [
+                "-shell-escape",
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-lualatex",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "xelatexmk",
+            "command": "latexmk",
+            "args": [
+                "-shell-escape",
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-xelatex",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "latexmk_rconly",
+            "command": "latexmk",
+            "args": [
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "rnw2tex",
+            "command": "Rscript",
+            "args": [
+                "-e",
+                "knitr::opts_knit$set(concordance = TRUE); knitr::knit('%DOCFILE_EXT%')"
+            ],
+            "env": {}
+        },
+        {
+            "name": "jnw2tex",
+            "command": "julia",
+            "args": [
+                "-e",
+                "using Weave; weave(\"%DOC_EXT%\", doctype=\"tex\")"
+            ],
+            "env": {}
+        },
+        {
+            "name": "jnw2texminted",
+            "command": "julia",
+            "args": [
+                "-e",
+                "using Weave; weave(\"%DOC_EXT%\", doctype=\"texminted\")"
+            ],
+            "env": {}
+        },
+        {
+            "name": "pnw2tex",
+            "command": "pweave",
+            "args": [
+                "-f",
+                "tex",
+                "%DOC_EXT%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "pnw2texminted",
+            "command": "pweave",
+            "args": [
+                "-f",
+                "texminted",
+                "%DOC_EXT%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "tectonic",
+            "command": "tectonic",
+            "args": [
+                "--synctex",
+                "--keep-logs",
+                "%DOC%.tex"
+            ],
+            "env": {}
+        }
+    ],
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
     },
-    {
-        "key": "ctrl+t",
-        "command": "workbench.action.terminal.focus"
-    },
-    {
-        "key": "ctrl+t",
-        "command": "workbench.action.focusActiveEditorGroup",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "ctrl+[Comma]",
-        "command": "editor.action.showHover",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+k ctrl+i",
-        "command": "-editor.action.showHover",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+s",
-        "command": "workbench.action.terminal.split",
-        "when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
-    },
-    {
-        "key": "ctrl+shift+5",
-        "command": "-workbench.action.terminal.split",
-        "when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
-    },
-    {
-        "key": "alt+s",
-        "command": "workbench.action.terminal.split",
-        "when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
-    },
-    {
-        "key": "ctrl+shift+5",
-        "command": "-workbench.action.terminal.split",
-        "when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
-    },
-    {
-        "key": "alt+w",
-        "command": "workbench.action.terminal.kill"
-    },
-    {
-        "key": "alt+l",
-        "command": "workbench.action.terminal.focusNextPane",
-        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
-    },
-    {
-        "key": "alt+down",
-        "command": "-workbench.action.terminal.focusNextPane",
-        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
-    },
-    {
-        "key": "alt+h",
-        "command": "workbench.action.terminal.focusPreviousPane",
-        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
-    },
-    {
-        "key": "alt+up",
-        "command": "-workbench.action.terminal.focusPreviousPane",
-        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
-    },
-    {
-        "key": "ctrl+1",
-        "command": "workbench.action.openEditorAtIndex1"
-    },
-    {
-        "key": "ctrl+2",
-        "command": "workbench.action.openEditorAtIndex2"
-    },
-    {
-        "key": "ctrl+3",
-        "command": "workbench.action.openEditorAtIndex3"
-    },
-    {
-        "key": "ctrl+4",
-        "command": "workbench.action.openEditorAtIndex4"
-    },
-    {
-        "key": "ctrl+5",
-        "command": "workbench.action.openEditorAtIndex5"
-    },
-    {
-        "key": "ctrl+6",
-        "command": "workbench.action.openEditorAtIndex6"
-    },
-    {
-        "key": "ctrl+7",
-        "command": "workbench.action.openEditorAtIndex7"
-    },
-    {
-        "key": "ctrl+8",
-        "command": "workbench.action.openEditorAtIndex8"
-    },
-    {
-        "key": "ctrl+9",
-        "command": "workbench.action.openEditorAtIndex9"
-    },
-    {
-        "key": "ctrl+shift+n",
-        "command": "editor.action.marker.next",
-        "when": "editorFocus"
-    },
-    {
-        "key": "alt+f8",
-        "command": "-editor.action.marker.next",
-        "when": "editorFocus"
-    },
-    {
-        "key": "ctrl+b",
-        "command": "agda-mode.input-symbol[Activate]",
-        "when": "editorTextFocus && editorLangId == 'agda' || editorTextFocus && editorLangId == 'lagda-md' || editorTextFocus && editorLangId == 'lagda-rst' || editorTextFocus && editorLangId == 'lagda-tex'"
-    },
-    {
-        "key": "\\",
-        "command": "-agda-mode.input-symbol[Activate]",
-        "when": "editorTextFocus && editorLangId == 'agda' || editorTextFocus && editorLangId == 'lagda-md' || editorTextFocus && editorLangId == 'lagda-rst' || editorTextFocus && editorLangId == 'lagda-tex'"
-    },
-    {
-        "key": "ctrl+e",
-        "command": "workbench.action.showAllEditors"
-    },
-    {
-        "key": "ctrl+k ctrl+p",
-        "command": "-workbench.action.showAllEditors"
-    },
-    {
-        "key": "ctrl+alt+n",
-        "command": "workbench.action.moveEditorToNewWindow"
-    },
-    {
-        "key": "ctrl+q",
-        "command": "-workbench.action.quit"
+    "agdaMode.connection.agdaLanguageServer": false,
+    "agdaMode.connection.commandLineOptions": "-l standard-library -i .",
+    "window.commandCenter": false,
+    "rust-analyzer.inlayHints.closureStyle": "hide",
+    "rust-analyzer.inlayHints.genericParameterHints.const.enable": false,
+    "workbench.activityBar.location": "hidden",
+    "workbench.editor.showTabs": "none",
+    "workbench.sideBar.location": "right",
+    "autoHide.ui": {
+        "sidebar": true,
+        "auxiliaryBar": true,
+        "panel": false,
+        "references": false,
+        "notifications": true,
+        "cursor": false
     }
-]
+}

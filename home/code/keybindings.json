@@ -184,5 +184,9 @@
     {
         "key": "ctrl+alt+n",
         "command": "workbench.action.moveEditorToNewWindow"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "-workbench.action.quit"
     }
 ]
