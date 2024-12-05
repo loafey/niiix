@@ -167,7 +167,6 @@
         "Vecture",
         "Xform"
     ],
-    "terminal.integrated.persistentSessionReviveProcess": "never",
     "markdown.marp.enableHtml": true,
     "rust-analyzer.inlayHints.enable": false,
     "rust-analyzer.inlayHints.renderColons": false,
