@@ -31,7 +31,7 @@
 
   fonts.packages = with pkgs; [
     cantarell-fonts
-    (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
+    nerd-fonts.fira-code
   ];
 
   console.keyMap = "sv-latin1";
