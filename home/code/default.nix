@@ -51,6 +51,7 @@
         banacorn.agda-mode
         jbenden.c-cpp-flylint
         vscode-org-mode.org-mode
+        ms-python.python
       ];
     })
   ];
