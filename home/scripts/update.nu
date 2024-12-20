@@ -32,8 +32,9 @@ let before = df -h
 #try {
 #    bash ~/Git/niiix/clean_user.sh
 #}
-nix-collect-garbage -d --delete-old
-sudo nix-collect-garbage -d --delete-old
+# nix-collect-garbage -d --delete-old
+# sudo nix-collect-garbage -d --delete-old
+nh clean all
 
 print "- linking -"
 sudo nix-store --optimise
