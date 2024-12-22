@@ -1,3 +1,9 @@
 [window.padding]
 x = 10
 y = 10
+
+[terminal]
+shell = "tmux"
+
+[font]
+size = 12.0
