@@ -11,7 +11,7 @@
 
   hardware.graphics = {
     enable = true;
-    extraPackages = [ pkgs.mesa.drivers ];
+    extraPackages = [ pkgs.mesa.drivers pkgs.mesa ];
     enable32Bit = true;
   };
 
@@ -19,6 +19,11 @@
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
+  boot.kernelParams = [
+    "acpi_backlight=native"
+    "amd_pstate=guided"
+    "amdgpu"
+  ];
 
   hardware.bluetooth.enable = true; # enables support for Bluetooth
   hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
