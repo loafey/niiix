@@ -15,4 +15,5 @@
   flake = "nix flake";
   nixos-rebuild = "nixos-rebuild --use-remote-sudo";
   gc = "sudo nix-collect-garbage -d --quiet 2> /dev/null; nix-collect-garbage -d --quiet 2> /dev/null";
+  split-sync = "bash -c `tmux new-session -s \"splat\" -d && tmux split-window -h && tmux swap-pane -s 0 && tmux set synchronize-panes on && tmux -2 attach-session -d `";
 }
