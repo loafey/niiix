@@ -14,10 +14,6 @@
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=v0.4.1";
     vscode-server.url = "github:nix-community/nixos-vscode-server";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
-    lix-module = {
-      url = "https://git.lix.systems/lix-project/nixos-module/archive/2.91.0.tar.gz";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs =
@@ -27,7 +23,6 @@
     , nix-index-database
     , nix-flatpak
     , vscode-server
-    , lix-module
     , zen-browser
     , ...
     }@inputs: {
@@ -41,7 +36,6 @@
             index = nix-index-database.nixosModules.nix-index;
             flatpak = nix-flatpak.nixosModules.nix-flatpak;
             vscode-server = vscode-server.nixosModules.default;
-            lix-module = lix-module.nixosModules.default;
           };
         in
         {
