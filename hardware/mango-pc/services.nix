@@ -5,6 +5,7 @@
 
   pcscd.enable = true;
 
+  pulseaudio.enable = false;
   fwupd.enable = true;
 
   pipewire = {

@@ -36,7 +36,6 @@
 
   console.keyMap = "sv-latin1";
 
-  hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
 
   hardware.bluetooth.enable = true;

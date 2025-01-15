@@ -5,7 +5,9 @@
     inputs = args.inputs;
     userName = args.userName;
     hardwareConfig = import (path + /hardware.nix);
-    serviceSetup = import (path + /services.nix) { userName = args.userName; };
+    serviceSetup = import (path + /services.nix) {
+      userName = args.userName;
+    };
     inherit extra-config;
   };
   modules = [

@@ -13,6 +13,7 @@
 
   fwupd.enable = true;
   rpcbind.enable = true;
+  pulseaudio.enable = false;
 
   pipewire = {
     enable = true;
