@@ -6,7 +6,12 @@
         installPhase = old.installPhase + ''
           # yo
           mkdir -p "$out/lib/vscode/resources/app/out/vs/workbench/"
+          mkdir -p "$out/lib/vscode/resources/app/out/media/"
           cat "${./custom.css}" >> $out/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.css
+          cat "${./logo.svg}"    > $out/lib/vscode/resources/app/out/media/letterpress-dark.svg
+          cat "${./logo.svg}"    > $out/lib/vscode/resources/app/out/media/letterpress-hcDark.svg
+          cat "${./logo.svg}"    > $out/lib/vscode/resources/app/out/media/letterpress-hcLark.svg
+          cat "${./logo.svg}"    > $out/lib/vscode/resources/app/out/media/letterpress-light.svg
         '';
       });
       vscodeExtensions = with inputs.nix-vscode-extensions.extensions.${pkgs.system}.vscode-marketplace; [
