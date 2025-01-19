@@ -54,7 +54,7 @@
         svelte.svelte-vscode
 
         banacorn.agda-mode
-        jbenden.c-cpp-flylint
+        llvm-vs-code-extensions.vscode-clangd
         vscode-org-mode.org-mode
         ms-python.python
       ];
