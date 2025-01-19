@@ -18,7 +18,7 @@
         golang.go
         rust-lang.rust-analyzer
         teabyii.ayu
-        fill-labs.dependi
+        # barboss-hack.crates-io
         icrawl.discord-vscode
         pkief.material-icon-theme
         jnoortheen.nix-ide
