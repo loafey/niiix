@@ -381,5 +381,6 @@
         "references": false,
         "notifications": true,
         "cursor": false
-    }
+    },
+    "editor.inlayHints.enabled": "offUnlessPressed"
 }
