@@ -41,7 +41,6 @@
     mpv
     monero-gui
     monero-cli
-    feather
     xmrig-mo
     p2pool
     bruno
