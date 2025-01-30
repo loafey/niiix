@@ -57,6 +57,8 @@
         llvm-vs-code-extensions.vscode-clangd
         vscode-org-mode.org-mode
         ms-python.python
+
+        llvm-vs-code-extensions.lldb-dap
       ];
     })
   ];
