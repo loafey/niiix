@@ -848,22 +848,7 @@ def gc [] {
 }
 
 def nix-update [] {
-    cd ~/Git/niiix
-    git pull
-    nix flake update
-    sudo nixos-rebuild switch --upgrade
-    # stinky goodness
-    try {
-        git add flake.lock
-        let s = ["\"[System Update] ", (date now | format date "%Y-%m-%d %H:%M"),"\""] | str join
-        git commit -m $s
-        git push
-    }
-    print "- collecting garbage -"
-    gc
-
-    print "- linking -"
-    sudo nix-store --optimise
+    nu /home/loafey/Git/niiix/home/scripts/update.nu
 }
 def nix-rebuild [] {
     sudo nixos-rebuild switch
