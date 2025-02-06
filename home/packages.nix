@@ -46,6 +46,7 @@
     bruno
     zsh-history-substring-search
     obsidian
+    fish
     inputs.zen-browser.packages."${system}".default
   ] ++ inputs.git-flakes.packages."${pkgs.system}";
 }
