@@ -1,5 +1,5 @@
 { inputs }:
-{ pkgs, config, ... }: {
+{ pkgs, config, nixosConfig, ... }: {
   home.packages = with pkgs;
     [
       firefox

@@ -1,5 +1,5 @@
-{ inputs }: { pkgs, config, ... }:
-{
+{ inputs }:
+{ pkgs, config, nixosConfig, ... }: {
   nixpkgs = {
     config = {
       allowUnfree = true;
@@ -7,7 +7,15 @@
     };
   };
 
-  imports = [
+  imports = let
+    serverSoftware = if nixosConfig.networking.hostName == "mango-basket" then
+      [ ./server ]
+    else [
+      ./services
+      (import ./code { inherit inputs; })
+      (import ./packages.nix { inherit inputs; })
+    ];
+  in [
     ./discord
     ./git
     ./alacritty
@@ -21,10 +29,7 @@
     ./neovim
     ./zsh
     ./tmux
-    ./services
-    (import ./code { inherit inputs; })
-    (import ./packages.nix { inherit inputs; })
-  ];
+  ] ++ serverSoftware;
 
   # The state version is required and should stay at the version you
   # originally installed.

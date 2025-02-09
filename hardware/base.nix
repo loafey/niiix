@@ -1,5 +1,5 @@
-{ userName, hardwareConfig, host, serviceSetup, config, pkgs, inputs, extra-config, ... }:
-{
+{ userName, hardwareConfig, host, serviceSetup, config, pkgs, inputs
+, extra-config, ... }: {
   imports = [
     hardwareConfig
     extra-config
@@ -29,10 +29,7 @@
 
   services = serviceSetup;
 
-  fonts.packages = with pkgs; [
-    cantarell-fonts
-    nerd-fonts.fira-code
-  ];
+  fonts.packages = with pkgs; [ cantarell-fonts nerd-fonts.fira-code ];
 
   console.keyMap = "sv-latin1";
 
@@ -50,10 +47,8 @@
   };
 
   nixpkgs.config.allowUnfree = true;
-  nixpkgs.config.permittedInsecurePackages = [
-    "electron-25.9.0"
-    "jitsi-meet-1.0.8043"
-  ];
+  nixpkgs.config.permittedInsecurePackages =
+    [ "electron-25.9.0" "jitsi-meet-1.0.8043" ];
 
   nix = {
     package = pkgs.nixVersions.latest;
@@ -79,15 +74,12 @@
     sshfs
   ];
 
-
   programs.nix-index-database.comma.enable = true;
   programs.command-not-found.enable = false;
   programs.gamemode.enable = true;
   programs.zsh.enable = true;
 
-  environment.sessionVariables = rec {
-    EDITOR = "nvim";
-  };
+  environment.sessionVariables = rec { EDITOR = "nvim"; };
 
   programs.steam = {
     enable = true;
@@ -109,8 +101,14 @@
     enable = false;
     allowedTCPPorts = [ 1337 55555 ];
     allowedUDPPortRanges = [
-      { from = 4000; to = 4007; }
-      { from = 8000; to = 8010; }
+      {
+        from = 4000;
+        to = 4007;
+      }
+      {
+        from = 8000;
+        to = 8010;
+      }
     ];
   };
 
@@ -129,34 +127,37 @@
 
   systemd.extraConfig = "DefaultTimeoutStopSec=10s";
 
-  systemd.mounts = [{
+  systemd.mounts = if config.networking.hostName != "mango-basket" then [{
     type = "nfs";
     mountConfig = {
-      Options = "defaults,user,noauto,relatime,nofail,rw,x-systemd.automount,x-systemd.mount-timeout=30,x-systemd.requires=network-online.target,_netdev";
+      Options =
+        "defaults,user,noauto,relatime,nofail,rw,x-systemd.automount,x-systemd.mount-timeout=30,x-systemd.requires=network-online.target,_netdev";
     };
     what = "localhost:/mnt/storage/shared";
     where = "/home/loafey/BreadBox";
-  }];
+  }] else
+    [ ];
 
-  systemd.automounts = [{
+  systemd.automounts = if config.networking.hostName != "mango-basket" then [{
     wantedBy = [ "multi-user.target" ];
-    automountConfig = {
-      TimeoutIdleSec = "600";
-    };
+    automountConfig = { TimeoutIdleSec = "600"; };
     where = "/home/loafey/BreadBox";
-  }];
+  }] else
+    [ ];
 
-  systemd.services.chuck-bread-box = {
-    enable = true;
-    before = [ "shutdown.target" ];
-    wantedBy = [ "halt.target" "reboot.target" "shutdown.target" ];
+  systemd.services.chuck-bread-box =
+    if config.networking.hostName != "mango-basket" then {
+      enable = true;
+      before = [ "shutdown.target" ];
+      wantedBy = [ "halt.target" "reboot.target" "shutdown.target" ];
 
-    serviceConfig = {
-      Type = "oneshot";
-      RemainAfterExit = "true";
-      ExecStop = "umount -f /home/loafey/BreadBox";
-    };
-  };
+      serviceConfig = {
+        Type = "oneshot";
+        RemainAfterExit = "true";
+        ExecStop = "umount -f /home/loafey/BreadBox";
+      };
+    } else
+      { };
 
   # fileSystems."/home/loafey/BreadBox" = {
   #   device = "localhost:/mnt/storage/shared";
@@ -230,7 +231,6 @@
   #     "config=/etc/rclone-mnt.conf"
   #   ];
   # };
-
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
