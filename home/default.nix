@@ -12,17 +12,17 @@
       [ ./server ]
     else [
       ./services
+      ./discord
+      ./gnome
       (import ./code { inherit inputs; })
       (import ./packages.nix { inherit inputs; })
     ];
   in [
-    ./discord
     ./git
     ./alacritty
     ./bash
     ./direnv
     ./carapace
-    ./gnome
     ./nushell
     ./kitty
     ./grompt
