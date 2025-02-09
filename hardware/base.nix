@@ -97,7 +97,7 @@
     };
   };
 
-  networking.firewall = {
+  networking.firewall = if config.networking.hostName != "mango-basket" then {
     enable = false;
     allowedTCPPorts = [ 1337 55555 ];
     allowedUDPPortRanges = [
@@ -110,6 +110,9 @@
         to = 8010;
       }
     ];
+  } else {
+    enable = true;
+    allowedTCPPorts = [ 22 ];
   };
 
   programs.nh = {
