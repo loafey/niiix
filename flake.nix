@@ -53,6 +53,13 @@
             path = ./hardware/mango-lappy;
           };
 
+          "mango-basket" = import ./hardware {
+            inherit args;
+            host = "mango-basket";
+            extra-modules = [ ./desktops/plasma.nix ];
+            path = ./hardware/mango-basket;
+          };
+
           "mango-pc" = import ./hardware {
             inherit args;
             host = "mango-pc";
