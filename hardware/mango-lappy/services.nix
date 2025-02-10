@@ -15,6 +15,11 @@
   rpcbind.enable = true;
   pulseaudio.enable = false;
 
+  openssh = {
+    enable = true;
+    settings = { PasswordAuthentication = false; };
+  };
+
   pipewire = {
     enable = true;
     alsa.enable = true;
