@@ -72,6 +72,8 @@
     ethtool
     cloudflared
     sshfs
+    lm_sensors
+    sysstat
   ];
 
   programs.nix-index-database.comma.enable = true;

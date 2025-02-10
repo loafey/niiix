@@ -51,6 +51,5 @@
       fish
       inputs.zen-browser.packages."${system}".default
       nixfmt-classic
-      lm_sensors
     ] ++ inputs.git-flakes.packages."${pkgs.system}";
 }
