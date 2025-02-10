@@ -382,5 +382,6 @@
         "notifications": true,
         "cursor": false
     },
-    "editor.inlayHints.enabled": "offUnlessPressed"
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "window.titleBarStyle": "native"
 }
