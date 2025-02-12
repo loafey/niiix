@@ -74,6 +74,7 @@
     sshfs
     lm_sensors
     sysstat
+    cifs-utils
   ];
 
   programs.nix-index-database.comma.enable = true;
@@ -164,6 +165,22 @@
   #   } else
   #     { };
 
+  fileSystems."BreadBox" =
+    pkgs.lib.mkIf (config.networking.hostName == "mango-pc") {
+      mountPoint = "/home/loafey/BreadBox";
+      device = "//192.168.50.135/BreadBox";
+      fsType = "cifs";
+      options = let
+        # this line prevents hanging on network split
+        automount_opts =
+          "x-systemd.automount,noauto,x-systemd.idle-timeout=60,x-systemd.device-timeout=5s,x-systemd.mount-timeout=5s";
+
+      in [
+        "${automount_opts},credentials=/etc/nixos/smb-secrets,uid=1000,gid=100"
+      ];
+    };
+
+  # /mnt/storage/shared
   environment.etc.cloudflared = {
     source = "${pkgs.cloudflared}/bin/cloudflared";
     target = "cloudflared";
