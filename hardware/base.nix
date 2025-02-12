@@ -132,110 +132,42 @@
 
   systemd.extraConfig = "DefaultTimeoutStopSec=10s";
 
-  systemd.mounts = if config.networking.hostName != "mango-basket" then [{
-    type = "nfs";
-    mountConfig = {
-      Options =
-        "defaults,user,noauto,relatime,nofail,rw,x-systemd.automount,x-systemd.mount-timeout=30,x-systemd.requires=network-online.target,_netdev";
-    };
-    what = "localhost:/mnt/storage/shared";
-    where = "/home/loafey/BreadBox";
-  }] else
-    [ ];
+  # systemd.mounts = if config.networking.hostName != "mango-basket" then [{
+  #   type = "nfs";
+  #   mountConfig = {
+  #     Options =
+  #       "defaults,user,noauto,relatime,nofail,rw,x-systemd.automount,x-systemd.mount-timeout=30,x-systemd.requires=network-online.target,_netdev";
+  #   };
+  #   what = "localhost:/mnt/storage/shared";
+  #   where = "/home/loafey/BreadBox";
+  # }] else
+  #   [ ];
 
-  systemd.automounts = if config.networking.hostName != "mango-basket" then [{
-    wantedBy = [ "multi-user.target" ];
-    automountConfig = { TimeoutIdleSec = "600"; };
-    where = "/home/loafey/BreadBox";
-  }] else
-    [ ];
+  # systemd.automounts = if config.networking.hostName != "mango-basket" then [{
+  #   wantedBy = [ "multi-user.target" ];
+  #   automountConfig = { TimeoutIdleSec = "600"; };
+  #   where = "/home/loafey/BreadBox";
+  # }] else
+  #   [ ];
 
-  systemd.services.chuck-bread-box =
-    if config.networking.hostName != "mango-basket" then {
-      enable = true;
-      before = [ "shutdown.target" ];
-      wantedBy = [ "halt.target" "reboot.target" "shutdown.target" ];
+  # systemd.services.chuck-bread-box =
+  #   if config.networking.hostName != "mango-basket" then {
+  #     enable = true;
+  #     before = [ "shutdown.target" ];
+  #     wantedBy = [ "halt.target" "reboot.target" "shutdown.target" ];
 
-      serviceConfig = {
-        Type = "oneshot";
-        RemainAfterExit = "true";
-        ExecStop = "umount -f /home/loafey/BreadBox";
-      };
-    } else
-      { };
-
-  # fileSystems."/home/loafey/BreadBox" = {
-  #   device = "localhost:/mnt/storage/shared";
-  #   fsType = "nfs";
-  #   label = "BreadBox";
-  #   options = [
-  #     "defaults"
-  #     "user"
-  #     "noauto"
-  #     "relatime"
-  #     "nofail"
-  #     "rw"
-  #     "x-systemd.automount"
-  #     "x-systemd.mount-timeout=30"
-  #     "_netdev"
-  #   ];
-  # };
-
-  # fileSystems."/mnt/shared" = {
-  #   device = "loafey@mango-pi:/mnt/storage/shared";
-  #   label = "BreadBox";
-  #   fsType = "sshfs";
-  #   depends = [ "/" ];
-  #   options = [
-  #     "nodev"
-  #     "noatime"
-  #     "allow_other"
-  #     "IdentityFile=/root/.ssh/id_ed25519"
-  #     "x-systemd.automount"
-  #     "x-systemd.mount-timeout=5s"
-  #     # "sshfs_debug"
-  #     # "loglevel=debug"
-  #   ];
-  # };
+  #     serviceConfig = {
+  #       Type = "oneshot";
+  #       RemainAfterExit = "true";
+  #       ExecStop = "umount -f /home/loafey/BreadBox";
+  #     };
+  #   } else
+  #     { };
 
   environment.etc.cloudflared = {
     source = "${pkgs.cloudflared}/bin/cloudflared";
     target = "cloudflared";
   };
-
-  # systemd.mounts = [{
-  #   description = "Shared Breadbox";
-  #   what = "loafey@mango-pi:/mnt/storage/shared";
-  #   where = "/mnt/shared";
-  #   type = "fuse.sshfs";
-  #   options = "nodev,noatime,allow_other,IdentityFile=/root/.ssh/id_ed25519,sshfs_debug,loglevel=debug";
-  #   enable = true;
-  # }];
-  # systemd.automounts = [{
-  #   description = "Shared Breadbox";
-  #   where = "/mnt/shared";
-  #   wantedBy = [ "multi-user.target" ];
-  # }];
-
-  # environment.etc."rclone-mnt.conf".text = ''
-  #   [breadbox]
-  #   type = sftp
-  #   host = dev.loafey.se
-  #   user = loafey
-  #   key_file = /root/.ssh/id_ed25519
-  # '';
-
-  # fileSystems."/mnt/shared" = {
-  #   device = "breadbox:/mnt/storage/shared";
-  #   fsType = "rclone";
-  #   options = [
-  #     "nodev"
-  #     "nofail"
-  #     "allow_other"
-  #     "args2env"
-  #     "config=/etc/rclone-mnt.conf"
-  #   ];
-  # };
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
