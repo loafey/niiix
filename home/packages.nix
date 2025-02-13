@@ -51,5 +51,6 @@
       fish
       inputs.zen-browser.packages."${system}".default
       nixfmt-classic
+      inkscape
     ] ++ inputs.git-flakes.packages."${pkgs.system}";
 }
