@@ -36,6 +36,12 @@
     };
   };
 
+  tailscale = {
+    enable = true;
+    useRoutingFeatures = "both";
+    # interfaceName = "userspace-networking";
+  };
+
   power-profiles-daemon.enable = true;
   # tlp = {
   #   enable = true;

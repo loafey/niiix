@@ -52,5 +52,6 @@
       inputs.zen-browser.packages."${system}".default
       nixfmt-classic
       inkscape
+      trayscale
     ] ++ inputs.git-flakes.packages."${pkgs.system}";
 }
