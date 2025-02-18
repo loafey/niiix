@@ -28,6 +28,20 @@
     [ { device = "/dev/disk/by-uuid/8736ea29-652d-4564-a345-a1fd65162f9a"; }
     ];
 
+  systemd.services.podman-autostart = {
+    enable = true;
+    after = [ "podman.service" ];
+    wantedBy = [ "multi-user.target" ];
+    description = "Automatically start containers with --restart=always tag";
+    serviceConfig = {
+      Type = "idle";
+      User = "loafey";
+      Restart = "on-failure";
+      RestartSec = "30";
+      ExecStart = ''/run/current-system/sw/bin/podman start --all --filter restart-policy=always'';
+    };
+  };
+
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's
   # still possible to use this option, but it's recommended to use it in conjunction
