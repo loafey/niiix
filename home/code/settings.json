@@ -383,5 +383,6 @@
         "cursor": false
     },
     "editor.inlayHints.enabled": "offUnlessPressed",
-    "window.titleBarStyle": "native"
+    "window.titleBarStyle": "native",
+    "remote.SSH.enableRemoteCommand": true
 }
