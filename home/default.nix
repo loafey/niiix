@@ -9,7 +9,7 @@
 
   imports = let
     serverSoftware = if nixosConfig.networking.hostName == "mango-basket" then
-      [ ./server ]
+      [ (import ./server { inherit inputs; }) ]
     else [
       ./services
       ./discord
