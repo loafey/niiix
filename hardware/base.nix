@@ -116,12 +116,10 @@
   } else {
     enable = true;
     allowedTCPPorts = [ 22 ];
-    allowedUDPPortRanges = [
-      {
-        from = 51820;
-        to = 51821;
-      }
-    ];
+    allowedUDPPortRanges = [{
+      from = 51820;
+      to = 51821;
+    }];
   };
 
   programs.nh = {
