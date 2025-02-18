@@ -791,7 +791,11 @@ $env.config = {
 }
 $env.DIRENV_LOG_FORMAT = ""
 $env.PROMPT_COMMAND = { prompt }
-$env.PROMPT_INDICATOR = "🦦 "
+if (sys host | get hostname) == "mango-basket" {
+    $env.PROMPT_INDICATOR = "🥭 "
+} else {
+    $env.PROMPT_INDICATOR = "🦦 "
+}
 $env.PROMPT_COMMAND_RIGHT = { randomArt }
 
 def randomArt [] {
