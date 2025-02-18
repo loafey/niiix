@@ -14,4 +14,4 @@ sudo ln -s "${CONFIG_PATH}/hardware-configs/base-configuration.nix" /etc/nixos/c
 sudo ln -s "${CONFIG_PATH}/flake.nix" /etc/nixos/flake.nix 
 
 
-sudo nixos-rebuild boot
+# :sudo nixos-rebuild boot

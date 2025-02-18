@@ -56,7 +56,7 @@
           "mango-basket" = import ./hardware {
             inherit args;
             host = "mango-basket";
-            extra-modules = [ ./desktops/plasma.nix ];
+            extra-modules = [ ];
             path = ./hardware/mango-basket;
           };
 
