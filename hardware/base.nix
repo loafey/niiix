@@ -170,9 +170,9 @@
   #     { };
 
   fileSystems."BreadBox" =
-    pkgs.lib.mkIf (config.networking.hostName == "mango-pc") {
+    pkgs.lib.mkIf (config.networking.hostName != "mango-basket") {
       mountPoint = "/home/loafey/BreadBox";
-      device = "//192.168.50.135/BreadBox";
+      device = "//mango-basket/private";
       fsType = "cifs";
       options = let
         # this line prevents hanging on network split
