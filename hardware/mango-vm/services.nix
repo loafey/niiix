@@ -16,6 +16,8 @@
 
   localtimed.enable = true;
   geoclue2.enable = true;
+  geoclue2.geoProviderUrl = "https://api.beacondb.net/v1/geolocate";
+  avahi.enable = true;
 
   xserver = {
     xkb = {

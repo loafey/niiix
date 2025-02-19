@@ -29,6 +29,8 @@
 
   mullvad-vpn.enable = true;
   geoclue2.enable = true;
+  avahi.enable = true;
+  geoclue2.geoProviderUrl = "https://api.beacondb.net/v1/geolocate";
   localtimed.enable = true;
 
   xserver = {

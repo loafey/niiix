@@ -12,8 +12,6 @@
   networking.hostName = host;
   networking.networkmanager.enable = true;
 
-  # time.timeZone = "Europe/Stockholm";
-
   i18n.defaultLocale = "en_US.UTF-8";
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "sv_SE.UTF-8";
@@ -28,6 +26,7 @@
   };
 
   services = serviceSetup;
+  # time.timeZone = "Europe/Stockholm";
 
   fonts.packages = with pkgs; [ cantarell-fonts nerd-fonts.fira-code ];
 
