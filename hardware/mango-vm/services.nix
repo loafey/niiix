@@ -14,6 +14,9 @@
     pulse.enable = true;
   };
 
+  localtimed.enable = true;
+  geoclue2.enable = true;
+
   xserver = {
     xkb = {
       variant = "";

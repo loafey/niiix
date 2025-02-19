@@ -41,6 +41,9 @@
     # interfaceName = "userspace-networking";
   };
 
+  localtimed.enable = true;
+  geoclue2.enable = true;
+
   cloudflared = {
     enable = true;
     user = "loafey";

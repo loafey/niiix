@@ -20,9 +20,7 @@
 
   openssh = {
     enable = true;
-    settings = {
-      PasswordAuthentication = false;
-    };
+    settings = { PasswordAuthentication = false; };
   };
 
   vscode-server = {
@@ -35,7 +33,8 @@
     user = "loafey";
     tunnels = {
       "17bd87f9-3726-4711-bcff-4a42a9833e36" = {
-        credentialsFile = "/home/loafey/.cloudflared/17bd87f9-3726-4711-bcff-4a42a9833e36.json";
+        credentialsFile =
+          "/home/loafey/.cloudflared/17bd87f9-3726-4711-bcff-4a42a9833e36.json";
         default = "http_status:404";
         # ingress = {
         #   "basket.loafey.se" = "ssh://localhost:22";
@@ -44,6 +43,7 @@
     };
   };
 
+  geoclue2.enable = true;
   localtimed.enable = true;
 
   tailscale = {

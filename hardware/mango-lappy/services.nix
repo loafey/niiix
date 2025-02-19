@@ -28,6 +28,8 @@
   };
 
   mullvad-vpn.enable = true;
+  geoclue2.enable = true;
+  localtimed.enable = true;
 
   xserver = {
     xkb = {
