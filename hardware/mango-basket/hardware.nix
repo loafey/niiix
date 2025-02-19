@@ -26,6 +26,16 @@
     options = [ "fmask=0077" "dmask=0077" ];
   };
 
+  fileSystems."/mnt/fruit-bowl" = {
+    device = "fruit-bowl";
+    fsType = "zfs";
+  };
+
+  fileSystems."/mnt/fruit-bowl/services" = {
+    device = "fruit-bowl/services";
+    fsType = "zfs";
+  };
+
   swapDevices =
     [{ device = "/dev/disk/by-uuid/8736ea29-652d-4564-a345-a1fd65162f9a"; }];
 
