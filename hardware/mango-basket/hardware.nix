@@ -4,29 +4,30 @@
 { config, lib, pkgs, modulesPath, ... }:
 
 {
-  imports =
-    [ (modulesPath + "/installer/scan/not-detected.nix")
-    ];
+  imports = [ (modulesPath + "/installer/scan/not-detected.nix") ];
 
-  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" "usb_storage" "sd_mod" ];
+  boot.initrd.availableKernelModules =
+    [ "nvme" "xhci_pci" "ahci" "usbhid" "usb_storage" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
+  boot.supportedFilesystems = [ "zfs" ];
+  boot.zfs.forceImportRoot = false;
+  networking.hostId = "f08cba2b";
 
-  fileSystems."/" =
-    { device = "/dev/disk/by-uuid/01dd624b-379c-41b4-b82d-397a14f59c0d";
-      fsType = "ext4";
-    };
+  fileSystems."/" = {
+    device = "/dev/disk/by-uuid/01dd624b-379c-41b4-b82d-397a14f59c0d";
+    fsType = "ext4";
+  };
 
-  fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/4FF8-6541";
-      fsType = "vfat";
-      options = [ "fmask=0077" "dmask=0077" ];
-    };
+  fileSystems."/boot" = {
+    device = "/dev/disk/by-uuid/4FF8-6541";
+    fsType = "vfat";
+    options = [ "fmask=0077" "dmask=0077" ];
+  };
 
   swapDevices =
-    [ { device = "/dev/disk/by-uuid/8736ea29-652d-4564-a345-a1fd65162f9a"; }
-    ];
+    [{ device = "/dev/disk/by-uuid/8736ea29-652d-4564-a345-a1fd65162f9a"; }];
 
   systemd.services = {
     chmoddy = {
@@ -38,7 +39,7 @@
         Type = "idle";
         Restart = "on-failure";
         RestartSec = "1";
-        ExecStart = ''chmod o+rw /dev/ttyACM0'';
+        ExecStart = "chmod o+rw /dev/ttyACM0";
       };
     };
     podman-autostart = {
@@ -51,12 +52,13 @@
         User = "loafey";
         Restart = "on-failure";
         RestartSec = "30";
-        ExecStart = ''/run/current-system/sw/bin/podman start --all --filter restart-policy=always'';
+        ExecStart =
+          "/run/current-system/sw/bin/podman start --all --filter restart-policy=always";
       };
     };
   };
 
-  system.activationScripts.script.text = ''chmod o+rw /dev/ttyACM0'';
+  system.activationScripts.script.text = "chmod o+rw /dev/ttyACM0";
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's
@@ -67,5 +69,6 @@
   # networking.interfaces.enp3s0.useDHCP = lib.mkDefault true;
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
-  hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
+  hardware.cpu.amd.updateMicrocode =
+    lib.mkDefault config.hardware.enableRedistributableFirmware;
 }
