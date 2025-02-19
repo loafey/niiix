@@ -44,6 +44,8 @@
     };
   };
 
+  localtimed.enable = true;
+
   tailscale = {
     enable = true;
     useRoutingFeatures = "both";
