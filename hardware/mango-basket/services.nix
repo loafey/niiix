@@ -64,4 +64,30 @@
       layout = "se";
     };
   };
+
+  samba = {
+    enable = true;
+    securityType = "user";
+    openFirewall = true;
+    settings = {
+      global = {
+        "workgroup" = "WORKGROUP";
+        "server string" = "breadbox";
+        "netbios name" = "breadbox";
+        "security" = "user";
+        # "hosts allow" = "192.168.0. 127.0.0.1 localhost";
+        # "hosts deny" = "0.0.0.0/0";
+        "guest account" = "nobody";
+        "map to guest" = "bad user";
+        "allow insecure wide links" = "yes";
+      };
+      "private" = {
+        "path" = "/mnt/fruit-bowl/services/shared/";
+        "browseable" = "yes";
+        "read only" = "no";
+        "follow symlinks" = "yes";
+        "wide links" = "yes";
+      };
+    };
+  };
 }
