@@ -44,6 +44,7 @@
     extraGroups = [ "networkmanager" "wheel" "input" "dialout" ];
     shell = pkgs.nushell;
     packages = [ ];
+    linger = config.networking.hostName == "mango-basket";
   };
 
   nixpkgs.config.allowUnfree = true;
