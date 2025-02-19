@@ -384,5 +384,8 @@
     },
     "editor.inlayHints.enabled": "offUnlessPressed",
     "window.titleBarStyle": "native",
-    "remote.SSH.enableRemoteCommand": true
+    "remote.SSH.enableRemoteCommand": true,
+    "[typst]": {
+        "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
+    }
 }
