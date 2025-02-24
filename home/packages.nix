@@ -53,5 +53,6 @@
       nixfmt-classic
       inkscape
       trayscale
+      feishin
     ] ++ inputs.git-flakes.packages."${pkgs.system}";
 }
