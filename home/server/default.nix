@@ -9,6 +9,7 @@
       xfce.thunar
       xfce.ristretto
       gparted
+      picard
     ];
   in p ++ inputs.git-flakes.packages."${pkgs.system}";
 }

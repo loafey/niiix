@@ -871,6 +871,11 @@ def copy-color [] {
         `
 }
 
+def remove-downloads [] {
+    ssh mango-basket -t "docker exec lidarr bash -c \"rm -rf /app/downloads/*\""
+    ssh mango-basket -t "docker exec qbittorrent bash -c \"rm -rf /downloads/*\""
+}
+
 def setup-direnv [] {
     bash -c `
         echo "use flake" >> .envrc
