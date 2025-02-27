@@ -22,5 +22,6 @@
     kdePackages.plasma-vault
     kdePackages.kaccounts-integration
     kdePackages.kaccounts-providers
+    plasmusic-toolbar
   ];
 }
