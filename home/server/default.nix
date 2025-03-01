@@ -11,6 +11,7 @@
       gparted
       picard
       fd
+      ffmpeg
     ];
   in p ++ inputs.git-flakes.packages."${pkgs.system}";
 }
