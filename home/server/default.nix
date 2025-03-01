@@ -10,6 +10,7 @@
       xfce.ristretto
       gparted
       picard
+      fd
     ];
   in p ++ inputs.git-flakes.packages."${pkgs.system}";
 }
