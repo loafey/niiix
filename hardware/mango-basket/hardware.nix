@@ -15,6 +15,8 @@
   boot.zfs.forceImportRoot = false;
   networking.hostId = "f08cba2b";
 
+  boot.kernel.sysctl = { "net.ipv4.ip_unprivileged_port_start" = 80; };
+
   fileSystems."/" = {
     device = "/dev/disk/by-uuid/01dd624b-379c-41b4-b82d-397a14f59c0d";
     fsType = "ext4";
