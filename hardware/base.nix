@@ -115,7 +115,7 @@
     ];
   } else {
     enable = true;
-    allowedTCPPorts = [ 22 ];
+    allowedTCPPorts = [ 22 80 ];
     allowedUDPPortRanges = [{
       from = 51820;
       to = 51821;
