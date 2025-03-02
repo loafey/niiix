@@ -18,6 +18,8 @@
   mullvad-vpn.enable = true;
   rpcbind.enable = true;
 
+  fail2ban.enable = true;
+
   zfs.autoScrub = {
     enable = true;
     interval = "*-*-1,15 02:30";
