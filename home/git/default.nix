@@ -1,9 +1,8 @@
-{ ... }:
-{
+{ ... }: {
   programs.git = {
     enable = true;
     userName = "Samuel Hammersberg";
-    userEmail = "samuel.hammersberg@gmail.com";
+    userEmail = "samuel@loafey.se";
     extraConfig = {
       gpg.format = "ssh";
       pull.rebase = true;
@@ -11,9 +10,7 @@
       commit.gpgSign = true;
     };
 
-    includes = [
-      { path = "~/.gitconfig.local"; }
-    ];
+    includes = [{ path = "~/.gitconfig.local"; }];
   };
 }
 
