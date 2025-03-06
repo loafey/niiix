@@ -1,5 +1,12 @@
 { inputs }:
-{ pkgs, ... }: {
+{ pkgs, ... }:
+let
+  pkgs-ext = import inputs.nixpkgs {
+    inherit (pkgs) system;
+    config.allowUnfree = true;
+    overlays = [ inputs.nix-vscode-extensions.overlays.default ];
+  };
+in {
   home.packages = [
     (pkgs.vscode-with-extensions.override {
       vscode = pkgs.vscode.overrideAttrs (old: {
@@ -24,11 +31,6 @@
           }"    > $out/lib/vscode/resources/app/out/media/letterpress-light.svg
         '';
       });
-      pkgs-ext = import inputs.nixpkgs {
-        inherit (pkgs) system;
-        config.allowUnfree = true;
-        overlays = [ inputs.nix-vscode-extensions.overlays.default ];
-      };
       vscodeExtensions = with pkgs-ext.vscode-marketplace; [
         golang.go
         rust-lang.rust-analyzer
