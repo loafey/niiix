@@ -73,7 +73,7 @@ in {
         banacorn.agda-mode
         llvm-vs-code-extensions.vscode-clangd
         ms-python.python
-
+        benjaminjurk.gas-highlight
         llvm-vs-code-extensions.lldb-dap
       ];
     })
