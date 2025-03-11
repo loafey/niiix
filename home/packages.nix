@@ -54,5 +54,6 @@
       inkscape
       trayscale
       feishin
+      signal-desktop
     ] ++ inputs.git-flakes.packages."${pkgs.system}";
 }
