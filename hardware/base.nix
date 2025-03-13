@@ -75,6 +75,7 @@
     lm_sensors
     sysstat
     cifs-utils
+    gnupg
   ];
 
   programs.nix-index-database.comma.enable = true;
