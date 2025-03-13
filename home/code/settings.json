@@ -387,5 +387,9 @@
     "remote.SSH.enableRemoteCommand": true,
     "[typst]": {
         "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
-    }
+    },
+    "chat.commandCenter.enabled": false,
+    "window.customTitleBarVisibility": "never",
+    "remote.SSH.experimental.chat": false,
+    "chat.agent.maxRequests": 0
 }
