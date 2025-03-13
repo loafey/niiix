@@ -388,8 +388,12 @@
     "[typst]": {
         "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
     },
-    "chat.commandCenter.enabled": false,
     "window.customTitleBarVisibility": "never",
     "remote.SSH.experimental.chat": false,
-    "chat.agent.maxRequests": 0
+    "chat.agent.maxRequests": 0,
+    "github.copilot.enabled": false,
+    "github.copilot.editor.enableCodeActions": false,
+    "github.copilot.nextEditSuggestions.enabled": false,
+    "chat.commandCenter.enabled": false,
+    "chat.agent.enabled": false
 }
