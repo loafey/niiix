@@ -55,5 +55,6 @@
       trayscale
       feishin
       signal-desktop
+      tangram
     ] ++ inputs.git-flakes.packages."${pkgs.system}";
 }
