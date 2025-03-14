@@ -395,5 +395,8 @@
     "github.copilot.editor.enableCodeActions": false,
     "github.copilot.nextEditSuggestions.enabled": false,
     "chat.commandCenter.enabled": false,
-    "chat.agent.enabled": false
+    "chat.agent.enabled": false,
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "workbench.commandPalette.experimental.enableNaturalLanguageSearch": false,
+    "inlineChat.lineNaturalLanguageHint": false
 }
