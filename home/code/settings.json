@@ -179,7 +179,7 @@
     },
     "workbench.preferredDarkColorTheme": "Ayu Mirage",
     "workbench.preferredLightColorTheme": "Adwaita Light",
-    "window.autoDetectColorScheme": true,
+    "window.autoDetectColorScheme": "Ayu Light Bordered",
     "rust-analyzer.inlayHints.closingBraceHints.enable": false,
     "material-icon-theme.folders.color": "#90a4af",
     "material-icon-theme.files.associations": {
