@@ -178,8 +178,8 @@
         "editor.defaultFormatter": "vscode.css-language-features"
     },
     "workbench.preferredDarkColorTheme": "Ayu Mirage",
-    "workbench.preferredLightColorTheme": "Adwaita Light",
-    "window.autoDetectColorScheme": "Ayu Light Bordered",
+    "workbench.preferredLightColorTheme": "Ayu Light Bordered",
+    "window.autoDetectColorScheme": true,
     "rust-analyzer.inlayHints.closingBraceHints.enable": false,
     "material-icon-theme.folders.color": "#90a4af",
     "material-icon-theme.files.associations": {
