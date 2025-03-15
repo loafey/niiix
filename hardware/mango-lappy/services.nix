@@ -46,6 +46,12 @@
     # interfaceName = "userspace-networking";
   };
 
+  # Enable the ClamAV service and keep the database up to date
+  clamav = {
+    daemon.enable = true;
+    updater.enable = true;
+  };
+
   power-profiles-daemon.enable = true;
   # tlp = {
   #   enable = true;
