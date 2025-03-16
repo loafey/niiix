@@ -53,7 +53,6 @@
 
   cloudflared = {
     enable = true;
-    user = "loafey";
     tunnels = {
       "302fd717-721e-4904-a482-6d9981ec5ba1" = {
         credentialsFile =
