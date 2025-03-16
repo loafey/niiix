@@ -23,5 +23,6 @@
     kdePackages.kaccounts-integration
     kdePackages.kaccounts-providers
     plasmusic-toolbar
+    kdePackages.dolphin-plugins
   ];
 }
