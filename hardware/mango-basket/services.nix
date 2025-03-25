@@ -15,10 +15,10 @@
     pulse.enable = true;
   };
 
-  clamav = {
-    daemon.enable = true;
-    updater.enable = true;
-  };
+  # clamav = {
+  #   daemon.enable = true;
+  #   updater.enable = true;
+  # };
 
   mullvad-vpn.enable = true;
   rpcbind.enable = true;
