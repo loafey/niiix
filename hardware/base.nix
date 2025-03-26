@@ -65,7 +65,6 @@
     distrobox
     tmux
     pass
-    auto-cpufreq
     p7zip
     podman-tui
     docker-compose
