@@ -269,11 +269,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1742996658,
-        "narHash": "sha256-snxgTLVq6ooaD3W3mPHu7LVWpoZKczhxHAUZy2ea4oA=",
+        "lastModified": 1743136572,
+        "narHash": "sha256-uwaVrKgi6g1TUq56247j6QvvFtYHloCkjCrEpGBvV54=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "693840c01b9bef9e54100239cef937e53d4661bf",
+        "rev": "1efd2503172016a6742c87b47b43ca2c8145607d",
         "type": "github"
       },
       "original": {
@@ -288,16 +288,15 @@
         "nixpkgs": "nixpkgs_5"
       },
       "locked": {
-        "path": "./klassy",
+        "lastModified": 1,
+        "narHash": "sha256-p7yxQxSnL4g15/lnsmAdIe/1daqnj8hClh+VK9WxZkA=",
+        "path": "/nix/store/519n4dplyp29yzcxx1yapfhrq5pc3xyi-source/klassy",
         "type": "path"
       },
       "original": {
-        "path": "./klassy",
+        "path": "/nix/store/519n4dplyp29yzcxx1yapfhrq5pc3xyi-source/klassy",
         "type": "path"
-      },
-      "parent": [
-        "git-flakes"
-      ]
+      }
     },
     "klassy_2": {
       "flake": false,
@@ -435,11 +434,11 @@
         "nixpkgs": "nixpkgs_11"
       },
       "locked": {
-        "lastModified": 1742954036,
-        "narHash": "sha256-L6QGMSkquAqW2IjiAI6Q0e0aOR1DsZW8teDxzHQaNaA=",
+        "lastModified": 1743126894,
+        "narHash": "sha256-FUsh0AWH3ndHvZsGkAf0Ng/wn8z9JydhhkICYoU4aEk=",
         "owner": "nix-community",
         "repo": "nix-vscode-extensions",
-        "rev": "463df39cfb76e4896a8625554d3c675c30fbe63a",
+        "rev": "2473e00df450ad863f552f2cc8da78e6a942118d",
         "type": "github"
       },
       "original": {
@@ -738,16 +737,15 @@
         "stremio": "stremio_2"
       },
       "locked": {
-        "path": "./stremio",
+        "lastModified": 1,
+        "narHash": "sha256-nDy4HGa7tQQO1D2paCputy+WyxkVumt2G/m+C9pYrnU=",
+        "path": "/nix/store/519n4dplyp29yzcxx1yapfhrq5pc3xyi-source/stremio",
         "type": "path"
       },
       "original": {
-        "path": "./stremio",
+        "path": "/nix/store/519n4dplyp29yzcxx1yapfhrq5pc3xyi-source/stremio",
         "type": "path"
-      },
-      "parent": [
-        "git-flakes"
-      ]
+      }
     },
     "stremio_2": {
       "flake": false,
@@ -897,11 +895,11 @@
         "nixpkgs": "nixpkgs_14"
       },
       "locked": {
-        "lastModified": 1742973471,
-        "narHash": "sha256-nneE0lIst5IDINF6+dW6Xgp8KNmsC12pb05Ws+wXkVQ=",
+        "lastModified": 1743132999,
+        "narHash": "sha256-cEqYQFxW8Uua64LckWpGrrqKIbPs/u+j2RnanhX35Js=",
         "owner": "0xc000022070",
         "repo": "zen-browser-flake",
-        "rev": "bae854c6767fb5c004cd7a4049a77be9da1b16db",
+        "rev": "9c81e4bb852d4bcb1ba525fa20d7cd2778453d2d",
         "type": "github"
       },
       "original": {
