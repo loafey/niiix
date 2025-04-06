@@ -51,15 +51,15 @@
   geoclue2.geoProviderUrl = "https://api.beacondb.net/v1/geolocate";
   avahi.enable = true;
 
-  cloudflared = {
-    enable = true;
-    tunnels = {
-      "302fd717-721e-4904-a482-6d9981ec5ba1" = {
-        credentialsFile =
-          "/home/loafey/.cloudflared/302fd717-721e-4904-a482-6d9981ec5ba1.json";
-        default = "http_status:404";
-        ingress = { "pc.loafey.se" = { service = "http://localhost:6969"; }; };
-      };
-    };
-  };
+  # cloudflared = {
+  #   enable = true;
+  #   tunnels = {
+  #     "302fd717-721e-4904-a482-6d9981ec5ba1" = {
+  #       credentialsFile =
+  #         "/home/loafey/.cloudflared/302fd717-721e-4904-a482-6d9981ec5ba1.json";
+  #       default = "http_status:404";
+  #       ingress = { "pc.loafey.se" = { service = "http://localhost:6969"; }; };
+  #     };
+  #   };
+  # };
 }

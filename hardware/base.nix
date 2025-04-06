@@ -69,7 +69,7 @@
     podman-tui
     docker-compose
     ethtool
-    cloudflared
+    # cloudflared
     sshfs
     lm_sensors
     sysstat
@@ -185,10 +185,10 @@
     };
 
   # /mnt/storage/shared
-  environment.etc.cloudflared = {
-    source = "${pkgs.cloudflared}/bin/cloudflared";
-    target = "cloudflared";
-  };
+  # environment.etc.cloudflared = {
+  #   source = "${pkgs.cloudflared}/bin/cloudflared";
+  #   target = "cloudflared";
+  # };
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions

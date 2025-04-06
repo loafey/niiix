@@ -40,19 +40,19 @@
     enableFHS = true;
   };
 
-  cloudflared = {
-    enable = true;
-    tunnels = {
-      "17bd87f9-3726-4711-bcff-4a42a9833e36" = {
-        credentialsFile =
-          "/home/loafey/.cloudflared/17bd87f9-3726-4711-bcff-4a42a9833e36.json";
-        default = "http_status:404";
-        # ingress = {
-        #   "basket.loafey.se" = "ssh://localhost:22";
-        # };
-      };
-    };
-  };
+  # cloudflared = {
+  #   enable = true;
+  #   tunnels = {
+  #     "17bd87f9-3726-4711-bcff-4a42a9833e36" = {
+  #       credentialsFile =
+  #         "/home/loafey/.cloudflared/17bd87f9-3726-4711-bcff-4a42a9833e36.json";
+  #       default = "http_status:404";
+  #       # ingress = {
+  #       #   "basket.loafey.se" = "ssh://localhost:22";
+  #       # };
+  #     };
+  #   };
+  # };
 
   geoclue2.enable = true;
   geoclue2.geoProviderUrl = "https://api.beacondb.net/v1/geolocate";
