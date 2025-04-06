@@ -389,11 +389,11 @@
         "nixpkgs": "nixpkgs_7"
       },
       "locked": {
-        "lastModified": 1743962538,
-        "narHash": "sha256-Iq1r6bN0B28U6t8ijiSRsQ2NfjtsDPTm+cflq+wIY8I=",
+        "lastModified": 1743964860,
+        "narHash": "sha256-A76NTZXwis9F05QsSTlqY1hzb9LGbbNWqMMsYF2otVY=",
         "owner": "loafey",
         "repo": "launcher",
-        "rev": "02d766da3f35584d56fdd506c44409777a39986f",
+        "rev": "98e688e3e9193f12144889af70ddf35ab2c5fc06",
         "type": "github"
       },
       "original": {
