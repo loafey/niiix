@@ -398,5 +398,13 @@
     "chat.agent.enabled": false,
     "workbench.settings.enableNaturalLanguageSearch": false,
     "workbench.commandPalette.experimental.enableNaturalLanguageSearch": false,
-    "inlineChat.lineNaturalLanguageHint": false
+    "inlineChat.lineNaturalLanguageHint": false,
+    "chat.mcp.discovery.enabled": false,
+    "chat.promptFiles": false,
+    "chat.promptFilesLocations": {},
+    "chat.setupFromDialog": false,
+    "github.copilot.chat.search.semanticTextResults": false,
+    "chat.edits2.enabled": false,
+    "accessibility.signals.editsKept": false,
+    "accessibility.signals.editsUndone": false
 }
