@@ -76,6 +76,8 @@ in {
         benjaminjurk.gas-highlight
         llvm-vs-code-extensions.lldb-dap
         swiftlang.swift-vscode
+
+        ms-vscode-remote.remote-containers
       ];
     })
   ];
