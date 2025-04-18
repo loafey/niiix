@@ -406,5 +406,6 @@
     "github.copilot.chat.search.semanticTextResults": false,
     "chat.edits2.enabled": false,
     "accessibility.signals.editsKept": false,
-    "accessibility.signals.editsUndone": false
+    "accessibility.signals.editsUndone": false,
+    "dev.containers.dockerPath": "podman"
 }
