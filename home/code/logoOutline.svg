@@ -26,15 +26,15 @@
      inkscape:pagecheckerboard="1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.40079838"
-     inkscape:cx="903.19726"
-     inkscape:cy="1111.5314"
+     inkscape:zoom="0.28340725"
+     inkscape:cx="838.01666"
+     inkscape:cy="1130.8814"
      inkscape:window-width="1920"
      inkscape:window-height="1014"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer9"
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:snap-bbox="true"
@@ -59,7 +59,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="outline"
-     transform="translate(89.625832,61.98001)"
+     transform="translate(105.49669,62.91359)"
      style="stroke:#1e222e;stroke-width:15;stroke-dasharray:none;stroke-opacity:1">
     <g
        inkscape:groupmode="layer"
@@ -218,7 +218,7 @@
      id="layer10"
      inkscape:label="tail bottom"
      style="display:inline"
-     sodipodi:insensitive="true">
+     transform="translate(15.870859,0.93357997)">
     <path
        style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:11.1125;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 140.85077,354.80539 c -4.29966,4.85044 -27.28737,53.85801 5.53065,74.87633 29.57076,18.93861 64.79898,7.799 133.86187,-18.82372 68.93337,-26.57278 124.64163,-69.57028 197.68377,-77.72036"
@@ -230,7 +230,7 @@
      id="layer8"
      inkscape:label="ears"
      style="display:inline"
-     sodipodi:insensitive="true">
+     transform="translate(15.870859,0.93357997)">
     <g
        inkscape:label="print-logo"
        id="layer1-3-5"
@@ -298,7 +298,7 @@
      id="layer4"
      inkscape:label="face"
      style="display:inline"
-     sodipodi:insensitive="true">
+     transform="translate(15.870859,0.93357997)">
     <path
        style="fill:none;stroke:#ffffff;stroke-width:11.9062;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 176.87281,212.52032 33.28656,22.1181 -33.93644,17.11938"
@@ -335,7 +335,7 @@
      id="layer9"
      inkscape:label="tail top"
      style="display:inline"
-     sodipodi:insensitive="true">
+     transform="translate(15.870859,0.93357997)">
     <path
        id="path52097"
        style="color:#000000;display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none"
