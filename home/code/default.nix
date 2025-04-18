@@ -75,6 +75,7 @@ in {
         ms-python.python
         benjaminjurk.gas-highlight
         llvm-vs-code-extensions.lldb-dap
+        swiftlang.swift-vscode
       ];
     })
   ];
