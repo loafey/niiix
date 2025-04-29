@@ -66,7 +66,7 @@
                     ]
                 }
             ]
-        },
+        }
     ],
     "zenMode.centerLayout": false,
     "haskell.formattingProvider": "fourmolu",
@@ -183,7 +183,7 @@
     "rust-analyzer.inlayHints.closingBraceHints.enable": false,
     "material-icon-theme.folders.color": "#90a4af",
     "material-icon-theme.files.associations": {
-        "*.rs": "rescript",
+        "*.rs": "rescript"
     },
     "latex-workshop.latex.build.forceRecipeUsage": false,
     "workbench.startupEditor": "none",
