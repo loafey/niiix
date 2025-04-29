@@ -56,5 +56,6 @@
       feishin
       signal-desktop
       tangram
+      gcc
     ] ++ inputs.git-flakes.packages."${pkgs.system}";
 }
