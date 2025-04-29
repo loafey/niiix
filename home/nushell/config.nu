@@ -1022,3 +1022,20 @@ def pc [] {
 }
 
 # bunbun
+
+def replace [...args] {
+    let stdin = each { |in| $in } | str join "\n"
+    mut newArgs = []
+    mut i = 0; 
+    loop { 
+        if $i + 1 > ($args | length) { break }; 
+        let a = $args | get $i
+        let b = $args | get ($i + 1)
+        $newArgs = $newArgs ++ [[$a, $b]]
+        $i = $i + 2
+    }
+    let defines = $newArgs | each {|arg| $"#define ($arg.0) ($arg.1)"} | str join "\n"
+    let input = $defines ++ "\n" ++ $stdin
+    let beforeTrim = echo $"($input)" | gcc -E -S -
+    echo $beforeTrim | lines | reverse | drop 6 | reverse | str join "\n" | str trim --left
+}
