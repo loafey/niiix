@@ -4,6 +4,7 @@
     config = {
       allowUnfree = true;
       allowUnfreePredicate = (_: true);
+      permittedInsecurePackages = [ "electron-33.4.11" ];
     };
   };
 
