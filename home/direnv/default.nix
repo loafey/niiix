@@ -9,5 +9,5 @@
     };
   };
 
-  xdg.configFile."direnv/direnv.toml".source = ./direnv.conf;
+  xdg.configFile."direnv/direnv.toml".source = ./direnv.toml;
 }
