@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{ pkgs, ... }: {
   programs.direnv = {
     enable = true;
     enableBashIntegration = true; # see note on other shells below
@@ -9,4 +8,6 @@
       package = pkgs.nix-direnv;
     };
   };
+
+  xdg.configFile."direnv/direnv.toml".source = ./direnv.conf;
 }
