@@ -11,6 +11,7 @@
   environment.systemPackages = with pkgs; [
     kdePackages.kcmutils
     kdePackages.kate
+    kdePackages.kdesu
     vlc
     clinfo
     glxinfo
