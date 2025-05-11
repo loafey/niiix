@@ -57,5 +57,6 @@
       signal-desktop
       tangram
       gcc
+      zed-editor
     ] ++ inputs.git-flakes.packages."${pkgs.system}";
 }
