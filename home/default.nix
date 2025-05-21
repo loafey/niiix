@@ -30,6 +30,7 @@
     ./neovim
     ./zsh
     ./tmux
+    ./zed
     # ./vivaldi
   ] ++ serverSoftware;
 

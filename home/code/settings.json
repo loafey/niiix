@@ -396,9 +396,21 @@
     "inlineChat.lineNaturalLanguageHint": false,
     "chat.mcp.discovery.enabled": false,
     "chat.promptFiles": false,
-    "chat.promptFilesLocations": {},
+    "chat.promptFilesLocations": {
+        ".github/prompts": false
+    },
     "chat.setupFromDialog": false,
     "github.copilot.chat.search.semanticTextResults": false,
     "chat.edits2.enabled": false,
-    "dev.containers.dockerPath": "podman"
+    "dev.containers.dockerPath": "podman",
+    "accessibility.verbosity.panelChat": false,
+    "accessibility.verbosity.inlineChat": false,
+    "chat.detectParticipant.enabled": false,
+    "chat.extensionTools.enabled": false,
+    "chat.mcp.enabled": false,
+    "chat.sendElementsToChat.attachCSS": false,
+    "chat.sendElementsToChat.attachImages": false,
+    "chat.sendElementsToChat.enabled": false,
+    "chat.useFileStorage": false,
+    "editor.inlineSuggest.enabled": false
 }

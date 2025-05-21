@@ -1,0 +1,62 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "icon_theme": "Material Icon Theme",
+  "theme": "Ayu Mirage",
+  "ui_font_size": 16,
+  "buffer_font_size": 13,
+  "buffer_font_family": "FiraCode Nerd Font Mono",
+  "edit_predictions": {
+    "disabled_globs": ["**/*", "**/*.*"]
+  },
+  "features": {
+    "edit_prediction_provider": "none",
+    "collab": false,
+    "assistant": false,
+    "chat": false
+  },
+  "agent": {
+    "enabled": false,
+    "version": "2"
+  },
+  "collaboration_panel": {
+    "button": false
+  },
+  "chat_panel": {
+    "button": "never"
+  },
+  "format_on_save": "on",
+  "lsp": {
+    "rust-analyzer": {
+      "enable_lsp_tasks": true,
+      "path": "/run/current-system/sw/bin/rust-analyzer",
+      "initialization_options": {
+        "check": {
+          "command": "clippy"
+        }
+      },
+      "inlayHints": {
+        "maxLength": null,
+        "lifetimeElisionHints": {
+          "enable": "skip_trivial",
+          "useParameterNames": true
+        },
+        "closureReturnTypeHints": {
+          "enable": "always"
+        }
+      }
+    },
+    "tinymist": {
+      "settings": {
+        "exportPdf": "onSave",
+        "outputPath": "$root/$name"
+      }
+    }
+  }
+}
