@@ -10,13 +10,15 @@
     "context": "Workspace",
     "bindings": {
       // "shift shift": "file_finder::Toggle"
+      "ctrl-ö": "workspace::ToggleBottomDock"
     }
   },
   {
     "context": "Editor",
     "bindings": {
       "ctrl-shift-up": "editor::AddSelectionAbove", // Insert Cursor Above
-      "ctrl-shift-down": "editor::AddSelectionBelow" // Insert Cursor Below
+      "ctrl-shift-down": "editor::AddSelectionBelow", // Insert Cursor Below
+      "ctrl-'": ["editor::ToggleComments", { "advance_downwards": false }]
       // "j k": ["workspace::SendKeystrokes", "escape"]
     }
   }

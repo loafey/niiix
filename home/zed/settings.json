@@ -58,5 +58,40 @@
         "outputPath": "$root/$name"
       }
     }
+  },
+  "tab_bar": {
+    "show": true,
+    "show_nav_history_buttons": false,
+    "show_tab_bar_buttons": true
+  },
+  "inlay_hints": {
+    "enabled": false
+  },
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": false,
+    "selections_menu": false,
+    "agent_review": false
+  },
+  "title_bar": {
+    "show_branch_icon": true
+  },
+  "middle_click_paste": false,
+  "indent_guides": {
+    "coloring": "indent_aware"
+  },
+  "tabs": {
+    "file_icons": true
+  },
+  "diagnostics": {
+    "include_warnings": true,
+    "inline": {
+      "enabled": true
+    }
+  },
+  "terminal": {
+    "toolbar": {
+      "breadcrumbs": false
+    }
   }
 }
