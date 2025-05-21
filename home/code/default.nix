@@ -1,11 +1,15 @@
 { inputs }:
-{ pkgs, ... }:
+{ pkgs, config, ... }:
 let
   pkgs-ext = import inputs.nixpkgs {
     inherit (pkgs) system;
     config.allowUnfree = true;
     overlays = [ inputs.nix-vscode-extensions.overlays.default ];
   };
+  path = pkgs.lib.escapeShellArg "/home/loafey/Git/niiix/home/code";
+  dotfiles =
+    pkgs.runCommandLocal "nixos-mutable-file-${builtins.baseNameOf path}" { }
+    "ln -s ${path} $out";
 in {
   home.packages = [
     (pkgs.vscode-with-extensions.override {
@@ -82,6 +86,7 @@ in {
     })
   ];
 
-  xdg.configFile."Code/User/settings.json".source = ./settings.json;
-  xdg.configFile."Code/User/keybindings.json".source = ./keybindings.json;
+  xdg.configFile."Code/User/settings.json".source = "${dotfiles}/settings.json";
+  xdg.configFile."Code/User/keybindings.json".source =
+    "${dotfiles}/keybindings.json";
 }

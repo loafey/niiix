@@ -92,7 +92,7 @@
     "zenMode.hideStatusBar": false,
     "git.ignoreRebaseWarning": true,
     "rust-analyzer.lens.implementations": false,
-    "cSpell.enableFiletypes": [
+    "cSpell.enableFileTypes": [
         "!c",
         "!haskell",
         "!rust",
@@ -105,7 +105,6 @@
         "𝓛": true
     },
     "workbench.colorTheme": "Ayu Mirage",
-    "workbench.productIconTheme": "icons-carbon",
     "workbench.iconTheme": "material-icon-theme",
     "security.workspace.trust.startupPrompt": "never",
     "security.workspace.trust.enabled": false,
@@ -167,7 +166,6 @@
         "Vecture",
         "Xform"
     ],
-    "markdown.marp.enableHtml": true,
     "rust-analyzer.inlayHints.enable": false,
     "rust-analyzer.inlayHints.renderColons": false,
     "rust-analyzer.cargo.buildScripts.enable": true,
@@ -222,9 +220,6 @@
     "typescript.updateImportsOnFileMove.enabled": "always",
     "editor.linkedEditing": true,
     "slint.preview.style": "fluent",
-    "[csharp]": {
-        "editor.defaultFormatter": "ms-dotnettools.csharp"
-    },
     "terminal.integrated.fontFamily": "FiraCode Nerd Font",
     "breadcrumbs.enabled": true,
     "typst-lsp.exportPdf": "never",
@@ -405,7 +400,5 @@
     "chat.setupFromDialog": false,
     "github.copilot.chat.search.semanticTextResults": false,
     "chat.edits2.enabled": false,
-    "accessibility.signals.editsKept": false,
-    "accessibility.signals.editsUndone": false,
     "dev.containers.dockerPath": "podman"
 }
