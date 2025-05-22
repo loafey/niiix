@@ -920,3 +920,5 @@ def replace [...args] {
     let beforeTrim = echo $"($input)" | gcc -E -S -
     echo $beforeTrim | lines | reverse | drop 6 | reverse | str join "\n" | str trim --left
 }
+
+alias zed = zeditor
