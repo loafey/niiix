@@ -96,5 +96,6 @@
       "breadcrumbs": false
     }
   },
+  "outline_panel": { "button": false },
   "load_direnv": "shell_hook"
 }
