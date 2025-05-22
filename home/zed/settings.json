@@ -7,9 +7,11 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "theme": "Ayu Mirage",
+  "theme": "Ayu Light",
   "ui_font_size": 16,
+  "ui_font_weight": 500,
   "buffer_font_size": 13,
+  "buffer_font_weight": 550,
   "buffer_font_family": "FiraCode Nerd Font Mono",
   "edit_predictions": {
     "disabled_globs": ["**/*", "**/*.*"]
