@@ -92,5 +92,6 @@
     "toolbar": {
       "breadcrumbs": false
     }
-  }
+  },
+  "load_direnv": "shell_hook"
 }
