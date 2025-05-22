@@ -6,7 +6,7 @@ let
     "ln -s ${path} $out";
 in {
   programs.zed-editor = {
-    extensions = [ "nix" "toml" "elixir" "make" "rust" "typst" ];
+    extensions = [ "nix" "toml" "elixir" "make" "rust" "typst" "html" "javascript" ];
     enable = true;
   };
   xdg.configFile."zed/settings.json".source =
