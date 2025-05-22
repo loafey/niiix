@@ -13,7 +13,8 @@
       "ctrl-j": "workspace::ToggleBottomDock",
       "ctrl-ö": "terminal_panel::ToggleFocus",
       "alt-x": "editor::ExpandMacroRecursively",
-      "alt-r": "editor::RestartLanguageServer"
+      "alt-r": "editor::RestartLanguageServer",
+      "alt-d": "editor::OpenDocs"
     }
   },
   {
