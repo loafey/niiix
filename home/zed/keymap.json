@@ -11,7 +11,9 @@
     "bindings": {
       // "shift shift": "file_finder::Toggle"
       "ctrl-j": "workspace::ToggleBottomDock",
-      "ctrl-ö": "terminal_panel::ToggleFocus"
+      "ctrl-ö": "terminal_panel::ToggleFocus",
+      "alt-x": "editor::ExpandMacroRecursively",
+      "alt-r": "editor::RestartLanguageServer"
     }
   },
   {
