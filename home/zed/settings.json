@@ -9,8 +9,9 @@
 {
   "icon_theme": "Material Icon Theme",
   "theme": "Ayu Light",
-  "ui_font_size": 16,
+  "ui_font_size": 15,
   "ui_font_weight": 500,
+  "ui_font_family": "FiraCode Nerd Font Mono",
   "buffer_font_size": 13,
   "buffer_font_weight": 550,
   "buffer_font_family": "FiraCode Nerd Font Mono",
