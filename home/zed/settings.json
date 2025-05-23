@@ -97,6 +97,18 @@
       "breadcrumbs": false
     }
   },
-  "outline_panel": { "button": false },
+  "project_panel": {
+    "default_width": 300
+    // "dock": "right"
+  },
+  "git_panel": {
+    "default_width": 300
+    // "dock": "right"
+  },
+  "outline_panel": {
+    "button": false,
+    "default_width": 360,
+    "dock": "right"
+  },
   "load_direnv": "shell_hook"
 }
