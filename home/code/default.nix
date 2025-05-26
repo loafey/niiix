@@ -82,6 +82,7 @@ in {
         swiftlang.swift-vscode
 
         ms-vscode-remote.remote-containers
+        elijah-potter.harper
       ];
     })
   ];
