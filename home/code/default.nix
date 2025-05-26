@@ -11,6 +11,7 @@ let
     pkgs.runCommandLocal "nixos-mutable-file-${builtins.baseNameOf path}" { }
     "ln -s ${path} $out";
 in {
+
   home.packages = [
     (pkgs.vscode-with-extensions.override {
       vscode = pkgs.vscode.overrideAttrs (old: {
@@ -85,6 +86,7 @@ in {
         elijah-potter.harper
       ];
     })
+    pkgs.harper
   ];
 
   xdg.configFile."Code/User/settings.json".source = "${dotfiles}/settings.json";
