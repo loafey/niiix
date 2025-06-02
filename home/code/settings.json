@@ -413,5 +413,6 @@
     "chat.sendElementsToChat.enabled": false,
     "chat.useFileStorage": false,
     "editor.inlineSuggest.enabled": false,
-    "harper.path": "/nix/store/8ni3b4frl0a64hw1sfjs9ggk6xng8dfy-user-environment/bin/harper-ls"
+    "harper.path": "/nix/store/8ni3b4frl0a64hw1sfjs9ggk6xng8dfy-user-environment/bin/harper-ls",
+    "workbench.editor.empty.hint": "hidden"
 }
