@@ -124,6 +124,8 @@
         "dummyframe",
         "dvarm",
         "dvrk",
+        "eframe",
+        "egui",
         "Endianness",
         "Evaluable",
         "femmepp",
