@@ -109,6 +109,7 @@
     "security.workspace.trust.startupPrompt": "never",
     "security.workspace.trust.enabled": false,
     "cSpell.userWords": [
+        "Addrs",
         "Aktivitet",
         "Arrangör",
         "boardofstudies",
@@ -149,6 +150,7 @@
         "rehype",
         "reimplement",
         "rgba",
+        "rkyv",
         "Sandboxing",
         "selftext",
         "serde",
