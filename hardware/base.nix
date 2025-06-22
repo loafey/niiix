@@ -74,7 +74,7 @@
     sysstat
     cifs-utils
     gnupg
-    rust-analyzer
+    # rust-analyzer
   ];
 
   programs.nix-index-database.comma.enable = true;
