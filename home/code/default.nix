@@ -82,6 +82,9 @@ in {
         llvm-vs-code-extensions.lldb-dap
         swiftlang.swift-vscode
 
+        ms-dotnettools.csharp
+        geequlim.godot-tools
+
         ms-vscode-remote.remote-containers
         elijah-potter.harper
       ];

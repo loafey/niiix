@@ -6,11 +6,12 @@ let
     "ln -s ${path} $out";
 in {
   programs.zed-editor = {
-    extensions = [ "nix" "toml" "elixir" "make" "rust" "typst" "html" "javascript" ];
+    extensions =
+      [ "nix" "toml" "elixir" "make" "rust" "typst" "html" "javascript" ];
     enable = true;
   };
-  xdg.configFile."zed/settings.json".source =
-    lib.mkForce "${dotfiles}/settings.json";
-  xdg.configFile."zed/keymap.json".source =
-    lib.mkForce "${dotfiles}/keymap.json";
+  # xdg.configFile."zed/settings.json".source =
+  # lib.mkForce "${dotfiles}/settings.json";
+  # xdg.configFile."zed/keymap.json".source =
+  # lib.mkForce "${dotfiles}/keymap.json";
 }
