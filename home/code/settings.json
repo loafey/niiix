@@ -6,7 +6,6 @@
     "[rust]": {
         "editor.defaultFormatter": "rust-lang.rust-analyzer"
     },
-    "csharp.referencesCodeLens.enabled": false,
     "git.confirmSync": false,
     "git.autofetch": true,
     "git.enableSmartCommit": true,
@@ -418,5 +417,6 @@
     "chat.useFileStorage": false,
     "editor.inlineSuggest.enabled": false,
     "harper.path": "/nix/store/1d5hzhnssysrannyqk0m867xbsacd0gh-user-environment/bin/harper-ls",
-    "workbench.editor.empty.hint": "hidden"
+    "workbench.editor.empty.hint": "hidden",
+    "dotnet.codeLens.enableReferencesCodeLens": false
 }

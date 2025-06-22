@@ -84,6 +84,7 @@ in {
 
         ms-dotnettools.csharp
         geequlim.godot-tools
+        ms-dotnettools.vscode-dotnet-runtime
 
         ms-vscode-remote.remote-containers
         elijah-potter.harper
