@@ -49,7 +49,7 @@
       zsh-history-substring-search
       obsidian
       fish
-      inputs.zen-browser.packages."${system}".default
+      # inputs.zen-browser.packages."${system}".default
       nixfmt-classic
       inkscape
       trayscale

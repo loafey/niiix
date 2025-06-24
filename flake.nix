@@ -13,60 +13,52 @@
     };
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=v0.4.1";
     vscode-server.url = "github:nix-community/nixos-vscode-server";
-    zen-browser.url = "github:0xc000022070/zen-browser-flake";
+    # zen-browser.url = "github:0xc000022070/zen-browser-flake";
   };
 
-  outputs =
-    { self
-    , nixpkgs
-    , home-manager
-    , nix-index-database
-    , nix-flatpak
+  outputs = { self, nixpkgs, home-manager, nix-index-database, nix-flatpak
     , vscode-server
-    , zen-browser
-    , ...
-    }@inputs: {
-      nixosConfigurations =
-        let
-          args = {
-            inherit nixpkgs;
-            userName = "loafey";
-            inherit inputs;
-            inherit home-manager;
-            index = nix-index-database.nixosModules.nix-index;
-            flatpak = nix-flatpak.nixosModules.nix-flatpak;
-            vscode-server = vscode-server.nixosModules.default;
-          };
-        in
-        {
-          "mango-vm" = import ./hardware {
-            inherit args;
-            host = "mango-vm";
-            extra-modules = [ ./desktops/gnome.nix ];
-            path = ./hardware/mango-vm;
-          };
-
-          "mango-lappy" = import ./hardware {
-            inherit args;
-            host = "mango-lappy";
-            extra-modules = [ ./desktops/plasma.nix ];
-            path = ./hardware/mango-lappy;
-          };
-
-          "mango-basket" = import ./hardware {
-            inherit args;
-            host = "mango-basket";
-            extra-modules = [ ];
-            path = ./hardware/mango-basket;
-          };
-
-          "mango-pc" = import ./hardware {
-            inherit args;
-            host = "mango-pc";
-            extra-modules = [ ./desktops/plasma.nix ];
-            path = ./hardware/mango-pc;
-            extra-config = ./hardware/mango-pc/nvidia.nix;
-          };
+    # , zen-browser
+    , ... }@inputs: {
+      nixosConfigurations = let
+        args = {
+          inherit nixpkgs;
+          userName = "loafey";
+          inherit inputs;
+          inherit home-manager;
+          index = nix-index-database.nixosModules.nix-index;
+          flatpak = nix-flatpak.nixosModules.nix-flatpak;
+          vscode-server = vscode-server.nixosModules.default;
         };
+      in {
+        "mango-vm" = import ./hardware {
+          inherit args;
+          host = "mango-vm";
+          extra-modules = [ ./desktops/gnome.nix ];
+          path = ./hardware/mango-vm;
+        };
+
+        "mango-lappy" = import ./hardware {
+          inherit args;
+          host = "mango-lappy";
+          extra-modules = [ ./desktops/plasma.nix ];
+          path = ./hardware/mango-lappy;
+        };
+
+        "mango-basket" = import ./hardware {
+          inherit args;
+          host = "mango-basket";
+          extra-modules = [ ];
+          path = ./hardware/mango-basket;
+        };
+
+        "mango-pc" = import ./hardware {
+          inherit args;
+          host = "mango-pc";
+          extra-modules = [ ./desktops/plasma.nix ];
+          path = ./hardware/mango-pc;
+          extra-config = ./hardware/mango-pc/nvidia.nix;
+        };
+      };
     };
 }
