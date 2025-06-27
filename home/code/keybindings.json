@@ -47,7 +47,7 @@
         "command": "-workbench.action.focusSideBar"
     },
     {
-        "key": "ctrl+k",
+        "key": "ctrl+b",
         "command": "workbench.action.toggleSidebarVisibility"
     },
     {

@@ -378,7 +378,6 @@
     "window.commandCenter": false,
     "rust-analyzer.inlayHints.closureStyle": "hide",
     "rust-analyzer.inlayHints.genericParameterHints.const.enable": false,
-    "workbench.activityBar.location": "hidden",
     "workbench.editor.showTabs": "none",
     "workbench.sideBar.location": "right",
     "autoHide.ui": {
@@ -395,7 +394,6 @@
     "[typst]": {
         "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
     },
-    "window.customTitleBarVisibility": "never",
     "remote.SSH.experimental.chat": false,
     "chat.agent.maxRequests": 0,
     "github.copilot.enabled": false,
@@ -427,5 +425,10 @@
     "editor.inlineSuggest.enabled": false,
     "harper.path": "/nix/store/1d5hzhnssysrannyqk0m867xbsacd0gh-user-environment/bin/harper-ls",
     "workbench.editor.empty.hint": "hidden",
-    "dotnet.codeLens.enableReferencesCodeLens": false
+    "dotnet.codeLens.enableReferencesCodeLens": false,
+    "workbench.activityBar.location": "top",
+    "autoHide.enable": false,
+    "workbench.editor.editorActionsLocation": "hidden",
+    "workbench.layoutControl.enabled": false,
+    "window.customTitleBarVisibility": "never"
 }
