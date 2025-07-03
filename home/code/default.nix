@@ -85,6 +85,7 @@ let
 
       ms-vscode-remote.remote-containers
       elijah-potter.harper
+      editorconfig.editorconfig
     ];
   });
 in {
