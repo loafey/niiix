@@ -436,5 +436,17 @@
     "workbench.editor.editorActionsLocation": "hidden",
     "workbench.layoutControl.enabled": false,
     "window.customTitleBarVisibility": "never",
-    "telemetry.feedback.enabled": false
+    "telemetry.feedback.enabled": false,
+    "terminal.integrated.initialHint": false,
+    "chat.implicitContext.enabled": {
+        "panel": "never"
+    },
+    "chat.instructionsFilesLocations": {
+        ".github/instructions": false
+    },
+    "chat.modeFilesLocations": {
+        ".github/chatmodes": false
+    },
+    "inlineChat.holdToSpeech": false,
+    "notebook.experimental.generate": false
 }
