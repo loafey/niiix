@@ -435,5 +435,6 @@
     "autoHide.enable": false,
     "workbench.editor.editorActionsLocation": "hidden",
     "workbench.layoutControl.enabled": false,
-    "window.customTitleBarVisibility": "never"
+    "window.customTitleBarVisibility": "never",
+    "telemetry.feedback.enabled": false
 }
