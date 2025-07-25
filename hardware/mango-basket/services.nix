@@ -37,7 +37,7 @@
 
   vscode-server = {
     enable = true;
-    enableFHS = true;
+    # enableFHS = true;
   };
 
   # cloudflared = {
