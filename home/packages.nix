@@ -8,7 +8,6 @@
       neofetch
       slack
       protonup-qt
-      youtube-music
       krita
       lutris
       cartridges
