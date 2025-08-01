@@ -135,7 +135,7 @@
     source = "${pkgs.nfs-utils.out}/bin/mount.nfs";
   };
 
-  systemd.extraConfig = "DefaultTimeoutStopSec=10s";
+  # systemd.extraConfig = "DefaultTimeoutStopSec=10s";
 
   # systemd.mounts = if config.networking.hostName != "mango-basket" then [{
   #   type = "nfs";
