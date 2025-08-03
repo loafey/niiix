@@ -18,7 +18,7 @@ nix flake update
 #    git push
 #}
 #cd ..
-nh os switch .
+nh os boot .
 # stinky goodness
 try {
     git add flake.lock
