@@ -8,23 +8,26 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    git-flakes.url = "github:loafey/git-flakes";
+    nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
   };
 
   outputs =
-    { nixpkgs, home-manager, ... }:
+    { nixpkgs, home-manager, git-flakes, ... }:
     let
-      system = "aarch64-darwin";
-      pkgs = nixpkgs.legacyPackages.${system};
+      pkgs = import nixpkgs { system = "aarch64-darwin"; config.allowUnfree = true; };
     in
     {
       homeConfigurations."loafey" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-
         # Specify your home configuration modules here, for example,
         # the path to your home.nix.
         modules = [ ./macos.nix ];
 
         # Optionally use extraSpecialArgs
+        extraSpecialArgs = {
+          inherit git-flakes;
+        };
         # to pass through arguments to home.nix
       };
     };

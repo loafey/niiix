@@ -1,5 +1,9 @@
-{ config, pkgs, ... }:
+{ config, pkgs, git-flakes, ... }:
 
+let 
+  grompt = (builtins.elemAt git-flakes.packages."${pkgs.system}" 1);
+  grompt-prompt = (builtins.elemAt git-flakes.packages."${pkgs.system}" 3);
+in
 {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
@@ -19,10 +23,9 @@
   # environment.
   home.packages = [
     pkgs.neovim
-    pkgs.vscodium
-    # # Adds the 'hello' command to your environment. It prints a friendly
-    # # "Hello, world!" when run.
-    # pkgs.hello
+    pkgs.vscode
+    # grompt
+    # grompt-prompt
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
