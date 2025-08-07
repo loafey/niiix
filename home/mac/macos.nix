@@ -24,7 +24,8 @@ in
   home.packages = [
     pkgs.neovim
     pkgs.vscode
-    lazygit
+    pkgs.lazygit
+    
     # grompt
     # grompt-prompt
 
