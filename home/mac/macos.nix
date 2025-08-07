@@ -25,7 +25,7 @@ in
     pkgs.neovim
     pkgs.vscode
     pkgs.lazygit
-    
+    pkgs.btop
     # grompt
     # grompt-prompt
 
