@@ -19,6 +19,12 @@ in
   # release notes.
   home.stateVersion = "25.05"; # Please read the comment before changing.
 
+  imports = [
+    ./../alacritty
+    ./../tmux
+    ./../kitty
+  ];
+
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = [
@@ -26,6 +32,9 @@ in
     pkgs.vscode
     pkgs.lazygit
     pkgs.btop
+    pkgs.alacritty
+    pkgs.kitty
+    pkgs.tmux
     # grompt
     # grompt-prompt
 
