@@ -44,6 +44,7 @@ in
     pkgs.tmux
     pkgs.alt-tab-macos
     pkgs.fzf
+    pkgs.git
     # grompt
     # grompt-prompt
     pkgs.nerd-fonts.fira-code

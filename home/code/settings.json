@@ -265,6 +265,12 @@
             "icon": "terminal-tmux"
         }
     },
+    "terminal.integrated.profiles.osx": {
+        "nu": {
+            "path": "/Users/loafey/Git/niiix/home/mac/scripts/shell.sh"
+        }
+    },
+    "terminal.integrated.defaultProfile.osx": "nu",
     "latex-workshop.message.latexlog.exclude": [
         "Some font shapes were not available, defaults substituted.",
         "Font shape `.*' undefined"
