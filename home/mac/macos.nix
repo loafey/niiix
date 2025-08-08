@@ -60,7 +60,7 @@ in
       name = "grompt";
       runtimeInputs = [ ];
       text = ''
-      /Users/loafey/Git/grompt/target/release/grompt
+      /Users/loafey/Git/personal/grompt/target/release/grompt
       '';
     })
 
