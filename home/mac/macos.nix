@@ -35,8 +35,22 @@ in
     pkgs.alacritty
     pkgs.kitty
     pkgs.tmux
+    pkgs.alt-tab-macos
+    pkgs.fzf
     # grompt
     # grompt-prompt
+    (pkgs.writeShellApplication {
+      name = "flg";
+      runtimeInputs = [ pkgs.lazygit pkgs.fzf ];
+      text = ./scripts/project-lazy-git.sh;
+    })
+    (pkgs.writeShellApplication {
+      name = "rebuild";
+      runtimeInputs = [ ];
+      text = ''
+      home-manager switch --flake ~/Git/niiix/home/mac/
+      '';
+    })
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
