@@ -24,6 +24,7 @@ in
     ./../tmux
     ./../kitty
     ./../grompt
+    ./../nushell
   ];
 
   programs.nushell = {
