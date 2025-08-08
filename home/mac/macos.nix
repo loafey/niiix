@@ -23,6 +23,7 @@ in
     ./../alacritty
     ./../tmux
     ./../kitty
+    ./../grompt
   ];
 
   # The home.packages option allows you to install Nix packages into your
@@ -49,6 +50,13 @@ in
       runtimeInputs = [ ];
       text = ''
       home-manager switch --flake ~/Git/niiix/home/mac/
+      '';
+    })
+    (pkgs.writeShellApplication {
+      name = "grompt";
+      runtimeInputs = [ ];
+      text = ''
+      /Users/loafey/Git/grompt/target/release/grompt
       '';
     })
 
