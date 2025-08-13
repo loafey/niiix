@@ -533,5 +533,10 @@
         "key": "ctrl+alt+i",
         "command": "-workbench.panel.chat",
         "when": "workbench.panel.chat.view.copilot.active"
+    },
+    {
+        "key": "shift+cmd+g",
+        "when": "isMac",
+        "command": "workbench.view.scm"
     }
 ]
