@@ -46,6 +46,7 @@ in
     pkgs.fzf
     pkgs.git
     pkgs.aerospace
+    pkgs.fish
     # grompt
     # grompt-prompt
     pkgs.nerd-fonts.fira-code
