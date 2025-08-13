@@ -45,6 +45,7 @@ in
     pkgs.alt-tab-macos
     pkgs.fzf
     pkgs.git
+    pkgs.aerospace
     # grompt
     # grompt-prompt
     pkgs.nerd-fonts.fira-code
