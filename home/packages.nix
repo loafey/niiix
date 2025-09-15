@@ -28,7 +28,6 @@
       alacritty
       prettierd
       lsd
-      floorp
       protontricks
       zenity
       ripgrep
