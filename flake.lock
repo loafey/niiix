@@ -273,11 +273,11 @@
         "stremio": "stremio"
       },
       "locked": {
-        "lastModified": 1743949041,
-        "narHash": "sha256-/ZstYzq8ZZM3ZEoQG/ck9HNPewpN1hBR+r5PAZsDcYM=",
+        "lastModified": 1758037944,
+        "narHash": "sha256-pwTd9z6NyKbPm/3rCx/QopiZm30sL+qq7qo8Nj0Sh/E=",
         "owner": "loafey",
         "repo": "git-flakes",
-        "rev": "1a94c8292ed63cd94edad30b05703cd9be5b1d22",
+        "rev": "a42ab5b82f9af0a1bd947391f9e40ab824a0ddf0",
         "type": "github"
       },
       "original": {
