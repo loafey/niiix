@@ -294,11 +294,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1758036480,
-        "narHash": "sha256-DNEjGFZA4hpEigZSagPFqXX2VU4V2Yx+a/7N5JLxYJA=",
+        "lastModified": 1758037228,
+        "narHash": "sha256-8JpNshA/6Ue9ANswuqPNJ35Q21ibyIlx35NjMGJk9gI=",
         "owner": "loafey",
         "repo": "grompt",
-        "rev": "ed3150499c844123c6617f78f337698676d2dff6",
+        "rev": "b1fc3718ffae02705de6095e34fe1f5c321bdcbf",
         "type": "github"
       },
       "original": {
