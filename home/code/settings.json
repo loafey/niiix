@@ -467,7 +467,12 @@
     "workbench.settings.enableNaturalLanguageSearch": false,
     "workbench.commandPalette.experimental.enableNaturalLanguageSearch": false,
     "inlineChat.lineNaturalLanguageHint": false,
-    "chat.mcp.discovery.enabled": false,
+    "chat.mcp.discovery.enabled": {
+        "claude-desktop": false,
+        "windsurf": false,
+        "cursor-global": false,
+        "cursor-workspace": false
+    },
     "chat.promptFiles": false,
     "chat.promptFilesLocations": {
         ".github/prompts": false
@@ -480,7 +485,6 @@
     "accessibility.verbosity.inlineChat": false,
     "chat.detectParticipant.enabled": false,
     "chat.extensionTools.enabled": false,
-    "chat.mcp.enabled": false,
     "chat.sendElementsToChat.attachCSS": false,
     "chat.sendElementsToChat.attachImages": false,
     "chat.sendElementsToChat.enabled": false,
@@ -523,5 +527,10 @@
         "*.db3": "${capture}.${extname}-*",
         "*.sdb": "${capture}.${extname}-*",
         "*.s3db": "${capture}.${extname}-*"
-    }
+    },
+    "chat.mcp.access": "none",
+    "dart.mcpServer": false,
+    "accessibility.openChatEditedFiles": false,
+    "chat.checkpoints.enabled": false,
+    "chat.emptyChatState.enabled": false
 }
