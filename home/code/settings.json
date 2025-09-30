@@ -233,6 +233,7 @@
         "Våning",
         "Vatten",
         "Vecture",
+        "wsfs",
         "Xform"
     ],
     "rust-analyzer.inlayHints.enable": false,
