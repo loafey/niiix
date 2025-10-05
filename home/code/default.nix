@@ -87,6 +87,7 @@ let
       elijah-potter.harper
       editorconfig.editorconfig
       tamasfe.even-better-toml
+      dbaeumer.vscode-eslint
     ];
   });
 in {
