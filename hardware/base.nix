@@ -74,6 +74,7 @@
     sysstat
     cifs-utils
     gnupg
+    openssl
     # rust-analyzer
   ];
 
