@@ -464,7 +464,6 @@
     "github.copilot.editor.enableCodeActions": false,
     "github.copilot.nextEditSuggestions.enabled": false,
     "chat.commandCenter.enabled": false,
-    "chat.agent.enabled": false,
     "workbench.settings.enableNaturalLanguageSearch": false,
     "workbench.commandPalette.experimental.enableNaturalLanguageSearch": false,
     "inlineChat.lineNaturalLanguageHint": false,
@@ -533,5 +532,9 @@
     "dart.mcpServer": false,
     "accessibility.openChatEditedFiles": false,
     "chat.checkpoints.enabled": false,
-    "chat.emptyChatState.enabled": false
+    "chat.emptyChatState.enabled": false,
+    "chat.agent.enabled": false,
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "workbench.settings.showAISearchToggle": false,
+    "chat.disableAIFeatures": true
 }
