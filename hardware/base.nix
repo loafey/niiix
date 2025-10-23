@@ -75,6 +75,7 @@
     cifs-utils
     gnupg
     openssl
+    jq
     # rust-analyzer
   ];
 
