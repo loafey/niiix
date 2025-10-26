@@ -76,6 +76,7 @@
     gnupg
     openssl
     jq
+    feh
     # rust-analyzer
   ];
 
