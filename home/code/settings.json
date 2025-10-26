@@ -536,5 +536,6 @@
     "chat.agent.enabled": false,
     "workbench.secondarySideBar.defaultVisibility": "hidden",
     "workbench.settings.showAISearchToggle": false,
-    "chat.disableAIFeatures": true
+    "chat.disableAIFeatures": true,
+    "terminal.integrated.stickyScroll.enabled": false
 }
