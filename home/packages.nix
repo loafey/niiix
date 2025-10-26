@@ -56,6 +56,7 @@
       tangram
       gcc
       revolt-desktop
+      immich-cli
       # zed-editor
     ] ++ inputs.git-flakes.packages."${pkgs.system}";
 }
