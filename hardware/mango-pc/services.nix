@@ -22,6 +22,7 @@
     enable = true;
     settings = { PasswordAuthentication = false; };
   };
+  flatpak.enable = true;
 
   vscode-server = {
     enable = true;
