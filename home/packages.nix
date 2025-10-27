@@ -57,6 +57,7 @@
       gcc
       revolt-desktop
       immich-cli
+      vintagestory
       # zed-editor
     ] ++ inputs.git-flakes.packages."${pkgs.system}";
 }
