@@ -119,6 +119,7 @@
         "Badkar",
         "Balkong",
         "battlesnakes",
+        "Behaviour",
         "blastcap",
         "boardofstudies",
         "boende",
@@ -166,6 +167,7 @@
         "Lägenhets",
         "Lerp",
         "libblastcap",
+        "libp",
         "loafey",
         "LPUTF",
         "lualatex",
@@ -176,6 +178,7 @@
         "moddy",
         "Monomorphism",
         "mpmc",
+        "Multiaddr",
         "Nästa",
         "NIDS",
         "nint",
@@ -234,7 +237,8 @@
         "Vatten",
         "Vecture",
         "wsfs",
-        "Xform"
+        "Xform",
+        "yamux"
     ],
     "rust-analyzer.inlayHints.enable": false,
     "rust-analyzer.inlayHints.renderColons": false,
