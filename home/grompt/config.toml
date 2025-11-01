@@ -6,13 +6,14 @@ separate_changes = true
 remote_icon = true
 print_error = false
 icon_override = [
-        "https://github.com|\ue708",
-        "git@github.com|\ue708",
-        "https://gitlab.com|\uf296 |252,109,38",
-        "git@gitlab.com|\uf296 |252,109,38",
-        "git@git.chalmers.se|󰇷|252,109,38",
-        "git@bakery|\uf18c|34,201,34",
-    ]
+    "https://github.com|\ue708",
+    "git@github.com|\ue708",
+    "https://gitlab.com|\uf296 |252,109,38",
+    "git@gitlab.com|\uf296 |252,109,38",
+    "git@git.chalmers.se|󰇷|252,109,38",
+    "git@bakery|\uf18c|34,201,34",
+    "ssh://git@bakery|\uf18c|34,201,34",
+]
 icon_color = true
 commit_arrow = true
 fetch_icon = "󰥔 "
