@@ -72,20 +72,20 @@ let
       dart-code.dart-code
       svelte.svelte-vscode
 
-      banacorn.agda-mode
+      # banacorn.agda-mode
       llvm-vs-code-extensions.vscode-clangd
       ms-python.python
       benjaminjurk.gas-highlight
       llvm-vs-code-extensions.lldb-dap
-      swiftlang.swift-vscode
+      # swiftlang.swift-vscode
 
-      ms-dotnettools.csharp
-      geequlim.godot-tools
-      ms-dotnettools.vscode-dotnet-runtime
+      # ms-dotnettools.csharp
+      # geequlim.godot-tools
+      # ms-dotnettools.vscode-dotnet-runtime
 
       ms-vscode-remote.remote-containers
-      elijah-potter.harper
-      editorconfig.editorconfig
+      # elijah-potter.harper
+      # editorconfig.editorconfig
       tamasfe.even-better-toml
       dbaeumer.vscode-eslint
     ];
