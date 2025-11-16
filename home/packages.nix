@@ -50,6 +50,7 @@
       # inputs.zen-browser.packages."${system}".default
       nixfmt-classic
       inkscape
+      fluffychat
       trayscale
       feishin
       signal-desktop
