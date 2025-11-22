@@ -17,7 +17,6 @@
     vulkan-tools
     wayland-utils
     aha
-    kdePackages.xwaylandvideobridge
     kde-rounded-corners
     kdePackages.plasma-vault
     kdePackages.kaccounts-integration
