@@ -14,7 +14,6 @@
     kdePackages.kdesu
     vlc
     clinfo
-    glxinfo
     vulkan-tools
     wayland-utils
     aha
