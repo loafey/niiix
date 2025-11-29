@@ -91,6 +91,10 @@
     "zenMode.hideStatusBar": false,
     "git.ignoreRebaseWarning": true,
     "rust-analyzer.lens.implementations": false,
+    "rust-analyzer.check.extraArgs": [
+        "--target-dir",
+        "${workspaceFolder}/target/check"
+    ],
     "cSpell.enableFileTypes": [
         "!c",
         "!haskell",
