@@ -552,5 +552,6 @@
     "workbench.secondarySideBar.defaultVisibility": "hidden",
     "workbench.settings.showAISearchToggle": false,
     "chat.disableAIFeatures": true,
-    "terminal.integrated.stickyScroll.enabled": false
+    "terminal.integrated.stickyScroll.enabled": false,
+    "editor.cursorSmoothCaretAnimation": "on"
 }
