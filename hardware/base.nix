@@ -73,6 +73,7 @@
     openssl
     jq
     feh
+    lsd
     # rust-analyzer
   ];
 

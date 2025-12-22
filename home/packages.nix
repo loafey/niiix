@@ -27,7 +27,6 @@
       wl-clipboard
       alacritty
       prettierd
-      lsd
       protontricks
       zenity
       ripgrep
