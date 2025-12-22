@@ -553,5 +553,6 @@
     "workbench.settings.showAISearchToggle": false,
     "chat.disableAIFeatures": true,
     "terminal.integrated.stickyScroll.enabled": false,
-    "editor.cursorSmoothCaretAnimation": "on"
+    "editor.cursorSmoothCaretAnimation": "on",
+    "git.replaceTagsWhenPull": true
 }
