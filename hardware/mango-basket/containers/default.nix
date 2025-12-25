@@ -1,4 +1,6 @@
 { config, lib, pkgs, modulesPath, ... }: {
-  # Immich
-  containers.immich = import ./immich.nix;
+  containers = {
+    immich = import ./immich.nix;
+    forgejo = import ./forgejo.nix;
+  };
 }
