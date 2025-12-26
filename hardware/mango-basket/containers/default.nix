@@ -1,6 +1,6 @@
 { config, lib, pkgs, modulesPath, inputs, ... }: {
   imports = [ ./testing ];
-  containers = builtins.trace (builtins.attrNames) {
+  containers = {
     immich = import ./immich.nix;
     forgejo = import ./forgejo.nix;
   };
