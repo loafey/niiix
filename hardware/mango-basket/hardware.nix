@@ -86,6 +86,12 @@
     };
   };
 
+  # fileSystems."/tmp/net_cls" = {
+  #   device = "net_cls";
+  #   fsType = "cgroup";
+  #   options = [ "net_cls" ];
+  # };
+
   # networking.interfaces.eno1.useDHCP = lib.mkDefault true;
   # networking.interfaces.enp3s0.useDHCP = lib.mkDefault true;
 

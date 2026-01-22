@@ -5,7 +5,10 @@
   bindMounts = { };
 
   config = { config, pkgs, lib, ... }: {
-    services.uptime-kuma.enable = true;
+    services.uptime-kuma = {
+      enable = true;
+      settings = { UPTIME_KUMA_HOST = "0.0.0.0"; };
+    };
 
     networking = {
       firewall.allowedTCPPorts = [ 3001 ];
