@@ -255,11 +255,11 @@
         "stremio": "stremio"
       },
       "locked": {
-        "lastModified": 1758984029,
-        "narHash": "sha256-93aialhu4LDyD/HNKdw7Vl+O4F1sU7o9Gb4KmdmotY8=",
+        "lastModified": 1769275224,
+        "narHash": "sha256-xTA1WGZGUfT7gjUncfB/ElSBHGUUgHzDEm2YVkodamc=",
         "owner": "loafey",
         "repo": "git-flakes",
-        "rev": "50805310a1d63afa2554a7ab561809028d19d551",
+        "rev": "cf583697733184871ce1ce0dbdb19d70840db64a",
         "type": "github"
       },
       "original": {
@@ -317,11 +317,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1768707181,
-        "narHash": "sha256-GdwFfnwdUgABFpc4sAmX7GYx8eQs6cEjOPo6nBJ0YaI=",
+        "lastModified": 1769187349,
+        "narHash": "sha256-clG+nT6I2qxjIgk5WoSDKJyNhzKJs9jzbCujPF2S/yg=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "83bcb17377f0242376a327e742e9404e9a528647",
+        "rev": "082a4cd87c6089d1d9c58ebe52655f9e07245fcb",
         "type": "github"
       },
       "original": {
@@ -522,11 +522,11 @@
         "nixpkgs": "nixpkgs_13"
       },
       "locked": {
-        "lastModified": 1768703331,
-        "narHash": "sha256-ob44p9PGlUIEiPZ3u7AAI0MyKtcHS2kPjiJjXtWies8=",
+        "lastModified": 1769220693,
+        "narHash": "sha256-o2r6tPNQ966AjPw5QpiD0guVXm5SvkuTIbZH9vN87NE=",
         "owner": "nix-community",
         "repo": "nix-vscode-extensions",
-        "rev": "45f1a82aa6940da7134e6b48d5870f8dc7a554d9",
+        "rev": "515d1d8491dd5be06f4db0208f096f0cedba1824",
         "type": "github"
       },
       "original": {
@@ -613,11 +613,11 @@
     },
     "nixpkgs_14": {
       "locked": {
-        "lastModified": 1768564909,
-        "narHash": "sha256-Kell/SpJYVkHWMvnhqJz/8DqQg2b6PguxVWOuadbHCc=",
+        "lastModified": 1769018530,
+        "narHash": "sha256-MJ27Cy2NtBEV5tsK+YraYr2g851f3Fl1LpNHDzDX15c=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "e4bae1bd10c9c57b2cf517953ab70060a828ee6f",
+        "rev": "88d3861acdd3d2f0e361767018218e51810df8a1",
         "type": "github"
       },
       "original": {
@@ -892,17 +892,17 @@
     "stremio_2": {
       "flake": false,
       "locked": {
-        "lastModified": 1711535500,
-        "narHash": "sha256-pz1mie0kJov06GcyitvZu5Gg0Vz3YnigjDqFujGKqZM=",
-        "ref": "refs/tags/v4.4.168",
-        "rev": "7cd1203b6364edee148b24a08830e3f57ebe1029",
-        "revCount": 847,
+        "lastModified": 1768306559,
+        "narHash": "sha256-YjaR0Y4tVVfp0Jj+Q5SnD8BoT/VtPMrZYeABnqd9BPk=",
+        "ref": "refs/tags/v4.4.171",
+        "rev": "3d7ce71cd638e20f69b958d1e8444cd7c6297f37",
+        "revCount": 877,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/Stremio/stremio-shell/"
       },
       "original": {
-        "ref": "refs/tags/v4.4.168",
+        "ref": "refs/tags/v4.4.171",
         "submodules": true,
         "type": "git",
         "url": "https://github.com/Stremio/stremio-shell/"
