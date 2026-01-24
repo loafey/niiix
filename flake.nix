@@ -57,7 +57,7 @@
           host = "mango-pc";
           extra-modules = [ ./desktops/plasma.nix ];
           path = ./hardware/mango-pc;
-          extra-config = ./hardware/mango-pc/nvidia.nix;
+          extra-config = ./hardware/mango-pc/amd.nix;
         };
       };
     };
