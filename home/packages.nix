@@ -58,5 +58,6 @@
       revolt-desktop
       immich-cli
       # zed-editor
+      openmw
     ] ++ inputs.git-flakes.packages."${pkgs.system}";
 }
