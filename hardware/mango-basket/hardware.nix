@@ -81,8 +81,8 @@
     nat = {
       enable = true;
       internalInterfaces = [ "ve-+" ];
-      externalInterface = "eno1";
-      enableIPv6 = true;
+      # externalInterface = "eno1";
+      # enableIPv6 = true;
     };
   };
 
