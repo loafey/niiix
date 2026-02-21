@@ -17,7 +17,7 @@
     vulkan-tools
     wayland-utils
     aha
-    kde-rounded-corners
+    # kde-rounded-corners
     kdePackages.plasma-vault
     kdePackages.kaccounts-integration
     kdePackages.kaccounts-providers
