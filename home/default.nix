@@ -4,7 +4,7 @@
     config = {
       allowUnfree = true;
       allowUnfreePredicate = (_: true);
-      permittedInsecurePackages = [ ];
+      permittedInsecurePackages = [ "qtwebengine-5.15.19" ];
     };
   };
 
