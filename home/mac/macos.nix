@@ -3,7 +3,8 @@
 let 
   grompt = (builtins.elemAt git-flakes.packages."${pkgs.system}" 1);
   grompt-prompt = (builtins.elemAt git-flakes.packages."${pkgs.system}" 3);
-  macosConf   = "/Users/loafey/Library/Application Support";
+  macosConf = "/Users/loafey/Library/Application Support";
+  home = "/Users/loafey";
 in
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -26,6 +27,7 @@ in
     ./../kitty
     ./../grompt
     ./../nushell
+    ./../lldb
   ];
 
   programs.nushell = {

@@ -31,6 +31,7 @@
     ./zsh
     ./tmux
     ./zed
+    ./lldb
     # ./vivaldi
   ] ++ serverSoftware;
 

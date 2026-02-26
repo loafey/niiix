@@ -1,0 +1,5 @@
+command alias frame-args settings set frame-format "${frame.index} - call: ${function.name}\n        args: ${function.formatted-arguments}\n"
+command alias frame-no-args settings set frame-format "${frame.index} - call: ${function.name}\n"
+command alias line po "\n# # # # # # # # # # # # # # # # # # # # # #\n"
+command alias lineln po "#\n# # # # # # # # # # # # # # # # # # # # # #\n#"
+frame-args
