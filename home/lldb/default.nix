@@ -1,4 +1,1 @@
-{ ... }:
-{
-  xdg.configHome.".lldbinit".source = ./settings;
-}
+{ ... }: { xdg.configFile."../.lldbinit".source = ./settings; }
