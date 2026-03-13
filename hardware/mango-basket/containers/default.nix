@@ -7,6 +7,7 @@
     badger = import ./badger.nix;
     uptime-kuma = import ./uptime-kuma.nix;
     sap-box = import ./sap-box.nix;
+    # navi = import ./navi.nix;
   };
 
   services.gitea-actions-runner = import ./forgejo-runner.nix pkgs;
