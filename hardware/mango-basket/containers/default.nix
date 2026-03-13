@@ -6,6 +6,7 @@
     jellybean = import ./jellybean.nix;
     badger = import ./badger.nix;
     uptime-kuma = import ./uptime-kuma.nix;
+    sap-box = import ./sap-box.nix;
   };
 
   services.gitea-actions-runner = import ./forgejo-runner.nix pkgs;
