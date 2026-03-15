@@ -13,13 +13,11 @@
     };
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=v0.4.1";
     vscode-server.url = "github:nix-community/nixos-vscode-server";
-    # zen-browser.url = "github:0xc000022070/zen-browser-flake";
+    agenix.url = "github:ryantm/agenix";
   };
 
   outputs = { self, nixpkgs, home-manager, nix-index-database, nix-flatpak
-    , vscode-server
-    # , zen-browser
-    , ... }@inputs: {
+    , vscode-server, agenix, ... }@inputs: {
       nixosConfigurations = let
         args = {
           inherit nixpkgs;
@@ -48,7 +46,13 @@
         "mango-basket" = import ./hardware {
           inherit args;
           host = "mango-basket";
-          extra-modules = [ ];
+          extra-modules = [
+            agenix.nixosModules.default
+            {
+              environment.systemPackages =
+                [ agenix.packages."x86_64-linux".default ];
+            }
+          ];
           path = ./hardware/mango-basket;
         };
 

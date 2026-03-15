@@ -1,4 +1,4 @@
-{ config, lib, pkgs, modulesPath, inputs, ... }: {
+{ config, lib, pkgs, modulesPath, inputs, age, ... }: {
   imports = [ ./testing ];
   containers = {
     immich = import ./immich.nix;
@@ -7,7 +7,8 @@
     badger = import ./badger.nix;
     uptime-kuma = import ./uptime-kuma.nix;
     sap-box = import ./sap-box.nix;
-    # navi = import ./navi.nix;
+    rss = import ./rss.nix;
+    navi = (import ./navi.nix { inherit config; });
   };
 
   services.gitea-actions-runner = import ./forgejo-runner.nix pkgs;

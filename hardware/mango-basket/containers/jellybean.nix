@@ -1,10 +1,10 @@
 {
   autoStart = true;
   privateNetwork = true;
-  hostAddress = "192.168.100.10";
-  localAddress = "192.168.100.11";
-  hostAddress6 = "fc00::1";
-  localAddress6 = "fc00::4";
+  hostAddress = "192.168.100.69";
+  localAddress = "192.168.100.70";
+  hostAddress6 = "fc00::45";
+  localAddress6 = "fc00::46";
 
   bindMounts = {
     "/media" = {

@@ -1,4 +1,4 @@
-{
+{ config, ... }: {
   autoStart = true;
   privateNetwork = true;
   hostAddress = "192.168.100.10";
@@ -16,6 +16,8 @@
       hostPath = "/mnt/fruit-bowl/services/shared/Playlists";
       isReadOnly = false;
     };
+
+    "${config.age.secrets.woof.path}".isReadOnly = true;
   };
 
   config = { config, pkgs, lib, ... }: {
@@ -34,8 +36,11 @@
         user = "navi";
         group = "media";
 
+        environmentFile = "/run/agenix/woof";
+
         settings = {
-          PlaylistsPath = "/mnt/audio/playlists";
+          PlaylistsPath = "/playlists";
+          MusicFolder = "/media";
           EnableSharing = true;
         };
       };
