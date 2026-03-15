@@ -6,7 +6,10 @@
   age = {
     identityPaths = [ "/home/loafey/.ssh/id_ed25519" ];
     secrets = {
-      meow.file = ./secrets/meow.age;
+      rss = {
+        mode = "444";
+        file = ./secrets/rss.age;
+      };
       woof.file = ./secrets/woof.age;
     };
   };

@@ -1,4 +1,4 @@
-{
+{ config, ... }: {
   autoStart = true;
   privateNetwork = true;
   hostAddress = "192.168.100.50";
@@ -12,7 +12,8 @@
     services = {
       freshrss = {
         enable = true;
-        passwordFile = "/run/agenix/woof";
+        passwordFile = "/run/agenix/rss";
+        baseUrl = "https://rss.loaf.boo";
       };
 
       tailscale = {
