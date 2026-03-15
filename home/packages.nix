@@ -14,7 +14,6 @@
       obs-studio
       kdePackages.kdenlive
       prismlauncher
-      ripgrep
       fragments
       wineWowPackages.stable
       # r2modman
@@ -59,5 +58,6 @@
       immich-cli
       # zed-editor
       openmw
+      picard
     ] ++ inputs.git-flakes.packages."${pkgs.system}";
 }
