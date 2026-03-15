@@ -5,7 +5,7 @@
       firefox
       thunderbird
       nixpkgs-fmt
-      neofetch
+      fastfetch
       slack
       protonup-qt
       krita

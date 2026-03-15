@@ -880,7 +880,7 @@ def setup-direnv [] {
 }
 
 def flex [] {
-    neofetch | queercat -f 1
+    fastfetch | queercat -f 1
 }
 
 def activate-flex-mode [] {
