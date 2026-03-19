@@ -59,5 +59,6 @@
       # zed-editor
       openmw
       picard
+      cinny-desktop
     ] ++ inputs.git-flakes.packages."${pkgs.system}";
 }
