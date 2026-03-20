@@ -60,5 +60,6 @@
       openmw
       picard
       cinny-desktop
+      easyeffects
     ] ++ inputs.git-flakes.packages."${pkgs.system}";
 }
