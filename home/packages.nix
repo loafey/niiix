@@ -61,5 +61,6 @@
       picard
       cinny-desktop
       easyeffects
+      jellyfin-desktop
     ] ++ inputs.git-flakes.packages."${pkgs.system}";
 }
