@@ -1,6 +1,19 @@
-{ userName, hardwareConfig, host, serviceSetup, config, pkgs, inputs
-, extra-config, ... }: {
-  imports = [ hardwareConfig extra-config ];
+{
+  userName,
+  hardwareConfig,
+  host,
+  serviceSetup,
+  config,
+  pkgs,
+  inputs,
+  extra-config,
+  ...
+}:
+{
+  imports = [
+    hardwareConfig
+    extra-config
+  ];
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -24,7 +37,10 @@
   services = serviceSetup;
   # time.timeZone = "Europe/Stockholm";
 
-  fonts.packages = with pkgs; [ cantarell-fonts nerd-fonts.fira-code ];
+  fonts.packages = with pkgs; [
+    cantarell-fonts
+    nerd-fonts.fira-code
+  ];
 
   console.keyMap = "sv-latin1";
 
@@ -82,7 +98,9 @@
   programs.gamemode.enable = true;
   programs.zsh.enable = true;
 
-  environment.sessionVariables = rec { EDITOR = "nvim"; };
+  environment.sessionVariables = rec {
+    EDITOR = "nvim";
+  };
 
   programs.steam = {
     enable = true;
@@ -100,27 +118,42 @@
     };
   };
 
-  networking.firewall = if config.networking.hostName != "mango-basket" then {
-    enable = false;
-    allowedTCPPorts = [ 1337 55555 ];
-    allowedUDPPortRanges = [
+  networking.firewall =
+    if config.networking.hostName != "mango-basket" then
       {
-        from = 4000;
-        to = 4007;
+        enable = false;
+        allowedTCPPorts = [
+          1337
+          55555
+        ];
+        allowedUDPPortRanges = [
+          {
+            from = 4000;
+            to = 4007;
+          }
+          {
+            from = 8000;
+            to = 8010;
+          }
+        ];
       }
+    else
       {
-        from = 8000;
-        to = 8010;
-      }
-    ];
-  } else {
-    enable = false;
-    allowedTCPPorts = [ 22 80 82 83 444 ];
-    allowedUDPPortRanges = [{
-      from = 51820;
-      to = 51821;
-    }];
-  };
+        enable = false;
+        allowedTCPPorts = [
+          22
+          80
+          82
+          83
+          444
+        ];
+        allowedUDPPortRanges = [
+          {
+            from = 51820;
+            to = 51821;
+          }
+        ];
+      };
 
   programs.nh = {
     enable = true;
@@ -169,20 +202,20 @@
   #   } else
   #     { };
 
-  fileSystems."BreadBox" =
-    pkgs.lib.mkIf (config.networking.hostName != "mango-basket") {
-      mountPoint = "/home/loafey/BreadBox";
-      device = "//mango-basket/private";
-      fsType = "cifs";
-      options = let
+  fileSystems."BreadBox" = pkgs.lib.mkIf (config.networking.hostName != "mango-basket") {
+    mountPoint = "/home/loafey/BreadBox";
+    device = "//mango-basket/private";
+    fsType = "cifs";
+    options =
+      let
         # this line prevents hanging on network split
-        automount_opts =
-          "x-systemd.automount,noauto,x-systemd.idle-timeout=60,x-systemd.device-timeout=5s,x-systemd.mount-timeout=5s";
+        automount_opts = "x-systemd.automount,noauto,x-systemd.idle-timeout=60,x-systemd.device-timeout=5s,x-systemd.mount-timeout=5s";
 
-      in [
+      in
+      [
         "${automount_opts},credentials=/etc/nixos/smb-secrets,uid=1000,gid=100"
       ];
-    };
+  };
 
   # /mnt/storage/shared
   # environment.etc.cloudflared = {
