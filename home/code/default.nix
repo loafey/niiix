@@ -79,9 +79,9 @@ let
       llvm-vs-code-extensions.lldb-dap
       # swiftlang.swift-vscode
 
-      # ms-dotnettools.csharp
-      # geequlim.godot-tools
-      # ms-dotnettools.vscode-dotnet-runtime
+      ms-dotnettools.csharp
+      geequlim.godot-tools
+      ms-dotnettools.vscode-dotnet-runtime
 
       ms-vscode-remote.remote-containers
       # elijah-potter.harper
