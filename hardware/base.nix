@@ -52,7 +52,13 @@
   users.users.${userName} = {
     isNormalUser = true;
     description = userName;
-    extraGroups = [ "networkmanager" "wheel" "input" "dialout" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+      "input"
+      "dialout"
+      "libvirtd"
+    ];
     shell = pkgs.zsh;
     packages = [ ];
     linger = config.networking.hostName == "mango-basket";
