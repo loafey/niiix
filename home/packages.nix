@@ -15,7 +15,7 @@
       kdePackages.kdenlive
       prismlauncher
       fragments
-      wineWowPackages.stable
+      wineWow64Packages.stable
       # r2modman
       element-desktop
       aisleriot
@@ -46,7 +46,7 @@
       obsidian
       fish
       # inputs.zen-browser.packages."${system}".default
-      nixfmt-classic
+      nixfmt
       inkscape
       fluffychat
       trayscale

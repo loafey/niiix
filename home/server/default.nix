@@ -5,7 +5,7 @@
       waypipe
       firefox
       fish
-      nixfmt-classic
+      nixfmt
       xfce.thunar
       xfce.ristretto
       gparted
