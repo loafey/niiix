@@ -1,4 +1,13 @@
-{ config, lib, pkgs, modulesPath, inputs, age, ... }: {
+{
+  config,
+  lib,
+  pkgs,
+  modulesPath,
+  inputs,
+  age,
+  ...
+}:
+{
   imports = [ ./testing ];
   containers = {
     immich = import ./immich.nix;
@@ -9,6 +18,7 @@
     sap-box = import ./sap-box.nix;
     navi = (import ./navi.nix { inherit config; });
     rss = (import ./rss.nix { inherit config; });
+    karakeep = (import ./karakeep.nix { inherit config; });
   };
 
   services.gitea-actions-runner = import ./forgejo-runner.nix pkgs;
