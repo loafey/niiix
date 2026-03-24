@@ -19,6 +19,8 @@
       ...
     }:
     {
+      nixpkgs.config.allowUnfree = true;
+
       hardware.graphics = {
         enable = true;
         enable32Bit = true;
@@ -32,8 +34,22 @@
             CRAWLER_HTTP_PROXY = "http://localhost:1055/";
             CRAWLER_HTTPS_PROXY = "http://localhost:1055/";
             CRAWLER_ALLOWED_INTERNAL_HOSTNAMES = ".";
+            # OLLAMA_BASE_URL = "localhost:11434";
+            # INFERENCE_TEXT_MODEL = "llama3.2:3b";
+            # INFERENCE_IMAGE_MODEL = "llava:7b";
+            # EMBEDDING_TEXT_MODEL = "qwen3-embedding:4b";
           };
         };
+
+        # ollama = {
+        #   enable = true;
+        #   loadModels = [
+        #     "llama3.2:3b"
+        #     "llava:7b"
+        #     "qwen3-embedding:4b"
+        #   ];
+        # };
+        # open-webui.enable = true;
 
         tailscale = {
           enable = true;
