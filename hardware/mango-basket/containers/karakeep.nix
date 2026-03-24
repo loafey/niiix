@@ -19,15 +19,29 @@
       ...
     }:
     {
+      hardware.graphics = {
+        enable = true;
+        enable32Bit = true;
+      };
+
       services = {
         karakeep = {
           enable = true;
-          extraEnvironment = { };
+          extraEnvironment = {
+            NEXT_CACHE_DIR = "/var/cache/next";
+            CRAWLER_HTTP_PROXY = "http://localhost:1055/";
+            CRAWLER_HTTPS_PROXY = "http://localhost:1055/";
+            CRAWLER_ALLOWED_INTERNAL_HOSTNAMES = ".";
+          };
         };
 
         tailscale = {
           enable = true;
           interfaceName = "userspace-networking";
+          extraDaemonFlags = [
+            "--socks5-server=localhost:1055"
+            "--outbound-http-proxy-listen=localhost:1055"
+          ];
         };
       };
       networking = {
