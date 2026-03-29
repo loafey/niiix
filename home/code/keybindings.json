@@ -538,5 +538,13 @@
         "key": "shift+cmd+g",
         "when": "isMac",
         "command": "workbench.view.scm"
+    },
+    {
+        "key": "alt+b",
+        "command": "workbench.action.toggleAuxiliaryBar"
+    },
+    {
+        "key": "ctrl+alt+b",
+        "command": "-workbench.action.toggleAuxiliaryBar"
     }
 ]
