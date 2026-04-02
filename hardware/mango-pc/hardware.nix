@@ -11,7 +11,7 @@
 
   boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" ];
   boot.initrd.kernelModules = [ ];
-  boot.kernelModules = [ "kvm-amd" "v4l2loopback" ];
+  boot.kernelModules = [ "kvm-amd" "v4l2loopback" "ntsync" ];
   boot.extraModulePackages = [ ];
   # boot.kernelPackages = pkgs.linuxPackages_latest;
 
