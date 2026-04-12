@@ -68,7 +68,8 @@
   nixpkgs.config.permittedInsecurePackages = [ ];
 
   nix = {
-    package = pkgs.lixPackageSets.latest.lix;
+    package = pkgs.nixVersions.latest;
+    # package = pkgs.lixPackageSets.latest.lix;
     extraOptions = ''
       experimental-features = nix-command flakes
     '';
