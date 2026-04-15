@@ -1,7 +1,11 @@
 { config, lib, pkgs, modulesPath, age, ... }:
 
 {
-  imports = [ (modulesPath + "/installer/scan/not-detected.nix") ./containers ];
+  imports = [
+    (modulesPath + "/installer/scan/not-detected.nix")
+    ./containers
+    ./prometheus.nix
+  ];
 
   age = {
     identityPaths = [ "/home/loafey/.ssh/id_ed25519" ];
@@ -11,6 +15,7 @@
         file = ./secrets/rss.age;
       };
       woof.file = ./secrets/woof.age;
+      grafana.file = ./secrets/grafana.age;
     };
   };
 
