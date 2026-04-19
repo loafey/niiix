@@ -1,4 +1,5 @@
-{ userName }: {
+{ userName }:
+{
   xserver.enable = true;
 
   printing.enable = true;
@@ -15,10 +16,10 @@
     pulse.enable = true;
   };
 
-  # clamav = {
-  #   daemon.enable = true;
-  #   updater.enable = true;
-  # };
+  clamav = {
+    daemon.enable = true;
+    updater.enable = true;
+  };
 
   mullvad-vpn.enable = true;
   rpcbind.enable = true;
@@ -32,7 +33,9 @@
 
   openssh = {
     enable = true;
-    settings = { PasswordAuthentication = false; };
+    settings = {
+      PasswordAuthentication = false;
+    };
   };
 
   vscode-server = {

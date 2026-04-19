@@ -87,6 +87,7 @@
     podman-tui
     docker-compose
     ethtool
+    clamav
     # cloudflared
     sshfs
     lm_sensors
