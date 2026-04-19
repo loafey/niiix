@@ -1,4 +1,11 @@
-{ config, lib, pkgs, modulesPath, age, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  modulesPath,
+  age,
+  ...
+}:
 
 {
   imports = [
@@ -6,6 +13,12 @@
     ./containers
     ./prometheus.nix
   ];
+
+  systemd.services.fluent-bit.serviceConfig = {
+    User = "root";
+    ProtectSystem = "none";
+  };
+  users.groups.systemd-journal.members = [ "fluent-bit" ];
 
   age = {
     identityPaths = [ "/home/loafey/.ssh/id_ed25519" ];
@@ -19,8 +32,14 @@
     };
   };
 
-  boot.initrd.availableKernelModules =
-    [ "nvme" "xhci_pci" "ahci" "usbhid" "usb_storage" "sd_mod" ];
+  boot.initrd.availableKernelModules = [
+    "nvme"
+    "xhci_pci"
+    "ahci"
+    "usbhid"
+    "usb_storage"
+    "sd_mod"
+  ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
@@ -28,7 +47,9 @@
   boot.zfs.forceImportRoot = false;
   networking.hostId = "f08cba2b";
 
-  boot.kernel.sysctl = { "net.ipv4.ip_unprivileged_port_start" = 80; };
+  boot.kernel.sysctl = {
+    "net.ipv4.ip_unprivileged_port_start" = 80;
+  };
 
   fileSystems."/" = {
     device = "/dev/disk/by-uuid/01dd624b-379c-41b4-b82d-397a14f59c0d";
@@ -38,7 +59,10 @@
   fileSystems."/boot" = {
     device = "/dev/disk/by-uuid/4FF8-6541";
     fsType = "vfat";
-    options = [ "fmask=0077" "dmask=0077" ];
+    options = [
+      "fmask=0077"
+      "dmask=0077"
+    ];
   };
 
   fileSystems."/mnt/fruit-bowl" = {
@@ -51,8 +75,7 @@
     fsType = "zfs";
   };
 
-  swapDevices =
-    [{ device = "/dev/disk/by-uuid/8736ea29-652d-4564-a345-a1fd65162f9a"; }];
+  swapDevices = [ { device = "/dev/disk/by-uuid/8736ea29-652d-4564-a345-a1fd65162f9a"; } ];
 
   systemd.services = {
     chmoddy = {
@@ -77,8 +100,7 @@
         User = "loafey";
         Restart = "on-failure";
         RestartSec = "30";
-        ExecStart =
-          "/run/current-system/sw/bin/podman start --all --filter restart-policy=always";
+        ExecStart = "/run/current-system/sw/bin/podman start --all --filter restart-policy=always";
       };
     };
   };
@@ -109,6 +131,5 @@
   # networking.interfaces.enp3s0.useDHCP = lib.mkDefault true;
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
-  hardware.cpu.amd.updateMicrocode =
-    lib.mkDefault config.hardware.enableRedistributableFirmware;
+  hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 }
