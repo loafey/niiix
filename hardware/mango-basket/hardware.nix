@@ -11,6 +11,7 @@
   imports = [
     (modulesPath + "/installer/scan/not-detected.nix")
     ./containers
+    ./podmen
     ./prometheus.nix
   ];
 
@@ -76,34 +77,6 @@
   };
 
   swapDevices = [ { device = "/dev/disk/by-uuid/8736ea29-652d-4564-a345-a1fd65162f9a"; } ];
-
-  systemd.services = {
-    chmoddy = {
-      enable = true;
-      after = [ "podman.service" ];
-      before = [ "podman-autostart.service" ];
-      description = "Fix acm0 perms";
-      serviceConfig = {
-        Type = "idle";
-        Restart = "on-failure";
-        RestartSec = "1";
-        ExecStart = "chmod o+rw /dev/ttyACM0";
-      };
-    };
-    podman-autostart = {
-      enable = true;
-      after = [ "podman.service" ];
-      wantedBy = [ "multi-user.target" ];
-      description = "Automatically start containers with --restart=always tag";
-      serviceConfig = {
-        Type = "idle";
-        User = "loafey";
-        Restart = "on-failure";
-        RestartSec = "30";
-        ExecStart = "/run/current-system/sw/bin/podman start --all --filter restart-policy=always";
-      };
-    };
-  };
 
   system.activationScripts.script.text = "chmod o+rw /dev/ttyACM0";
 
