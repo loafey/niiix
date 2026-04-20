@@ -98,6 +98,9 @@
     jq
     feh
     lsd
+    lazygit
+    btop
+    compose2nix
     # rust-analyzer
   ];
 
