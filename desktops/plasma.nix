@@ -1,4 +1,11 @@
-{ pkgs, services, programs, environment, ... }: {
+{
+  pkgs,
+  services,
+  programs,
+  environment,
+  ...
+}:
+{
   services.xserver.enable = true;
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
@@ -12,6 +19,7 @@
     kdePackages.kcmutils
     kdePackages.kate
     kdePackages.kdesu
+    kdePackages.partitionmanager
     vlc
     clinfo
     vulkan-tools
