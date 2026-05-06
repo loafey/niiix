@@ -16,8 +16,6 @@
       slack
       protonup-qt
       krita
-      lutris
-      cartridges
       obs-studio
       kdePackages.kdenlive
       prismlauncher
