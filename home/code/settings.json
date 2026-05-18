@@ -457,8 +457,6 @@
     "window.commandCenter": false,
     "rust-analyzer.inlayHints.closureStyle": "hide",
     "rust-analyzer.inlayHints.genericParameterHints.const.enable": false,
-    "workbench.editor.showTabs": "none",
-    "workbench.sideBar.location": "right",
     "autoHide.ui": {
         "sidebar": true,
         "auxiliaryBar": true,
@@ -510,9 +508,7 @@
     "dotnet.codeLens.enableReferencesCodeLens": false,
     "workbench.activityBar.location": "top",
     "autoHide.enable": false,
-    "workbench.editor.editorActionsLocation": "hidden",
     "workbench.layoutControl.enabled": false,
-    "window.customTitleBarVisibility": "never",
     "telemetry.feedback.enabled": false,
     "terminal.integrated.initialHint": false,
     "chat.implicitContext.enabled": {
@@ -554,5 +550,8 @@
     "chat.disableAIFeatures": true,
     "terminal.integrated.stickyScroll.enabled": false,
     "editor.cursorSmoothCaretAnimation": "on",
-    "git.replaceTagsWhenPull": true
+    "git.replaceTagsWhenPull": true,
+    "workbench.editor.editorActionsLocation": "hidden",
+    "window.customTitleBarVisibility": "never",
+    "workbench.sideBar.location": "right"
 }
