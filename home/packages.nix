@@ -66,6 +66,7 @@
       easyeffects
       jellyfin-desktop
       heroic
+      cargo-vet
     ]
     ++ inputs.git-flakes.packages."${pkgs.system}";
 }
