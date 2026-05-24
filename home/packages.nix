@@ -65,6 +65,7 @@
       cinny-desktop
       easyeffects
       jellyfin-desktop
+      heroic
     ]
     ++ inputs.git-flakes.packages."${pkgs.system}";
 }
