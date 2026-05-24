@@ -31,22 +31,15 @@ let
         # barboss-hack.crates-io
         # icrawl.discord-vscode
         pkief.material-icon-theme
-        jnoortheen.nix-ide
         thenuprojectcontributors.vscode-nushell-lang
-        james-yu.latex-workshop
         myriad-dreamin.tinymist
-        haskell.haskell
-        justusadam.language-haskell
         streetsidesoftware.code-spell-checker
         ms-vsliveshare.vsliveshare
-        eww-yuck.yuck
-        kaysonwu.cpptask
         qwtel.sqlite-viewer
         # asvetliakov.vscode-neovim
         # ms-vscode.cmake-tools
         twxs.cmake
         wakatime.vscode-wakatime
-        ndmitchell.haskell-ghcid
         # kevin-kwong.vscode-autohide-keyboard
         kvoon.command-task
         # guidotapia2.unicode-math-vscode
@@ -55,17 +48,13 @@ let
         ms-azuretools.vscode-docker
         rreverser.llvm
         # diku.futhark-vscode
-        pgourlain.erlang
         ms-vscode-remote.remote-ssh
         mkhl.direnv
         streetsidesoftware.code-spell-checker-swedish
-        dart-code.flutter
-        dart-code.dart-code
         svelte.svelte-vscode
 
         # banacorn.agda-mode
         llvm-vs-code-extensions.vscode-clangd
-        ms-python.python
         benjaminjurk.gas-highlight
         llvm-vs-code-extensions.lldb-dap
         # swiftlang.swift-vscode
