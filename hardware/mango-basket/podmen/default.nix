@@ -6,5 +6,6 @@
     ./homeassistant.nix
     ./discodrome.nix
     ./zigbee2mqtt.nix
+    # ./img_dump.nix
   ];
 }

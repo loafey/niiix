@@ -103,6 +103,17 @@
   # networking.interfaces.eno1.useDHCP = lib.mkDefault true;
   # networking.interfaces.enp3s0.useDHCP = lib.mkDefault true;
 
+  systemd.services.stormy = {
+    enable = true;
+    path = [ pkgs.nix ];
+    serviceConfig = {
+      WorkingDirectory = "/home/loafey/Git/stormy";
+      ExecStart = "${pkgs.nix}/bin/nix develop -c cargo run --release";
+      User = "loafey";
+      Group = "users";
+    };
+  };
+
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 }
