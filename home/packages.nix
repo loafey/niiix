@@ -47,6 +47,7 @@
       bruno
       zsh-history-substring-search
       obsidian
+      threema-desktop
       fish
       # inputs.zen-browser.packages."${system}".default
       nixfmt
