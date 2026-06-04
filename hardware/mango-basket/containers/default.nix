@@ -15,7 +15,6 @@
     jellybean = import ./jellybean.nix;
     badger = import ./badger.nix;
     uptime-kuma = import ./uptime-kuma.nix;
-    sap-box = import ./sap-box.nix;
     navi = (import ./navi.nix { inherit config; });
     rss = (import ./rss.nix { inherit config; });
     karakeep = (import ./karakeep.nix { inherit config; });
