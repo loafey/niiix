@@ -12,7 +12,7 @@
     (modulesPath + "/installer/scan/not-detected.nix")
     ./containers
     ./podmen
-    ./prometheus.nix
+    # ./prometheus.nix
   ];
 
   systemd.services.fluent-bit.serviceConfig = {
