@@ -9,7 +9,7 @@
     };
     volumes = [
       "/mnt/fruit-bowl/services/fileflows:/app/Data:rw"
-      "/mnt/fruit-bowl/services/fileflows_temp:/temp:rw"
+      "/home/loafey/.cache/fileflows_temp:/temp:rw"
       "/mnt/fruit-bowl/services/shared/Jellyfin/Movies:/mnt/movies:rw"
       "/mnt/fruit-bowl/services/shared/Jellyfin/Series:/mnt/series:rw"
       "/tmp/podman.sock:/var/run/docker.sock:ro"
