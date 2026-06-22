@@ -37,7 +37,6 @@
       hunspell
       hunspellDicts.uk_UA
       hunspellDicts.th_TH
-      bitwarden-desktop
       waypipe
       mpv
       monero-gui
