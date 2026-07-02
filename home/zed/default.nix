@@ -8,7 +8,7 @@ in {
   programs.zed-editor = {
     extensions =
       [ "nix" "toml" "elixir" "make" "rust" "typst" "html" "javascript" ];
-    enable = true;
+    enable = false;
   };
   # xdg.configFile."zed/settings.json".source =
   # lib.mkForce "${dotfiles}/settings.json";
