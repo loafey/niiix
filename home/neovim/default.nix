@@ -5,7 +5,11 @@
     rustfmt
     clippy
   ];
-  programs.neovim.enable = true;
+  programs.neovim = {
+    enable = true;
+    withPython3 = true;
+    withRuby = true;
+  };
   xdg.configFile."nvim" = {
     source = ./conf;
     recursive = true;
