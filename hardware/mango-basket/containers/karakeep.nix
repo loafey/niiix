@@ -41,16 +41,6 @@
           };
         };
 
-        # ollama = {
-        #   enable = true;
-        #   loadModels = [
-        #     "llama3.2:3b"
-        #     "llava:7b"
-        #     "qwen3-embedding:4b"
-        #   ];
-        # };
-        # open-webui.enable = true;
-
         tailscale = {
           enable = true;
           interfaceName = "userspace-networking";
