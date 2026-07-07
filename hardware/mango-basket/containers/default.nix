@@ -18,6 +18,7 @@
     navi = (import ./navi.nix { inherit config; });
     rss = (import ./rss.nix { inherit config; });
     karakeep = (import ./karakeep.nix { inherit config; });
+    trilium = (import ./trilium.nix { inherit config; });
   };
 
   services.gitea-actions-runner = import ./forgejo-runner.nix pkgs;
