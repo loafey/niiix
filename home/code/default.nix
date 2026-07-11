@@ -25,47 +25,23 @@ let
         '';
       });
       vscodeExtensions = with pkgs-ext.vscode-marketplace; [
-        golang.go
         rust-lang.rust-analyzer
         teabyii.ayu
-        # barboss-hack.crates-io
-        # icrawl.discord-vscode
         pkief.material-icon-theme
-        thenuprojectcontributors.vscode-nushell-lang
         myriad-dreamin.tinymist
-        streetsidesoftware.code-spell-checker
         ms-vsliveshare.vsliveshare
         qwtel.sqlite-viewer
-        # asvetliakov.vscode-neovim
-        # ms-vscode.cmake-tools
-        twxs.cmake
         wakatime.vscode-wakatime
-        # kevin-kwong.vscode-autohide-keyboard
-        kvoon.command-task
-        # guidotapia2.unicode-math-vscode
-        marp-team.marp-vscode
         ms-vscode.hexeditor
         ms-azuretools.vscode-docker
-        rreverser.llvm
-        # diku.futhark-vscode
         ms-vscode-remote.remote-ssh
         mkhl.direnv
-        streetsidesoftware.code-spell-checker-swedish
-        svelte.svelte-vscode
-
-        # banacorn.agda-mode
         llvm-vs-code-extensions.vscode-clangd
-        benjaminjurk.gas-highlight
         llvm-vs-code-extensions.lldb-dap
-        # swiftlang.swift-vscode
-
         ms-dotnettools.csharp
         geequlim.godot-tools
         ms-dotnettools.vscode-dotnet-runtime
-
         ms-vscode-remote.remote-containers
-        # elijah-potter.harper
-        # editorconfig.editorconfig
         tamasfe.even-better-toml
         dbaeumer.vscode-eslint
       ];
