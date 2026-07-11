@@ -88,7 +88,6 @@
     docker-compose
     ethtool
     clamav
-    # cloudflared
     sshfs
     lm_sensors
     sysstat
@@ -101,7 +100,6 @@
     lazygit
     btop
     compose2nix
-    # rust-analyzer
   ];
 
   programs.nix-index-database.comma.enable = true;
@@ -180,40 +178,6 @@
     source = "${pkgs.nfs-utils.out}/bin/mount.nfs";
   };
 
-  # systemd.extraConfig = "DefaultTimeoutStopSec=10s";
-
-  # systemd.mounts = if config.networking.hostName != "mango-basket" then [{
-  #   type = "nfs";
-  #   mountConfig = {
-  #     Options =
-  #       "defaults,user,noauto,relatime,nofail,rw,x-systemd.automount,x-systemd.mount-timeout=30,x-systemd.requires=network-online.target,_netdev";
-  #   };
-  #   what = "localhost:/mnt/storage/shared";
-  #   where = "/home/loafey/BreadBox";
-  # }] else
-  #   [ ];
-
-  # systemd.automounts = if config.networking.hostName != "mango-basket" then [{
-  #   wantedBy = [ "multi-user.target" ];
-  #   automountConfig = { TimeoutIdleSec = "600"; };
-  #   where = "/home/loafey/BreadBox";
-  # }] else
-  #   [ ];
-
-  # systemd.services.chuck-bread-box =
-  #   if config.networking.hostName != "mango-basket" then {
-  #     enable = true;
-  #     before = [ "shutdown.target" ];
-  #     wantedBy = [ "halt.target" "reboot.target" "shutdown.target" ];
-
-  #     serviceConfig = {
-  #       Type = "oneshot";
-  #       RemainAfterExit = "true";
-  #       ExecStop = "umount -f /home/loafey/BreadBox";
-  #     };
-  #   } else
-  #     { };
-
   fileSystems."BreadBox" = pkgs.lib.mkIf (config.networking.hostName != "mango-basket") {
     mountPoint = "/home/loafey/BreadBox";
     device = "//mango-basket/private";
@@ -228,12 +192,6 @@
         "${automount_opts},credentials=/etc/nixos/smb-secrets,uid=1000,gid=100"
       ];
   };
-
-  # /mnt/storage/shared
-  # environment.etc.cloudflared = {
-  #   source = "${pkgs.cloudflared}/bin/cloudflared";
-  #   target = "cloudflared";
-  # };
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
