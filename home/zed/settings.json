@@ -2,26 +2,25 @@
   "icon_theme": "Material Icon Theme",
   "theme": "Ayu Light",
   "ui_font_size": 15,
-  "ui_font_weight": 500,
+  "ui_font_weight": 400,
   "ui_font_family": "FiraCode Nerd Font Mono",
   "buffer_font_size": 13,
-  "buffer_font_weight": 550,
+  "buffer_font_weight": 400,
   "buffer_font_family": "FiraCode Nerd Font Mono",
   "edit_predictions": {
+    "provider": "none",
     "disabled_globs": [
       "**/*",
       "**/*.*"
     ]
   },
   "features": {
-    "edit_prediction_provider": "none",
     "collab": false,
     "assistant": false,
     "chat": false
   },
   "agent": {
     "enabled": false,
-    "version": "2"
   },
   "collaboration_panel": {
     "button": false
@@ -72,7 +71,7 @@
     "agent_review": false
   },
   "title_bar": {
-    "show_branch_icon": true
+    "show_branch_status_icon": true
   },
   "middle_click_paste": false,
   "indent_guides": {
@@ -88,6 +87,7 @@
     }
   },
   "terminal": {
+    "font_weight": 400.0,
     "toolbar": {
       "breadcrumbs": false
     }
