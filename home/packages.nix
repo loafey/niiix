@@ -58,7 +58,6 @@
       gcc
       revolt-desktop
       immich-cli
-      # zed-editor
       openmw
       picard
       cinny-desktop

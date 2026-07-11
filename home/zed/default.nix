@@ -7,11 +7,9 @@ let
 in {
   programs.zed-editor = {
     extensions =
-      [ "nix" "toml" "elixir" "make" "rust" "typst" "html" "javascript" ];
+      [ "nix" "toml" "elixir" "make" "rust" "typst" "html" "javascript" "c#" ];
     enable = false;
   };
-  # xdg.configFile."zed/settings.json".source =
-  # lib.mkForce "${dotfiles}/settings.json";
-  # xdg.configFile."zed/keymap.json".source =
-  # lib.mkForce "${dotfiles}/keymap.json";
+  xdg.configFile."zed/settings.json".source = lib.mkForce "${dotfiles}/settings.json";
+  xdg.configFile."zed/keymap.json".source = lib.mkForce "${dotfiles}/keymap.json";
 }
