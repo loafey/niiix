@@ -32,7 +32,6 @@
     ./tmux
     ./zed
     ./lldb
-    # ./vivaldi
   ] ++ serverSoftware;
 
   # The state version is required and should stay at the version you
