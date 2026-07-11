@@ -10,10 +10,8 @@
     with pkgs;
     [
       firefox
-      thunderbird
       nixpkgs-fmt
       fastfetch
-      slack
       protonup-qt
       krita
       obs-studio
@@ -21,11 +19,8 @@
       prismlauncher
       fragments
       wineWow64Packages.stable
-      # r2modman
       element-desktop
       aisleriot
-      protonmail-bridge
-      protonmail-desktop
       chromium
       wl-clipboard
       alacritty
@@ -33,38 +28,25 @@
       protontricks
       zenity
       ripgrep
-      libreoffice-qt
       hunspell
       hunspellDicts.uk_UA
       hunspellDicts.th_TH
       waypipe
       mpv
-      monero-gui
-      monero-cli
-      xmrig-mo
-      p2pool
-      bruno
       zsh-history-substring-search
       obsidian
       fish
-      # inputs.zen-browser.packages."${system}".default
       nixfmt
       inkscape
-      fluffychat
       trayscale
       feishin
       signal-desktop
-      tangram
       gcc
-      revolt-desktop
       immich-cli
       openmw
       picard
       cinny-desktop
       easyeffects
-      jellyfin-desktop
-      heroic
-      cargo-vet
     ]
     ++ inputs.git-flakes.packages."${pkgs.system}";
 }
