@@ -31,6 +31,6 @@
     kdePackages.kaccounts-providers
     plasmusic-toolbar
     kdePackages.dolphin-plugins
-    cryfs
+    gocryptfs
   ];
 }
