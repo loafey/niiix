@@ -20,7 +20,7 @@
     "chat": false
   },
   "agent": {
-    "enabled": false,
+    "enabled": false
   },
   "collaboration_panel": {
     "button": false

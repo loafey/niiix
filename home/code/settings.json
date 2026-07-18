@@ -561,5 +561,6 @@
     "git.replaceTagsWhenPull": true,
     "workbench.editor.editorActionsLocation": "hidden",
     "window.customTitleBarVisibility": "never",
-    "workbench.sideBar.location": "right"
+    "workbench.sideBar.location": "right",
+    "dotnetAcquisitionExtension.enableTelemetry": false
 }
