@@ -114,6 +114,17 @@
     };
   };
 
+  systemd.services.log-boot = {
+    enable = true;
+    path = [ pkgs.zsh ];
+    serviceConfig = {
+      WorkingDirectory = "/home/loafey/Git";
+      ExecStart = "${pkgs.zsh}/bin/zsh log-boot.sh";
+      User = "loafey";
+      Group = "users";
+    };
+  };
+
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 }
