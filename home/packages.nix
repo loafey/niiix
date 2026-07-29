@@ -47,6 +47,7 @@
       picard
       cinny-desktop
       easyeffects
+      okteta
     ]
     ++ inputs.git-flakes.packages."${pkgs.system}";
 }
