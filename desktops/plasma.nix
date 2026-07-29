@@ -19,6 +19,7 @@
     kdePackages.kcmutils
     kdePackages.kate
     kdePackages.kdesu
+    kdePackages.qtwebengine
     kdePackages.partitionmanager
     vlc
     clinfo
