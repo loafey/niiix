@@ -10,9 +10,16 @@
     lsd
     gnused
     lazygit
+    alacritty
+    tmux
   ];
 
-  imports = [ ./zsh ./grompt ];
+  imports = [
+    ./zsh
+    ./grompt
+    ./alacritty
+    ./tmux
+  ];
 
   home.file = { };
 
