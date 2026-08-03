@@ -20,6 +20,7 @@
     ./alacritty
     ./tmux
     ./code/mac.nix
+    ./git
   ];
 
   home.file = { };
