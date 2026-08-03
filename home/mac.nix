@@ -19,6 +19,7 @@
     ./grompt
     ./alacritty
     ./tmux
+    ./code/mac.nix
   ];
 
   home.file = { };
