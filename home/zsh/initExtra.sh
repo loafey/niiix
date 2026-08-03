@@ -2,7 +2,7 @@ setopt PROMPT_SUBST
 
 alias trim="sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//'"
 function fancyPrompt() {
-    local promptesc=$(print -rP $(rrompt) | sed -n 'l 1000')
+    local promptesc=$(print -rP $(rrompt))
     local prompty=${promptesc::-1}
     print $(sed 's/\\033\[[0-9;]*m/%{\0%}/g' <<< $prompty)
 }
@@ -28,3 +28,4 @@ setopt prompt_subst
 bindkey '^[[A' history-substring-search-up # or '\eOA'
 bindkey '^[[B' history-substring-search-down # or '\eOB'
 export HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=1
+export PATH=$PATH:~/.cargo/bin/
