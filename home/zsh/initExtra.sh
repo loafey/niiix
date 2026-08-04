@@ -2,11 +2,11 @@ setopt PROMPT_SUBST
 
 alias trim="sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//'"
 function fancyPrompt() {
-    local promptesc=$(print -rP $(rrompt))
-    local prompty=${promptesc::-1}
     if [[ "$OSTYPE" == "darwin"* ]]; then
-        print "$(sed 's/\\033\[[0-9;]*m/%{\0%}/g' <<< $prompty | trim) 🚀"
+        print "%~ $(grompt) 🚀"
     else
+        local promptesc=$(print -rP $(rrompt))
+        local prompty=${promptesc::-1}
         print $(sed 's/\\033\[[0-9;]*m/%{\0%}/g' <<< $prompty)
     fi
 }
