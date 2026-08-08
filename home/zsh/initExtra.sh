@@ -6,8 +6,7 @@ function fancyPrompt() {
         print "%~ $(grompt) 🚀"
     else
         local promptesc=$(print -rP $(rrompt))
-        local prompty=${promptesc::-1}
-        print $(sed 's/\\033\[[0-9;]*m/%{\0%}/g' <<< $prompty)
+        print $(sed 's/\\033\[[0-9;]*m/%{\0%}/g' <<< $promptesc)
     fi
 }
 
