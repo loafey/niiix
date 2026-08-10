@@ -26,6 +26,7 @@
   config = { config, pkgs, lib, ... }: {
     services = {
       jellyfin = { enable = true; };
+      seerr = { enable = true; };
       tailscale = {
         enable = true;
         interfaceName = "userspace-networking";
