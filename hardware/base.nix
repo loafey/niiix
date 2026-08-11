@@ -106,6 +106,7 @@
   programs.command-not-found.enable = false;
   programs.gamemode.enable = true;
   programs.zsh.enable = true;
+  programs.obs-studio.enableVirtualCamera = true;
 
   environment.sessionVariables = rec {
     EDITOR = "nvim";
