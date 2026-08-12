@@ -20,6 +20,7 @@
     ./alacritty
     ./tmux
     ./code/mac.nix
+    ./zed/mac.nix
     ./git
   ];
 
