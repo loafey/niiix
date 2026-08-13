@@ -29,11 +29,6 @@
     # enableFHS = true;
   };
 
-  # clamav = {
-  # daemon.enable = true;
-  # updater.enable = true;
-  # };
-
   xserver = {
     xkb = {
       variant = "";

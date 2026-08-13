@@ -46,11 +46,6 @@
     # interfaceName = "userspace-networking";
   };
 
-  # clamav = {
-  # daemon.enable = true;
-  # updater.enable = true;
-  # };
-
   power-profiles-daemon.enable = true;
   # tlp = {
   #   enable = true;

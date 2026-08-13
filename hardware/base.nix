@@ -87,7 +87,6 @@
     podman-tui
     docker-compose
     ethtool
-    clamav
     sshfs
     lm_sensors
     sysstat
