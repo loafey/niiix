@@ -4,7 +4,6 @@
   home.packages =
     let
       p = with pkgs; [
-        waypipe
         firefox
         fish
         nixfmt

@@ -31,7 +31,6 @@
       hunspell
       hunspellDicts.uk_UA
       hunspellDicts.th_TH
-      waypipe
       mpv
       zsh-history-substring-search
       obsidian
