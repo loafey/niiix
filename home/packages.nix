@@ -47,7 +47,6 @@
       cinny-desktop
       easyeffects
       okteta
-      beets
     ]
     ++ inputs.git-flakes.packages."${pkgs.system}";
 }

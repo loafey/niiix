@@ -99,6 +99,7 @@
     lazygit
     btop
     compose2nix
+    beets
   ];
 
   programs.nix-index-database.comma.enable = true;
