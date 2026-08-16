@@ -2,19 +2,19 @@ setopt PROMPT_SUBST
 
 alias trim="sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//'"
 function fancyPrompt() {
-    local output=$(grompt)
-    if [[ $output ]]; then
-        output=" $(output) "
-    else
-        output=" "
-    fi
+    local output=$(rrompt | sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2};?)?)?[mGK]//g")
+    # if [[ $output ]]; then
+    #     output=" $(output) "
+    # else
+    #     output=" "
+    # fi
     # if [[ "$OSTYPE" == "darwin"* ]]; then
     #     print "%~ $(grompt) 🚀"
     # else
     #     local promptesc=$(print -rP $(rrompt))
     #     print $(sed 's/\\033\[[0-9;]*m/%{\0%}/g' <<< $promptesc)
     # fi
-    print "%~$output🦦"
+    print "$output"
 }
 
 export PS1=' $(fancyPrompt) '
