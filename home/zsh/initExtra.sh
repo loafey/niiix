@@ -2,12 +2,19 @@ setopt PROMPT_SUBST
 
 alias trim="sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//'"
 function fancyPrompt() {
-    if [[ "$OSTYPE" == "darwin"* ]]; then
-        print "%~ $(grompt) 🚀"
+    local output=$(grompt)
+    if [[ $output ]]; then
+        output=" $(output) "
     else
-        local promptesc=$(print -rP $(rrompt))
-        print $(sed 's/\\033\[[0-9;]*m/%{\0%}/g' <<< $promptesc)
+        output=" "
     fi
+    # if [[ "$OSTYPE" == "darwin"* ]]; then
+    #     print "%~ $(grompt) 🚀"
+    # else
+    #     local promptesc=$(print -rP $(rrompt))
+    #     print $(sed 's/\\033\[[0-9;]*m/%{\0%}/g' <<< $promptesc)
+    # fi
+    print "%~$output🦦"
 }
 
 export PS1=' $(fancyPrompt) '
