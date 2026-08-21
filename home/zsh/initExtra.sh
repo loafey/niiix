@@ -17,6 +17,10 @@ function fancyPrompt() {
     print "$output"
 }
 
+function compare-branch() {
+    git diff $1 --color=always | less -R
+}
+
 export PS1=' $(fancyPrompt) '
 export DIRENV_LOG_FORMAT=""
 
