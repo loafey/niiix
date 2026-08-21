@@ -558,5 +558,5 @@
     "window.customTitleBarVisibility": "never",
     "workbench.sideBar.location": "right",
     "dotnetAcquisitionExtension.enableTelemetry": false,
-    "git.blame.editorDecoration.enabled": true
+    "git.blame.editorDecoration.enabled": false
 }
