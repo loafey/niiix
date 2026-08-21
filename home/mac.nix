@@ -12,6 +12,7 @@
     lazygit
     alacritty
     tmux
+    ripgrep
   ];
 
   imports = [
