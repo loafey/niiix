@@ -13,6 +13,7 @@
     alacritty
     tmux
     ripgrep
+    delta
   ];
 
   imports = [
