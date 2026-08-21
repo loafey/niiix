@@ -118,6 +118,11 @@
     dedicatedServer.openFirewall = true;
   };
 
+  programs.gamescope = {
+    enable = true;
+    capSysNice = true;
+  };
+
   programs.noisetorch.enable = true;
 
   virtualisation = {
