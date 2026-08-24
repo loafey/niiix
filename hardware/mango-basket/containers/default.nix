@@ -19,6 +19,7 @@
     rss = (import ./rss.nix { inherit config; });
     karakeep = (import ./karakeep.nix { inherit config; });
     trilium = (import ./trilium.nix { inherit config; });
+    mumriken = (import ./mumriken.nix);
   };
 
   services.gitea-actions-runner = import ./forgejo-runner.nix pkgs;
