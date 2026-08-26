@@ -1,7 +1,7 @@
 { ... }:
 {
   imports = [
-    ./metadata.nix
+    # ./metadata.nix
     ./proxy-manager.nix
     ./homeassistant.nix
     ./discodrome.nix
