@@ -20,6 +20,7 @@
     karakeep = (import ./karakeep.nix { inherit config; });
     trilium = (import ./trilium.nix { inherit config; });
     mumriken = (import ./mumriken.nix);
+    caddy = import ./caddy.nix;
   };
 
   services.gitea-actions-runner = import ./forgejo-runner.nix pkgs;
