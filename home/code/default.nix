@@ -29,6 +29,7 @@ let
         teabyii.ayu
         pkief.material-icon-theme
         myriad-dreamin.tinymist
+        jnoortheen.nix-ide
         ms-vsliveshare.vsliveshare
         qwtel.sqlite-viewer
         wakatime.vscode-wakatime
