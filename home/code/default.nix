@@ -45,6 +45,7 @@ let
         ms-vscode-remote.remote-containers
         tamasfe.even-better-toml
         dbaeumer.vscode-eslint
+        matthewpi.caddyfile-support
       ];
     }
   );
