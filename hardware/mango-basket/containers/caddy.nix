@@ -6,6 +6,18 @@
   hostAddress6 = "fc00::1";
   localAddress6 = "fc00::2f";
 
+  allowedDevices = [
+    {
+      node = "/dev/net/tun";
+      modifier = "rwm";
+    }
+  ];
+
+  additionalCapabilities = [
+    "CAP_NET_ADMIN"
+    "CAP_NET_RAW"
+  ];
+
   bindMounts = {
     "/run/Caddyfile" = {
       hostPath = "/mnt/fruit-bowl/services/shared/Caddy/Caddyfile";
@@ -24,7 +36,6 @@
       services = {
         tailscale = {
           enable = true;
-          interfaceName = "userspace-networking";
         };
 
         caddy = {
