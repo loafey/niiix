@@ -67,6 +67,11 @@
     wantedBy = [ "default.target" ];
   };
 
+  programs.weylus = {
+    enable = true;
+    users = [ "loafey" ];
+  };
+
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 }
