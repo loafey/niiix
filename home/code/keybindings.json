@@ -546,5 +546,25 @@
     {
         "key": "ctrl+alt+b",
         "command": "-workbench.action.toggleAuxiliaryBar"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "-workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    {
+        "key": "ctrl+shift+-",
+        "command": "-workbench.action.navigateForward",
+        "when": "canNavigateForward"
     }
 ]

@@ -449,7 +449,6 @@
     },
     "agdaMode.connection.agdaLanguageServer": false,
     "agdaMode.connection.commandLineOptions": "-l standard-library -i .",
-    "window.commandCenter": false,
     "rust-analyzer.inlayHints.closureStyle": "hide",
     "rust-analyzer.inlayHints.genericParameterHints.const.enable": false,
     "autoHide.ui": {
@@ -461,7 +460,6 @@
         "cursor": false
     },
     "editor.inlayHints.enabled": "offUnlessPressed",
-    "window.titleBarStyle": "native",
     "remote.SSH.enableRemoteCommand": true,
     "[typst]": {
         "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
@@ -501,9 +499,7 @@
     "harper.path": "/etc/profiles/per-user/loafey/bin/harper-ls",
     "workbench.editor.empty.hint": "hidden",
     "dotnet.codeLens.enableReferencesCodeLens": false,
-    "workbench.activityBar.location": "top",
     "autoHide.enable": false,
-    "workbench.layoutControl.enabled": false,
     "telemetry.feedback.enabled": false,
     "terminal.integrated.initialHint": false,
     "chat.implicitContext.enabled": {
@@ -555,8 +551,13 @@
     "editor.cursorSmoothCaretAnimation": "on",
     "git.replaceTagsWhenPull": true,
     "workbench.editor.editorActionsLocation": "hidden",
-    "window.customTitleBarVisibility": "never",
     "workbench.sideBar.location": "right",
     "dotnetAcquisitionExtension.enableTelemetry": false,
-    "git.blame.editorDecoration.enabled": true
+    "git.blame.editorDecoration.enabled": true,
+    "workbench.activityBar.location": "top",
+    "window.titleBarStyle": "native",
+    "workbench.layoutControl.enabled": false,
+    "workbench.browser.showInTitleBar": false,
+    "window.commandCenter": false,
+    "window.customTitleBarVisibility": "never"
 }
