@@ -21,6 +21,7 @@
     trilium = (import ./trilium.nix { inherit config; });
     mumriken = (import ./mumriken.nix);
     caddy = import ./caddy.nix;
+    loafey = (import ./loafey.nix { inherit config; });
   };
 
   services.gitea-actions-runner = import ./forgejo-runner.nix pkgs;
