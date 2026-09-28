@@ -106,6 +106,8 @@
   systemd.services.stormy = {
     enable = true;
     path = [ pkgs.nix ];
+    after = [ "network.target" ];
+    wantedBy = [ "default.target" ];
     serviceConfig = {
       WorkingDirectory = "/home/loafey/Git/stormy";
       ExecStart = "${pkgs.nix}/bin/nix develop -c cargo run --release";
@@ -117,6 +119,8 @@
   systemd.services.log-boot = {
     enable = true;
     path = [ pkgs.zsh ];
+    after = [ "network.target" ];
+    wantedBy = [ "default.target" ];
     serviceConfig = {
       WorkingDirectory = "/home/loafey/Git";
       ExecStart = "${pkgs.zsh}/bin/zsh log-boot.sh";
