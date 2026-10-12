@@ -6,14 +6,15 @@
     settings = {
       user = {
         name = "Samuel Hammersberg";
-        email = "samuel@loafey.se";
+        email = "git@loafey.se";
       };
       gpg.format = "ssh";
       pull.rebase = true;
-      user.signingKey = if pkgs.stdenv.isDarwin then 
-        "/Users/loafey/.ssh/id_ed25519.pub"
-      else
-        "/home/loafey/.ssh/id_ed25519.pub";
+      user.signingKey =
+        if pkgs.stdenv.isDarwin then
+          "/Users/loafey/.ssh/id_ed25519.pub"
+        else
+          "/home/loafey/.ssh/id_ed25519.pub";
       commit.gpgSign = true;
       url."git@github.com:" = {
         insteadOf = "https://github.com/";
