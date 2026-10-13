@@ -14,6 +14,7 @@
     alacritty
     tmux
     jujutsu
+    wireguard-tools
   ];
 
   imports = [
