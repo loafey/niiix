@@ -559,5 +559,6 @@
     "workbench.layoutControl.enabled": false,
     "workbench.browser.showInTitleBar": false,
     "window.commandCenter": false,
-    "window.customTitleBarVisibility": "never"
+    "window.customTitleBarVisibility": "never",
+    "debug.breakpointsView.presentation": "tree"
 }
