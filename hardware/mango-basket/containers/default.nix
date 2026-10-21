@@ -24,5 +24,5 @@
     loafey = (import ./loafey.nix { inherit config; });
   };
 
-  services.gitea-actions-runner = import ./forgejo-runner.nix pkgs;
+  services.forgejo-runner = import ./forgejo-runner.nix pkgs;
 }
