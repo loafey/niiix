@@ -45,6 +45,10 @@
   console.keyMap = "sv-latin1";
 
   security.rtkit.enable = true;
+  security.pki.caCertificateBlacklist = [
+    "Comodo AAA Services root"
+    "emSign ECC Root CA - G3"
+  ];
 
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
