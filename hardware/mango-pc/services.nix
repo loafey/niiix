@@ -20,7 +20,9 @@
 
   openssh = {
     enable = true;
-    settings = { PasswordAuthentication = false; };
+    settings = {
+      PasswordAuthentication = false;
+    };
   };
   flatpak.enable = true;
 
@@ -28,6 +30,7 @@
     enable = true;
     # enableFHS = true;
   };
+  lact.enable = true;
 
   xserver = {
     xkb = {

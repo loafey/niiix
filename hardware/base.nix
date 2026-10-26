@@ -103,6 +103,7 @@
     lazygit
     btop
     compose2nix
+    lact
     # beets
   ];
 
