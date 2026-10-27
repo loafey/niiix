@@ -46,6 +46,7 @@ let
         tamasfe.even-better-toml
         dbaeumer.vscode-eslint
         matthewpi.caddyfile-support
+        slint.slint
       ];
     }
   );
