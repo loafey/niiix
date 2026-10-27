@@ -24,6 +24,7 @@
 
   virtualisation.libvirtd.enable = true;
   programs.virt-manager.enable = true;
+  hardware.amdgpu.overdrive.enable = true;
 
   boot.initrd.kernelModules = [ "amdgpu" ];
   boot.blacklistedKernelModules = [ ];
