@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable-small";
+    nixpkgs-stable.url = "github:NixOS/nixpkgs/7a2148e931419f75f67620349d377ddf32462cda";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     git-flakes.url = "github:loafey/git-flakes";
@@ -16,53 +17,64 @@
     agenix.url = "github:ryantm/agenix";
   };
 
-  outputs = { self, nixpkgs, home-manager, nix-index-database, nix-flatpak
-    , vscode-server, agenix, ... }@inputs: {
-      nixosConfigurations = let
-        args = {
-          inherit nixpkgs;
-          userName = "loafey";
-          inherit inputs;
-          inherit home-manager;
-          index = nix-index-database.nixosModules.nix-index;
-          flatpak = nix-flatpak.nixosModules.nix-flatpak;
-          vscode-server = vscode-server.nixosModules.default;
-        };
-      in {
-        "mango-vm" = import ./hardware {
-          inherit args;
-          host = "mango-vm";
-          extra-modules = [ ./desktops/gnome.nix ];
-          path = ./hardware/mango-vm;
-        };
+  outputs =
+    {
+      self,
+      nixpkgs,
+      home-manager,
+      nix-index-database,
+      nix-flatpak,
+      vscode-server,
+      agenix,
+      ...
+    }@inputs:
+    {
+      nixosConfigurations =
+        let
+          args = {
+            inherit nixpkgs;
+            userName = "loafey";
+            inherit inputs;
+            inherit home-manager;
+            index = nix-index-database.nixosModules.nix-index;
+            flatpak = nix-flatpak.nixosModules.nix-flatpak;
+            vscode-server = vscode-server.nixosModules.default;
+          };
+        in
+        {
+          "mango-vm" = import ./hardware {
+            inherit args;
+            host = "mango-vm";
+            extra-modules = [ ./desktops/gnome.nix ];
+            path = ./hardware/mango-vm;
+          };
 
-        "mango-lappy" = import ./hardware {
-          inherit args;
-          host = "mango-lappy";
-          extra-modules = [ ./desktops/plasma.nix ];
-          path = ./hardware/mango-lappy;
-        };
+          "mango-lappy" = import ./hardware {
+            inherit args;
+            host = "mango-lappy";
+            extra-modules = [ ./desktops/plasma.nix ];
+            path = ./hardware/mango-lappy;
+          };
 
-        "mango-basket" = import ./hardware {
-          inherit args;
-          host = "mango-basket";
-          extra-modules = [
-            agenix.nixosModules.default
-            {
-              environment.systemPackages =
-                [ agenix.packages."x86_64-linux".default ];
-            }
-          ];
-          path = ./hardware/mango-basket;
-        };
+          "mango-basket" = import ./hardware {
+            inherit args;
+            host = "mango-basket";
+            extra-modules = [
+              agenix.nixosModules.default
+              {
+                environment.systemPackages = [ agenix.packages."x86_64-linux".default ];
+              }
+            ];
+            path = ./hardware/mango-basket;
+          };
 
-        "mango-pc" = import ./hardware {
-          inherit args;
-          host = "mango-pc";
-          extra-modules = [ ./desktops/plasma.nix ];
-          path = ./hardware/mango-pc;
-          extra-config = ./hardware/mango-pc/amd.nix;
+          "mango-pc" = import ./hardware {
+            inherit args;
+            host = "mango-pc";
+            extra-modules = [ ./desktops/plasma.nix ];
+            path = ./hardware/mango-pc;
+            extra-config = ./hardware/mango-pc/amd.nix;
+          };
         };
-      };
     };
 }

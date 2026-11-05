@@ -1,4 +1,10 @@
-{ config, ... }: {
+{
+  config,
+  inputs,
+  system,
+  ...
+}:
+{
   autoStart = true;
   privateNetwork = true;
   hostAddress = "192.168.100.60";
@@ -20,7 +26,14 @@
       lib,
       ...
     }:
+    let
+      old-pkgs = import inputs.nixpkgs-stable {
+        system = system;
+        config.allowUnfree = true;
+      };
+    in
     {
+
       services = {
         tailscale = {
           enable = true;
@@ -30,6 +43,7 @@
         trilium-server = {
           enable = true;
           dataDir = "/data-dir";
+          package = old-pkgs.trilium-server;
         };
       };
 
