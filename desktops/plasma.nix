@@ -30,6 +30,8 @@
     kdePackages.plasma-vault
     kdePackages.kaccounts-integration
     kdePackages.kaccounts-providers
+    kdePackages.kio
+    kdePackages.signond
     plasmusic-toolbar
     kdePackages.dolphin-plugins
     gocryptfs
