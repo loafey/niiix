@@ -18,6 +18,7 @@
     navi = (import ./navi.nix { inherit config; });
     rss = (import ./rss.nix { inherit config; });
     karakeep = (import ./karakeep.nix { inherit config; });
+    nextcloud = import ./nextcloud.nix;
     trilium = (
       import ./trilium.nix {
         inherit config;
