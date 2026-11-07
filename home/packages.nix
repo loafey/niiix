@@ -47,6 +47,7 @@
       cinny-desktop
       easyeffects
       okteta
+      keepassxc
     ]
     ++ inputs.git-flakes.packages."${pkgs.system}";
 }
