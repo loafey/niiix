@@ -7,6 +7,10 @@
       hostPath = "/mnt/fruit-bowl/services/nextcloud";
       isReadOnly = false;
     };
+    "/shared" = {
+      hostPath = "/mnt/fruit-bowl/services/shared";
+      isReadOnly = false;
+    };
   };
 
   config =
@@ -25,6 +29,10 @@
           config.dbtype = "sqlite";
           home = "/nextcloud";
           https = true;
+
+          phpExtraExtensions = all: [
+            all.smbclient
+          ];
 
           settings = {
             trusted_domains = [
