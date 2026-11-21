@@ -62,6 +62,7 @@
       "input"
       "dialout"
       "libvirtd"
+      "wireshark"
     ];
     shell = pkgs.zsh;
     packages = [ ];
