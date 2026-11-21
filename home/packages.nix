@@ -47,6 +47,8 @@
       cinny-desktop
       easyeffects
       okteta
+      keepassxc
+      nextcloud-client
     ]
     ++ inputs.git-flakes.packages."${pkgs.system}";
 }
