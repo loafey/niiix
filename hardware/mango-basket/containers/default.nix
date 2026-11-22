@@ -10,7 +10,11 @@
 {
   imports = [ ./testing ];
   containers = {
-    immich = import ./immich.nix;
+    immich = import ./immich.nix {
+      inherit config;
+      inherit inputs;
+      system = pkgs.system;
+    };
     forgejo = import ./forgejo.nix;
     jellybean = import ./jellybean.nix;
     badger = import ./badger.nix;

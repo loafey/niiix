@@ -1,4 +1,10 @@
 {
+  config,
+  inputs,
+  system,
+  ...
+}:
+{
   autoStart = true;
   privateNetwork = false;
 
@@ -17,24 +23,43 @@
     };
   };
 
-  config = { config, pkgs, lib, ... }: {
-    users.users.immich.uid = 999;
-    users.users.postgres.uid = 71;
+  config =
+    {
+      config,
+      pkgs,
+      lib,
+      ...
+    }:
+    let
+      old-pkgs = import inputs.nixpkgs-stable {
+        system = system;
+        config.allowUnfree = true;
+      };
+    in
+    {
+      nix.settings.experimental-features = [
+        "nix-command"
+        "flakes"
+      ];
+      users.users.immich.uid = 999;
+      users.users.postgres.uid = 71;
 
-    services.postgresql.package = pkgs.postgresql_14;
-    services.immich = {
-      enable = true;
-      port = 2283;
-      host = "0.0.0.0";
-      secretsFile = "/run/secrets/immich";
+      # environment.systemPackages = [ pkgs.postgresql_14 ];
+
+      services.postgresql.package = old-pkgs.postgresql_14;
+      services.immich = {
+        enable = true;
+        port = 2283;
+        host = "0.0.0.0";
+        secretsFile = "/run/secrets/immich";
+      };
+
+      networking = {
+        firewall.allowedTCPPorts = [ 2283 ];
+        useHostResolvConf = lib.mkForce false;
+      };
+
+      services.resolved.enable = true;
+      system.stateVersion = "24.11";
     };
-
-    networking = {
-      firewall.allowedTCPPorts = [ 2283 ];
-      useHostResolvConf = lib.mkForce false;
-    };
-
-    services.resolved.enable = true;
-    system.stateVersion = "24.11";
-  };
 }
