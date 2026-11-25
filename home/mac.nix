@@ -17,6 +17,7 @@
     wireguard-tools
     docker
     colima
+    act
   ];
 
   imports = [
