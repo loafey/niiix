@@ -15,6 +15,8 @@
     tmux
     jujutsu
     wireguard-tools
+    docker
+    colima
   ];
 
   imports = [
