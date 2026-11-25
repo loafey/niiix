@@ -1,6 +1,8 @@
 { config, pkgs, ... }:
 
 {
+  nixpkgs.config.allowUnfreePredicate = _: true;
+
   home.username = "loafey";
   home.homeDirectory = "/Users/loafey";
 
@@ -18,6 +20,7 @@
     docker
     colima
     act
+    tart
   ];
 
   imports = [
