@@ -21,6 +21,7 @@
     colima
     act
     tart
+    ripgrep
   ];
 
   imports = [
