@@ -1,32 +1,32 @@
 {
+  "agent_ui_font_family": ".ZedSans",
+  "vim_mode": true,
+  "disable_ai": true,
   "icon_theme": "Material Icon Theme",
-  "theme": "Ayu Light",
+  "theme": "Ayu Mirage",
   "ui_font_size": 15,
   "ui_font_weight": 400,
-  "ui_font_family": "FiraCode Nerd Font Mono",
+  "ui_font_family": "Fira Code",
   "buffer_font_size": 13,
   "buffer_font_weight": 400,
-  "buffer_font_family": "FiraCode Nerd Font Mono",
+  "buffer_font_family": "Fira Code",
   "edit_predictions": {
     "provider": "none",
-    "disabled_globs": [
-      "**/*",
-      "**/*.*"
-    ]
+    "disabled_globs": ["**/*", "**/*.*"],
   },
   "features": {
     "collab": false,
     "assistant": false,
-    "chat": false
+    "chat": false,
   },
   "agent": {
-    "enabled": false
+    "enabled": false,
   },
   "collaboration_panel": {
-    "button": false
+    "button": false,
   },
   "chat_panel": {
-    "button": "never"
+    "button": "never",
   },
   "format_on_save": "on",
   "lsp": {
@@ -35,73 +35,74 @@
       "path": "/run/current-system/sw/bin/rust-analyzer",
       "initialization_options": {
         "check": {
-          "command": "clippy"
-        }
+          "command": "clippy",
+        },
       },
       "inlayHints": {
         "maxLength": null,
         "lifetimeElisionHints": {
           "enable": "skip_trivial",
-          "useParameterNames": true
+          "useParameterNames": true,
         },
         "closureReturnTypeHints": {
-          "enable": "always"
-        }
-      }
+          "enable": "always",
+        },
+      },
     },
     "tinymist": {
       "settings": {
         "exportPdf": "onSave",
-        "outputPath": "$root/$name"
-      }
-    }
+        "outputPath": "$root/$name",
+      },
+    },
   },
   "tab_bar": {
     "show": true,
     "show_nav_history_buttons": false,
-    "show_tab_bar_buttons": true
+    "show_tab_bar_buttons": true,
   },
   "inlay_hints": {
-    "enabled": false
+    "enabled": false,
   },
   "toolbar": {
     "breadcrumbs": false,
     "quick_actions": false,
     "selections_menu": false,
-    "agent_review": false
+    "agent_review": false,
   },
   "title_bar": {
-    "show_branch_status_icon": true
+    "show_sign_in": false,
+    "show_branch_status_icon": true,
   },
   "middle_click_paste": false,
   "indent_guides": {
-    "coloring": "indent_aware"
+    "coloring": "indent_aware",
   },
   "tabs": {
-    "file_icons": true
+    "file_icons": true,
   },
   "diagnostics": {
     "include_warnings": true,
     "inline": {
-      "enabled": true
-    }
+      "enabled": true,
+    },
   },
   "terminal": {
     "font_weight": 400.0,
     "toolbar": {
-      "breadcrumbs": false
-    }
+      "breadcrumbs": false,
+    },
   },
   "project_panel": {
-    "default_width": 300
+    "default_width": 300,
   },
   "git_panel": {
-    "default_width": 300
+    "default_width": 300,
   },
   "outline_panel": {
     "button": false,
     "default_width": 360,
-    "dock": "right"
+    "dock": "right",
   },
   "load_direnv": "shell_hook",
   "auto_install_extensions": {
@@ -113,6 +114,6 @@
     "nix": true,
     "rust": true,
     "toml": true,
-    "typst": true
-  }
+    "typst": true,
+  },
 }

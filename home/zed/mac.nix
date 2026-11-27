@@ -7,7 +7,7 @@ let
 in {
   programs.zed-editor = {
     extensions =
-      [ "nix" "toml" "elixir" "make" "rust" "typst" "html" "javascript" "c#" ];
+      [ "nix" "toml" "elixir" "make" "rust" "typst" "html" "javascript" "c#" "material-icon-theme" ];
     enable = true;
   };
   xdg.configFile."zed/settings.json".source = lib.mkForce "${dotfiles}/settings.json";

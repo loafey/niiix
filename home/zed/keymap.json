@@ -10,7 +10,7 @@
     "context": "Workspace",
     "bindings": {
       // "shift shift": "file_finder::Toggle"
-      "ctrl-j": "workspace::ToggleBottomDock",
+      "ctrl-å": "workspace::ToggleBottomDock",
       "ctrl-ö": "terminal_panel::ToggleFocus",
       "alt-x": "editor::ExpandMacroRecursively",
       "alt-r": "editor::RestartLanguageServer",
@@ -22,8 +22,18 @@
     "bindings": {
       "ctrl-shift-up": "editor::AddSelectionAbove", // Insert Cursor Above
       "ctrl-shift-down": "editor::AddSelectionBelow", // Insert Cursor Below
-      "ctrl-'": ["editor::ToggleComments", { "advance_downwards": false }]
+      "ctrl-'": [
+        "editor::ToggleComments",
+        {
+          "advance_downwards": false
+        }
+      ]
       // "j k": ["workspace::SendKeystrokes", "escape"]
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-b": "project_panel::Toggle"
     }
   }
 ]
