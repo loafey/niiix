@@ -1,4 +1,11 @@
 {
+  "buffer_line_height": "standard",
+  "git": {
+    "inline_blame": {
+      "location": "inline"
+    }
+  },
+  "text_rendering_mode": "platform_default",
   "agent_ui_font_family": ".ZedSans",
   "vim_mode": true,
   "disable_ai": true,
@@ -8,7 +15,7 @@
   "ui_font_weight": 400,
   "ui_font_family": "Fira Code",
   "buffer_font_size": 13,
-  "buffer_font_weight": 400,
+  "buffer_font_weight": 350.0,
   "buffer_font_family": "Fira Code",
   "edit_predictions": {
     "provider": "none",
@@ -62,6 +69,7 @@
     "show_tab_bar_buttons": true,
   },
   "inlay_hints": {
+    "show_value_hints": false,
     "enabled": false,
   },
   "toolbar": {
@@ -88,7 +96,7 @@
     },
   },
   "terminal": {
-    "font_weight": 400.0,
+    "font_weight": 350.0,
     "toolbar": {
       "breadcrumbs": false,
     },

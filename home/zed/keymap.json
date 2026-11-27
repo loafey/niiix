@@ -35,5 +35,65 @@
     "bindings": {
       "ctrl-b": "project_panel::Toggle"
     }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-shift-d": "debug_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "cmd-shift-d": "debug_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Picker > Editor",
+    "bindings": {
+      "ctrl-h": "editor::Backspace"
+    }
+  },
+  {
+    "context": "Picker > Editor",
+    "unbind": {
+      "ctrl-h": "editor::Backspace"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "¨": "editor::Backspace"
+    }
+  },
+  {
+    "context": "Editor",
+    "unbind": {
+      "ctrl-h": "editor::Backspace"
+    }
+  },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "ctrl-h": "pane::GoBack"
+    }
+  },
+  {
+    "context": "VimControl && !menu",
+    "unbind": {
+      "ctrl-o": "pane::GoBack"
+    }
+  },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "ctrl-l": "pane::GoForward"
+    }
+  },
+  {
+    "context": "VimControl && !menu",
+    "unbind": {
+      "ctrl-i": "pane::GoForward"
+    }
   }
 ]
